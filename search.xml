@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo基础建站</title>
+    <url>/2020/09/20/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<p>之前为了建立一个自己的个人博客，浏览过各种网站搭建方法，最后选择Hexo+Github Pages的方式建站。</p>
+<p>时隔半年多NexT主题更新至7.8.0，为了系统地升级blog决定把Hexo和NexT主题重装一次，重新记录全过程作为技术笔记保存，待未来遇到问题时能有据可循地查漏、解决疑难问题。</p>
+<a id="more"></a>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo 是一个由<a href="https://nodejs.org/">Node.js</a>支持的快速，简单且功能强大的博客框架。</p>
+<p>Hexo 使用 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p><strong>特征</strong></p>
+<ul>
+<li>快速生成</li>
+<li>支持GitHub Flavored Markdown和大多数Octopress插件</li>
+<li>一键部署到GitHub Pages，Heroku等</li>
+<li>强大的API可实现无限扩展</li>
+<li>数以百计的<a href="https://hexo.io/themes/">主题</a>和<a href="https://hexo.io/plugins/">插件</a></li>
+</ul>
+<br/>
+
+<h3 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h3><p>（待续）</p>
+<br/>
+
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>安装 Hexo 前要先安装：</p>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li><a href="http://git-scm.com/">Git</a></li>
+</ul>
+<br/>
+
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>可以通过官方的 <a href="https://nodejs.org/en/download/">安装程序</a>进行安装。</p>
+<p>其它的安装方法：</p>
+<ul>
+<li>Windows：通过 <a href="https://github.com/jasongin/nvs/">nvs</a>（推荐）或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</li>
+<li>Mac：使用 <a href="https://brew.sh/">Homebrew</a> 或 <a href="http://www.macports.org/">MacPorts</a> 安装。</li>
+<li>Linux（DEB/RPM-based）：从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</li>
+<li>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 <a href="https://nodejs.org/en/download/package-manager/">指导</a></li>
+</ul>
+<p><strong>当前版本：12.18.4</strong></p>
+<br/>
+
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><em>Git 初始化安装配置详见：<a href="https://tding.top/archives/b0004f5f.html">GitHub 初始化配置</a></em></p>
+<br/>
+
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="快速安装"><a href="#快速安装" class="headerlink" title="快速安装"></a>快速安装</h3><p>使用<code>npm</code>安装 Hexo</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p><strong>当前版本：</strong>v4.2.0</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo: 5.2.0</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 10.0.18363 win32 x64</span><br><span class="line">node: 12.18.4</span><br><span class="line">v8: 7.8.279.23-node.39</span><br><span class="line">uv: 1.38.0</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.16.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.41.0</span><br><span class="line">napi: 6</span><br><span class="line">llhttp: 2.1.2</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1g</span><br><span class="line">cldr: 37.0</span><br><span class="line">icu: 67.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 13.0</span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h3><p>在想要的路径下新建文件夹，目录下运行<code>cmd</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>新建完成后，指定文件夹的目录如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>_config.yml</strong></p>
+<p>网站的 <a href="https://hexo.io/zh-cn/docs/configuration">配置</a> 信息，您可以在此配置大部分的参数。</p>
+</li>
+<li><p><strong>package.json</strong></p>
+<p>应用程序的信息。<a href="https://ejs.co/">EJS</a>, <a href="http://learnboost.github.io/stylus/">Stylus</a> 和 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> renderer 已默认安装，可以自由移除。</p>
+</li>
+<li><p><strong>scaffolds</strong></p>
+<p><a href="https://hexo.io/zh-cn/docs/writing">模版</a> 文件夹，当新建文章时，Hexo 会根据 scaffold 来建立文件。</p>
+<p>Hexo的模板是指在新建的文章文件中默认填充的内容。</p>
+</li>
+<li><p><strong>source</strong></p>
+<p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<ul>
+<li><p>关于找不到<code>_drafts</code>文件夹，直接新建文件夹后打开<strong>_config.yml</strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">render_drafts:</span> <span class="literal">true</span> <span class="comment">#显示草稿</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><strong>themes</strong></p>
+<p><a href="https://hexo.io/zh-cn/docs/themes">主题</a> 文件夹。Hexo 会根据主题来生成静态页面。</p>
+</li>
+<li><p><strong>node_modules</strong></p>
+<p>Nodejs 周边生态安装包存放处。</p>
+<br/>
+
+</li>
+</ul>
+<h3 id="生成与预览"><a href="#生成与预览" class="headerlink" title="生成与预览"></a>生成与预览</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">g</span> <span class="comment"># 生成</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">s</span> <span class="comment"># 启动服务</span></span><br></pre></td></tr></table></figure>
+
+<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <code>http://localhost:4000</code> 即可看到内容</p>
+<p>执行以上命令之后，hexo 就会在 <code>public</code> 文件夹生成相关 html 文件，这些是博客的静态文件，后续需要把这些提交到 GitHub 上。</p>
+<br/>
+
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>这里以 <code>hexo-theme-yilia</code> 这个主题为例做一下说明。</p>
+<p>首先下载 <code>hexo-theme-yilia</code> 这个主题：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd &#x2F;d&#x2F;document&#x2F;GitHub&#x2F;hexo&#x2F;</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git themes&#x2F;yilia</span><br></pre></td></tr></table></figure>
+
+<p>下载的主题文件都在 theme 目录下。</p>
+<p>然后将 Hexo 根目录下的<code>_config.yml</code> 中的 <code>theme: landscape</code> 改为 <code>theme: yilia</code>，然后重新执行 <code>hexo g</code> 来重新生成。</p>
+<p><strong>注意：如果出现一些莫名其妙的问题，可以先执行 <code>hexo clean</code> 来清理一下 public 的内容，然后再重新生成。</strong></p>
+<br/>
+
+<h2 id="部署到Github-Pages"><a href="#部署到Github-Pages" class="headerlink" title="部署到Github Pages"></a>部署到Github Pages</h2><h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><p>在配置文件<code>_config.yml</code>中作如下修改：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:lluphok/lluphok.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="使用hexo-deploy部署"><a href="#使用hexo-deploy部署" class="headerlink" title="使用hexo deploy部署"></a>使用hexo deploy部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>如果出现如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">INFO  Validating config</span><br><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
+
+<p>是由于缺少插件，可以通过<code>npm</code>安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果出现如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Permission denied (publickey).</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rightsand the repository exists.</span><br></pre></td></tr></table></figure>
+
+<p>是因为没有设置好public key所致。在本机生成public key（参考<a href="https://help.github.com/articles/generating-an-ssh-key/">github帮助</a>）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">＃ssh-keygen -t rsa -b 4096 -C &quot;xxx@xxx.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>在<code>#user_id/.ssh</code>目录下会生成两个文件，<code>id_rsa.pub</code>和<code>id_rsa.</code>然后登陆github，在<a href="https://github.com/settings/ssh">SSH设置页面</a>添加上刚才的public key文件也就是<code>id_rsa.pub</code>的内容即可。</p>
+</li>
+</ul>
+<p>执行后目录下新生成一个<code>.deploy_git</code>文件夹。</p>
+<br/>
+
+<p>这个时候个人网站就基本搭建完成了。</p>
+<br/>
+
+<h2 id="附：常用Hexo命令"><a href="#附：常用Hexo命令" class="headerlink" title="附：常用Hexo命令"></a>附：常用Hexo命令</h2><ul>
+<li>常见命令：</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">&quot;postName&quot;</span>      <span class="comment"># 新建文章</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">&quot;pageName&quot;</span> <span class="comment"># 新建页面</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">generate</span>            <span class="comment"># 生成静态页面至public目录</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">server</span>              <span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">deploy</span>              <span class="comment"># 部署到GitHub</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">help</span>                <span class="comment"># 查看帮助</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">version</span>             <span class="comment"># 查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>缩写命令：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n &#x3D;&#x3D; hexo new</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">hexo s &#x3D;&#x3D; hexo server</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>组合命令：</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">s</span> <span class="string">-g</span>   <span class="comment"># 生成并本地预览</span></span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span> <span class="string">-g</span>   <span class="comment"># 生成并上传</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://hexo.io/zh-cn/docs/">Hexo官方手册</a></li>
+<li><a href="https://tding.top/archives/7f189df5.html">Hexo 建站教程</a></li>
+<li><a href="https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Onedrive软连接搭建实例——mklink命令的使用</title>
+    <url>/2020/09/20/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B%E2%80%94%E2%80%94mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。</p>
+<p>尝试解决方案：利用DOS命令<code>mklink</code>给待同步的文件目录在OneDrive文件夹下创建映射。</p>
+<a id="more"></a>
+
+
+
+<h2 id="关于-mklink-命令"><a href="#关于-mklink-命令" class="headerlink" title="关于 mklink 命令"></a>关于 mklink 命令</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>NTFS 符号链接又称“符号链接”，是 NTFS 文件系统中指向文件系统中的另一个对象的一类对象，被指向的对象叫做“目标”。<code>mklink</code>是 Windows 系统下用于创建符号链接的工具，存在于 Windows Vista 及以后版本的 Windows 操作系统中。</p>
+<br/>
+
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\WINDOWS\system32&gt;mklink</span><br><span class="line">创建符号链接。</span><br><span class="line"></span><br><span class="line">MKLINK [[&#x2F;D] | [&#x2F;H] | [&#x2F;J]] Link Target</span><br><span class="line"></span><br><span class="line">        &#x2F;D      创建目录符号链接(Symbolic Link)。</span><br><span class="line">                默认为文件符号链接。</span><br><span class="line">        &#x2F;H      创建硬链接(Hard Link)而非符号链接。</span><br><span class="line">        &#x2F;J      创建目录联接(Junction)。</span><br><span class="line">        Link    指定新的符号链接名称。</span><br><span class="line">        Target  指定新链接引用的路径</span><br><span class="line">                (相对或绝对)。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>目录链接</strong></p>
+<p><code>/d</code>与<code>/j</code>的区别</p>
+<ol>
+<li><p>创建新链接路径</p>
+<p><code>/d</code>可以是相对路径，也可以是绝对路径；</p>
+<p><code>/j</code>必须是绝对路径</p>
+</li>
+<li><p>执行后，剪切/移动新链接路径</p>
+<p><code>/d</code>生成的目录，移动到其他地方，<strong>仍旧保持链接。对源目录无影响，<code>/d</code>生成的目录消失</strong></p>
+<p><code>/j</code>生成的目录，移动到其他地方，<strong>会产生一个新的副本文件夹，源文件夹内容全部移至新普通文件夹内，源文件夹清空，源文件夹仍旧存在，<code>/j</code>生成的目录也依旧存在</strong></p>
+<br/>
+
+<blockquote>
+<p>示例：</p>
+<p>target文件夹中存有文件<strong>a.txt</strong>，执行命令行创建链接</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;j D:\link\target D:\target</span><br></pre></td></tr></table></figure>
+
+<p>剪切<code>D:\link\</code>中的目录文件夹<strong>target（带有小箭头）</strong>至<code>E:\</code>后，D盘源文件夹内容全清空，全部（即<strong>a.txt</strong>）被移动至E盘的<strong>target（此时不带小箭头）</strong>文件夹中，同时<code>D:\link\</code>中生成的目录<strong>target（带有小箭头）</strong>依旧存在，但此时由于目标文件夹<code>D:\target</code>被清空而显示为空。</p>
+</blockquote>
+<br/>
+</li>
+<li><p>软件打开</p>
+<p>用filedialog打开，<code>/d</code>生成的目录，地址栏会跳到源目录位置。</p>
+<p>​                               <code>/j</code>生成的目录，地址栏不会跳到源目录位置。</p>
+<p>用FolderDialog打开，两者相同。</p>
+<br/>
+
+</li>
+</ol>
+<p><strong>总结：</strong><code>/d</code>更像一个快捷方式。</p>
+<br/>
+</li>
+<li><p><strong>文件链接</strong></p>
+<p>参数 <code>/h</code> 版本的 <code>mklink</code> 命令可以为文件创建硬链接。当源路径是目录时，不带参数的 <code>mklink</code> 会报错「拒绝访问」。在 <code>cmd</code> 中使用 <code>dir</code> 列出当前目录的文件列表时，硬链接的样式与正常文件没什么不同。</p>
+<p>删除参数 <code>/H</code> 版本的 <code>mklink</code> 命令创建的硬链接，不会影响源路径指向的文件。删除参数 <code>/H</code> 版本的 <code>mklink</code> 命令创建的硬链接指向的源文件，也不会影响硬链接。只有当一个文件的所有硬链接都被删除时，文件才被真正删除。</p>
+<br/>
+</li>
+<li><p><strong>不带参数</strong></p>
+<p>不带参数的 <code>mklink</code> 命令可以为文件创建符号链接。当源路径是目录时，不带参数的 <code>mklink</code> 不会报错，但是实际产生的符号链接不可用。在 <code>cmd</code> 中使用 <code>dir</code> 列出当前目录的文件列表时，符号链接显示为 <code>SYMLINK</code>，同时在文件名后以方括号表示链接的源地址。</p>
+<p>删除不带参数的 <code>mklink</code> 创建的符号链接，不会影响源路径指向的文件。删除不带参数的 <code>mklink</code> 创建的符号链接指向的源文件，访问符号链接时无法访问。</p>
+</li>
+</ul>
+<br/>
+
+<h3 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h3><ul>
+<li><p>使用<code>mklink</code>命令需要管理员权限。</p>
+</li>
+<li><p>这个功能必须是在NTFS文件系统上才能使用。</p>
+</li>
+<li><p>参数 <code>Link</code> 和 <code>Target</code> 要求不能使用 Windows 中不允许用作文件名的字符（\ / : * ? “ &lt; &gt; |）。并且如果 <code>Link</code> 和 <code>Target</code> 这两个参数中需要包含空格，则必须使用英文双引号将内容引起来，以避免参数识别错误。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\&lt;win-username&gt;\OneDrive\ws&quot; &quot;D:\Workspace&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>符号链接在系统启动的时候是不工作的，下面这些文件（夹）不可以作为符号链接替换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\Windows</span><br><span class="line">\Windows\system32</span><br><span class="line">\Windows\system32\config</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<br/>
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="建立（以Onedrive为例）"><a href="#建立（以Onedrive为例）" class="headerlink" title="建立（以Onedrive为例）"></a>建立（以Onedrive为例）</h3><p>OneDrive默认的保存位置是<code>C:\Users\&lt;win-username&gt;\OneDrive</code></p>
+<p>以管理员模式打开命令提示符，在打开的窗口中输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d C:\Users\&lt;win-username&gt;\OneDrive\target E:\target</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>执行操作时请确保<code>C:\Users\&lt;win-username&gt;\OneDrive</code>下没有名为<strong>“target”</strong>的目录，否则将会报错。</p>
+<p>回车键执行后，命令提示符返回“……创建的文件链接”字样的文字，即说明建立连接成功。</p>
+<br/>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><ol>
+<li><p>在OneDrive设置中选择同步文件夹时取消勾选自建符号链接的目录。</p>
+</li>
+<li><p>直接删除符号链接目录。</p>
+</li>
+<li><p><code>cmd</code>命令删除</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#删除虚拟的链接目录，并不会删除远程文件夹真实文件，注意千万不能用del，del会删除远程的真实文件。</span><br><span class="line">rmdir C:\Users\&lt;win-username&gt;\OneDrive\target</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<br/>
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>链接目录内的文件即使已经上传完毕，其状态也会一直显示正在上传（<a href="https://techcommunity.microsoft.com/t5/onedrive-for-business/include-files-in-onedrive-sync-without-copying-them/m-p/74119#lineardisplaymessageviewwrapper_5">参考</a>）。</li>
+<li>在Web版OneDrive中删除自建的符号链接会导致目标目录内文件丢失。</li>
+</ul>
+<br/>]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Win</tag>
+        <tag>Symbolic Link</tag>
+        <tag>OneDrive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora使用心得</title>
+    <url>/2020/09/20/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<blockquote>
+<p>胡说八道</p>
+</blockquote>
+<a id="more"></a>
+
+<p><strong>Tips:</strong></p>
+<ul>
+<li>复制网页文本时会自动粘贴Markdown格式，并在软件中打开时自动渲染。对于文件原始数据的储存而言是个十分便捷的小功能。<ul>
+<li><strong>2020/09/17 补</strong>：才发现网页文本的复制粘贴过程都是保留HTML格式的……word甚至会自动读取生成标题目录，以前只用记事本copy的我整个人都傻掉了</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cmd Markdown语法参考</title>
+    <url>/2020/01/09/markdown/</url>
+    <content><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<a id="more"></a>
+
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
+<hr>
+<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8">Todo 列表</a></h3><ul>
+<li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li>
+<li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li>
+</ul>
+<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
+<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">&#x27;hello world&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: Start</span><br><span class="line">op&#x3D;&gt;operation: Your Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<hr>
+<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
+<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
+<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<hr>
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a><br>2016 年 07月 07日    </p>
+<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。</p>
+<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><a href="http://xianbai.me/learn-md/index.html">Learning-Markdown(Markdown入门参考)</a></li>
+<li><a href="https://frankbing.gitbooks.io/markdown">MarkDown使用指南</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>实用工具</title>
+    <url>/2020/09/20/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<blockquote>
+<p>想起来就更新</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制工具"><a href="#压制工具" class="headerlink" title="压制工具"></a>压制工具</h3><p><strong>1.MediaCode x64</strong><br>老牌专业压制工具。<br><strong>2.小丸工具箱</strong><br>B站特供，方便直接选择类型压制。<br><strong>3.FFmpeg</strong><br>集大成之作，实用短板FFmpeg_Joiner</p>
+<br/>
+
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><p><strong>1.Gifcam</strong><br>目前使用的Gif录制工具，其实也可以考虑通过Pr导出<del>就是麻烦了一点</del></p>
+<br/>
+
+<h3 id="播放工具"><a href="#播放工具" class="headerlink" title="播放工具"></a>播放工具</h3><p><strong>1.Potplayer</strong><br>最方便实用<br><strong>2.FFmpeg - ffplay</strong><br>测试直播源效果极佳<br><strong>3.VLC</strong><br>听说是直播源播放神器，<del>没一次使用成功</del></p>
+<br/>
+
+<h2 id="下载类"><a href="#下载类" class="headerlink" title="下载类"></a>下载类</h2><h3 id="非BT"><a href="#非BT" class="headerlink" title="非BT"></a>非BT</h3><p><strong>1.IDM</strong><br>捕捉浏览器下载行为，但有时不如Chrome直连</p>
+<h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><p><strong>1.迅雷</strong><br>国内最好用<br><strong>2.百度云</strong><br>垃圾限速软件<br><strong>3.FDM</strong><br>动漫类使用效果比较好<br><strong>4.Aria2</strong><br>设定比较繁琐<br><strong>5.亿寻</strong><br><a href="https://yixun.writeas.com/yi-xun">官网</a></p>
+<br/>
+
+<h2 id="办公类"><a href="#办公类" class="headerlink" title="办公类"></a>办公类</h2><h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><p><strong>1.印象笔记</strong><br>文章摘录、信息储存、整理型笔记<br><strong>2.Pocket</strong><br>稍后阅读<br><strong>3.Inoreader</strong><br>rss<br><strong>4.Notion</strong><br>可以尝试</p>
+<h3 id="Remind"><a href="#Remind" class="headerlink" title="Remind"></a>Remind</h3><p><strong>1.To-do</strong><br>Microsoft系列，联动Outlook实用</p>
+<h3 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h3><p><strong>1.Onedrive</strong><br><strong>2.iCloud</strong></p>
+<h3 id="Write"><a href="#Write" class="headerlink" title="Write"></a>Write</h3><p><strong>1.Sublime</strong><br>Python编辑器、Markdown编辑器<br><strong>2.Typora</strong><br>纯粹写作</p>
+<br/>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>1.Foobar2000</strong><br>注意媒体库转移<br><strong>2.Bandizip</strong><br>香，太香了</p>
+<p>1</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>辅助工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NexT主题配置及优化</title>
+    <url>/2020/09/20/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<blockquote>
+<p>熬夜伤身。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>进入Hexo目录，使用<code>git bash</code>安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>可以随时<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/README.md#update">使用 git 更新至最新版本</a>并切换至任何有 tag 标记的 release 版本、最新的 master 分支版本、甚至其他分支。</p>
+<p>获取 tags 列表：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd themes&#x2F;next</span><br><span class="line">$ git tag -l</span><br><span class="line">…</span><br><span class="line">v6.0.0</span><br><span class="line">v6.0.1</span><br><span class="line">v6.0.2</span><br></pre></td></tr></table></figure>
+
+<p>切换到 <code>v6.0.1</code> 这一 <a href="https://github.com/theme-next/hexo-theme-next/tags">tag 指向的 release 版本</a>。输入如下指令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout tags&#x2F;v6.0.1</span><br><span class="line">Note: checking out &#39;tags&#x2F;v6.0.1&#39;.</span><br><span class="line">…</span><br><span class="line">HEAD is now at da9cdd2... Release v6.0.1</span><br></pre></td></tr></table></figure>
+
+<p>切换回 <a href="https://github.com/theme-next/hexo-theme-next/commits/master">master 分支</a>，输入如下指令即可：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>注意：</strong></p>
+<p>由于历时遗留问题，NexT主题目前一共有三个仓库：</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>年份</th>
+<th>仓库</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v5.1.4 或更低</td>
+<td>2014 ~ 2017</td>
+<td><a href="https://github.com/iissnan/hexo-theme-next">https://github.com/iissnan/hexo-theme-next</a></td>
+</tr>
+<tr>
+<td>v6.0.0 ~ v7.8.0</td>
+<td>2018 ~ 2019</td>
+<td><a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a></td>
+</tr>
+<tr>
+<td>v8.0.0 或更高</td>
+<td>2020</td>
+<td><a href="https://github.com/next-theme/hexo-theme-next">https://github.com/next-theme/hexo-theme-next</a></td>
+</tr>
+</tbody></table>
+<p><strong>安装时务必核对相应的地址是否正确</strong></p>
+<ul>
+<li>跨版本升级参考文档：<a href="https://theme-next.js.org/docs/getting-started/update-from-v5.html">Update from Version 5</a></li>
+</ul>
+<br/>
+
+<h2 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h2><h3 id="数据文件"><a href="#数据文件" class="headerlink" title="数据文件"></a>数据文件</h3><blockquote>
+<p><strong>参考Github issues</strong></p>
+<ul>
+<li><a href="https://github.com/hexojs/hexo/pull/4120">feat(load_theme_config): support alternate theme config</a></li>
+<li><a href="https://github.com/next-theme/hexo-theme-next/issues/4">【必读】更新说明及常见问题</a></li>
+</ul>
+<p><strong><code>next.yml</code> 配置文件</strong></p>
+<p>为了避免更新出现冲突，推荐使用 Alternate Theme Config 存储配置：<a href="https://theme-next.js.org/docs/getting-started/configuration.html">https://theme-next.js.org/docs/getting-started/configuration.html</a><br>注：Hexo 官方已实现此功能，在升级到 Hexo 5.0 版本后，请留意配置方式上的改变，使用 <code>_config.next.yml</code> 代替 <code>source/_data/next.yml</code>。<strong>旧的 <code>next.yml</code> 配置方式诞生于 2015 年（<a href="https://github.com/iissnan/hexo-theme-next/issues/328">iissnan/hexo-theme-next#328</a>），已经完成其历史使命，将在一段时间后停止支持。</strong></p>
+</blockquote>
+<p> <strong><code>_config.[name].yml</code></strong></p>
+<p>所有配置都位于config文件中<code>/_config.[name].yml</code>。用中<code>[name]</code>的<code>theme</code>option 值替换站点配置文件例如<code>next</code>。</p>
+<br/>
+
+<h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><ol>
+<li><p>请确保使用的是Hexo 5.0（或更高版本）。</p>
+</li>
+<li><p>在站点的根目录中创建一个配置文件，例如<code>_config.next.yml</code>。</p>
+</li>
+<li><p>从复制所需的NexT主题选项 </p>
+<p>主题配置文件</p>
+<p>进入此配置文件。如果是第一次安装NexT，可以通过以下命令复制整个配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">＃通过npm</span><br><span class="line"> cp node_modules &#x2F; hexo-theme-next &#x2F; _config.yml _config.next.yml </span><br><span class="line">安装＃通过Git</span><br><span class="line"> cp theme &#x2F; next &#x2F; _config.yml _config.next.yml安装</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<br/>
+
+<h3 id="设置Hexo主题"><a href="#设置Hexo主题" class="headerlink" title="设置Hexo主题"></a>设置Hexo主题</h3><p>在 Hexo <code>站点配置文件</code>（<code>/_config.yml</code>）中设置主题：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="选择Scheme"><a href="#选择Scheme" class="headerlink" title="选择Scheme"></a>选择Scheme</h3><p>Scheme是NexT提供的主题方案，在<code>主题配置文件</code>（<code>/next.yml</code>）中修改。</p>
+<ul>
+<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
+<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
+<li>Gemini - 类似Pisces，配色使用米黄暖色调，采用block阴影</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>当前选择：Gemini</strong></p>
+<br/>
+
+<h3 id="配置Hexo网站信息"><a href="#配置Hexo网站信息" class="headerlink" title="配置Hexo网站信息"></a>配置Hexo网站信息</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span>          <span class="comment"># 网站标题</span></span><br><span class="line"><span class="attr">subtitle:</span>       <span class="comment"># 网站副标题</span></span><br><span class="line"><span class="attr">description:</span>    <span class="comment"># 描述，介绍网站的</span></span><br><span class="line"><span class="attr">keywords:</span>       <span class="comment"># 网站的关键字</span></span><br><span class="line"><span class="attr">author:</span>         <span class="comment"># 博主姓名</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span> <span class="comment"># 语言：zh-CN 是简体中文</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">UTC</span>   <span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><h3 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h3><ol>
+<li><strong>设置配置文件<code>_config.next.yml</code>中相关内容</strong></li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 菜单设置为 菜单名: /菜单目录 || 菜单图标名字</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="attr">sitemap:</span> <span class="string">/sitemap.xml</span> <span class="string">||</span> <span class="string">sitemap</span></span><br><span class="line">  <span class="attr">commonweal:</span> <span class="string">/404/</span> <span class="string">||</span> <span class="string">heartbeat</span></span><br><span class="line"></span><br><span class="line"><span class="attr">menu_settings:</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span>   <span class="comment"># 显示图标</span></span><br><span class="line">  <span class="attr">badges:</span> <span class="literal">true</span>  <span class="comment"># 显示统计信息</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>若站点运行在子目录中，需要将链接前缀的 <code>/</code> 去掉</li>
+</ul>
+<ol start="2">
+<li><p><strong>手动生成页面</strong></p>
+<p>新菜单开启后没有对应文件，需要手动生成 about、tags、categories、404 页面。</p>
+<p>在根目录下输入以下指令新建页面：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>在<code>hexo/source/tags</code> 文件夹中新生成<code>index.md</code> 文件，对内容进行修改：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-06-29 11:35:42   # 时间随意</span><br><span class="line">type: &quot;tags&quot;                # 类型一定要为tags</span><br><span class="line">comments: false             # 提示这个页面不需要加载评论</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<br/>
+
+<h3 id="设置搜索页"><a href="#设置搜索页" class="headerlink" title="设置搜索页"></a>设置搜索页</h3><p><strong>安装插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置文件<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 本地搜索</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>path</code>：索引文件的路径，相对于站点根目录</li>
+<li><code>field</code>：搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</li>
+<li><code>limit</code>：限制搜索的条目数</li>
+</ul>
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Local Search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If auto, trigger search by changing input.</span></span><br><span class="line">  <span class="comment"># If manual, trigger search by pressing enter key or search button.</span></span><br><span class="line">  <span class="attr">trigger:</span> <span class="string">auto</span></span><br><span class="line">  <span class="comment"># Show top n results per article, show all results by setting to -1</span></span><br><span class="line">  <span class="attr">top_n_per_article:</span> <span class="number">1</span></span><br><span class="line">  <span class="comment"># Unescape html strings to the readable one.</span></span><br><span class="line">  <span class="attr">unescape:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Preload the search data when the page loads.</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="设置rss订阅"><a href="#设置rss订阅" class="headerlink" title="设置rss订阅"></a>设置rss订阅</h3><p><strong>安装插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置文件<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line">  <span class="attr">hub:</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">  <span class="attr">content_limit:</span> <span class="number">140</span></span><br><span class="line">  <span class="attr">content_limit_delim:</span> <span class="string">&#x27; &#x27;</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">icon.png</span></span><br><span class="line">  <span class="attr">autodiscovery:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">template:</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="配置Footer"><a href="#配置Footer" class="headerlink" title="配置Footer"></a>配置Footer</h3><ol>
+<li><p><strong>v7.8.0</strong></p>
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="comment"># Specify the date when the site was setup. If not defined, current year will be used.</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2019</span></span><br><span class="line">  <span class="comment"># Icon between year and copyright info.</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="comment"># Icon name in Font Awesome. See: https://fontawesome.com/icons</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">fa</span> <span class="string">fa-heart</span></span><br><span class="line">    <span class="comment"># If you want to animate the icon, set it to true.</span></span><br><span class="line">    <span class="attr">animated:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Change the color of icon, using Hex Code.</span></span><br><span class="line">    <span class="attr">color:</span> <span class="string">&quot;#ff0000&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># If not defined, `author` from Hexo `_config.yml` will be used.</span></span><br><span class="line">  <span class="attr">copyright:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Powered by Hexo &amp; NexT</span></span><br><span class="line">  <span class="attr">powered:</span> </span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span>    <span class="comment"># 开启hexo驱动</span></span><br><span class="line">    <span class="attr">version:</span> <span class="literal">true</span>    <span class="comment"># 开启hexo版本号</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">theme:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span>    <span class="comment"># 开启主题驱动</span></span><br><span class="line">    <span class="attr">version:</span> <span class="literal">true</span>    <span class="comment"># 开启主题版本号</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn</span></span><br><span class="line">  <span class="attr">beian:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">icp:</span></span><br><span class="line">    <span class="comment"># The digit in the num of gongan beian.</span></span><br><span class="line">    <span class="attr">gongan_id:</span></span><br><span class="line">    <span class="comment"># The full num of gongan beian.</span></span><br><span class="line">    <span class="attr">gongan_num:</span></span><br><span class="line">    <span class="comment"># The icon for gongan beian. See: http://www.beian.gov.cn/portal/download</span></span><br><span class="line">    <span class="attr">gongan_icon_url:</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<p>   <strong>添加运行时间</strong></p>
+<p>   先修改配置文件<code>_config.next.yml</code>中的custom选项：</p>
+   <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="comment">#style: source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+
+<p>   在相应位置新建文件<code>footer.swig</code>，写入以下代码</p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;span id=<span class="string">&quot;sitetime&quot;</span>&gt;&lt;/span&gt;</span><br><span class="line">&lt;script language=javascript&gt;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">siteTime</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.setTimeout(<span class="string">&quot;siteTime()&quot;</span>, <span class="number">1000</span>);</span><br><span class="line">        <span class="keyword">var</span> seconds = <span class="number">1000</span>;</span><br><span class="line">        <span class="keyword">var</span> minutes = seconds * <span class="number">60</span>;</span><br><span class="line">        <span class="keyword">var</span> hours = minutes * <span class="number">60</span>;</span><br><span class="line">        <span class="keyword">var</span> days = hours * <span class="number">24</span>;</span><br><span class="line">        <span class="keyword">var</span> years = days * <span class="number">365</span>;</span><br><span class="line">        <span class="keyword">var</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">        <span class="keyword">var</span> todayYear = today.getFullYear();</span><br><span class="line">        <span class="keyword">var</span> todayMonth = today.getMonth()+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">var</span> todayDate = today.getDate();</span><br><span class="line">        <span class="keyword">var</span> todayHour = today.getHours();</span><br><span class="line">        <span class="keyword">var</span> todayMinute = today.getMinutes();</span><br><span class="line">        <span class="keyword">var</span> todaySecond = today.getSeconds();</span><br><span class="line">        <span class="comment">/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)</span></span><br><span class="line"><span class="comment">        year - 作为date对象的年份，为4位年份值</span></span><br><span class="line"><span class="comment">        month - 0-11之间的整数，做为date对象的月份</span></span><br><span class="line"><span class="comment">        day - 1-31之间的整数，做为date对象的天数</span></span><br><span class="line"><span class="comment">        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数</span></span><br><span class="line"><span class="comment">        minutes - 0-59之间的整数，做为date对象的分钟数</span></span><br><span class="line"><span class="comment">        seconds - 0-59之间的整数，做为date对象的秒数</span></span><br><span class="line"><span class="comment">        microseconds - 0-999之间的整数，做为date对象的毫秒数 */</span></span><br><span class="line">        <span class="keyword">var</span> t1 = <span class="built_in">Date</span>.UTC(<span class="number">2019</span>,<span class="number">12</span>,<span class="number">29</span>,<span class="number">18</span>,<span class="number">07</span>,<span class="number">00</span>); <span class="comment">//北京时间</span></span><br><span class="line">        <span class="keyword">var</span> t2 = <span class="built_in">Date</span>.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);</span><br><span class="line">        <span class="keyword">var</span> diff = t2-t1;</span><br><span class="line">        <span class="keyword">var</span> diffYears = <span class="built_in">Math</span>.floor(diff/years);</span><br><span class="line">        <span class="keyword">var</span> diffDays = <span class="built_in">Math</span>.floor((diff/days)-diffYears*<span class="number">365</span>);</span><br><span class="line">        <span class="keyword">var</span> diffHours = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days)/hours);</span><br><span class="line">        <span class="keyword">var</span> diffMinutes = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours)/minutes);</span><br><span class="line">        <span class="keyword">var</span> diffSeconds = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);</span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">&quot;sitetime&quot;</span>).innerHTML=<span class="string">&quot;本站运行 &quot;</span>+<span class="comment">/*diffYears+&quot; 年 &quot;+*/</span>diffDays+<span class="string">&quot; 天 &quot;</span>+diffHours+<span class="string">&quot; 小时 &quot;</span>+diffMinutes+<span class="string">&quot; 分钟 &quot;</span>+diffSeconds+<span class="string">&quot; 秒&quot;</span>;</span><br><span class="line">    &#125;<span class="comment">/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/</span></span><br><span class="line">    siteTime();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>   <strong>隐藏强力驱动</strong></p>
+<p>   修改<code>hexo/themes/next/layout/_partials/footer.swig</code></p>
+   <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">    *注释掉以下代码行</span><br><span class="line">    </span><br><span class="line">    &lt;!--</span><br><span class="line">    &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">    --&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;!--</span><br><span class="line">&#123;%- <span class="keyword">if</span> theme.footer.powered %&#125;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;powered-by&quot;</span>&gt;</span><br><span class="line">    &#123;%- set next_site = <span class="string">&#x27;https://theme-next.org&#x27;</span> %&#125;</span><br><span class="line">    &#123;%- <span class="keyword">if</span> theme.scheme !== <span class="string">&#x27;Gemini&#x27;</span> %&#125;</span><br><span class="line">      &#123;%- set next_site = <span class="string">&#x27;https://&#x27;</span> + theme.scheme | lower + <span class="string">&#x27;.theme-next.org&#x27;</span> %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">    &#123;&#123;- __(<span class="string">&#x27;footer.powered&#x27;</span>, next_url(<span class="string">&#x27;https://hexo.io&#x27;</span>, <span class="string">&#x27;Hexo&#x27;</span>, &#123;<span class="attr">class</span>: <span class="string">&#x27;theme-link&#x27;</span>&#125;) + <span class="string">&#x27; &amp; &#x27;</span> + next_url(next_site, <span class="string">&#x27;NexT.&#x27;</span> + theme.scheme, &#123;<span class="attr">class</span>: <span class="string">&#x27;theme-link&#x27;</span>&#125;)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p><strong>v8.0.0</strong></p>
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Show multilingual switcher in footer.</span></span><br><span class="line"><span class="comment"># 底部显示语言切换</span></span><br><span class="line"><span class="attr">language_switcher:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="comment"># Specify the date when the site was setup. If not defined, current year will be used.</span></span><br><span class="line">  <span class="comment">#since: 2015</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Icon between year and copyright info.</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="comment"># Icon name in Font Awesome. See: https://fontawesome.com/icons</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">fa</span> <span class="string">fa-heart</span></span><br><span class="line">    <span class="comment"># If you want to animate the icon, set it to true.</span></span><br><span class="line">    <span class="attr">animated:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># Change the color of icon, using Hex Code.</span></span><br><span class="line">    <span class="attr">color:</span> <span class="string">&quot;#ff0000&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># If not defined, `author` from Hexo `_config.yml` will be used.</span></span><br><span class="line">  <span class="attr">copyright:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Powered by Hexo &amp; NexT</span></span><br><span class="line">  <span class="attr">powered:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn</span></span><br><span class="line">  <span class="attr">beian:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">icp:</span></span><br><span class="line">    <span class="comment"># The digit in the num of gongan beian.</span></span><br><span class="line">    <span class="attr">gongan_id:</span></span><br><span class="line">    <span class="comment"># The full num of gongan beian.</span></span><br><span class="line">    <span class="attr">gongan_num:</span></span><br><span class="line">    <span class="comment"># The icon for gongan beian. See: http://www.beian.gov.cn/portal/download</span></span><br><span class="line">    <span class="attr">gongan_icon_url:</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<br/>
+
+<h3 id="设置头像信息"><a href="#设置头像信息" class="headerlink" title="设置头像信息"></a>设置头像信息</h3><p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/avatar.jpg</span>  <span class="comment"># 设置头像资源的位置</span></span><br><span class="line">  <span class="attr">rounded:</span> <span class="literal">true</span>            <span class="comment"># 开启圆形头像</span></span><br><span class="line">  <span class="attr">opacity:</span> <span class="number">1</span>               <span class="comment"># 不透明的比例：0就是完全透明</span></span><br><span class="line">  <span class="attr">rotated:</span> <span class="literal">false</span>           <span class="comment"># 不开启旋转</span></span><br></pre></td></tr></table></figure>
+
+<p>头像的链接地址可以是：</p>
+<table>
+<thead>
+<tr>
+<th align="center">地址</th>
+<th align="center">值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">完整的互联网 URI</td>
+<td align="center"><code>http://example.com/avatar.png</code></td>
+</tr>
+<tr>
+<td align="center">站点内的地址</td>
+<td align="center">将头像放置主题目录下的 <code>source/uploads/</code> （新建 uploads 目录若不存在） 配置为：<code>avatar: /uploads/avatar.png</code>或者 放置在 <code>source/images/</code> 目录下 配置为：<code>avatar: /images/avatar.png</code></td>
+</tr>
+</tbody></table>
+<br/>
+
+<h3 id="社交信息与友情链接"><a href="#社交信息与友情链接" class="headerlink" title="社交信息与友情链接"></a>社交信息与友情链接</h3><p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span> </span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/yourname</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:yourname@gmail.com</span> <span class="string">||</span> <span class="string">envelope</span></span><br><span class="line">  <span class="attr">Google:</span> <span class="string">https://plus.google.com/yourname</span> <span class="string">||</span> <span class="string">google</span></span><br><span class="line"></span><br><span class="line"><span class="attr">social_icons:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>      <span class="comment"># 显示社交图标</span></span><br><span class="line">  <span class="attr">icons_only:</span> <span class="literal">false</span> <span class="comment"># 只显示图标，不显示文字</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Blog rolls</span></span><br><span class="line"><span class="attr">links_icon:</span> <span class="string">link</span>          <span class="comment"># 友链的图标 参考上文</span></span><br><span class="line"><span class="attr">links_title:</span> <span class="string">Links</span>        <span class="comment"># 友链的title  比如你可以更改为 友情链接</span></span><br><span class="line"><span class="attr">links_layout:</span> <span class="string">block</span>       <span class="comment"># 友链摆放的样式：按块（一行一个）</span></span><br><span class="line"><span class="comment">#links_layout: inline     # 友链摆放的样式：按线摆放（一行很多个），注意，同时只能一种样式</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line">  <span class="attr">Title:</span> <span class="string">http://example.com/</span>  <span class="comment"># 友链的地址</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="侧边栏目录设置"><a href="#侧边栏目录设置" class="headerlink" title="侧边栏目录设置"></a>侧边栏目录设置</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Table Of Contents in the Sidebar</span></span><br><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Automatically add list number to toc.</span></span><br><span class="line">  <span class="attr">number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If true, all words will placed on next lines if header width longer then sidebar width.</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span></span><br><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front Matter.</span></span><br><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span><br></pre></td></tr></table></figure>
+
+<p><code>enable:</code>用于设置是否开启侧边栏目录<br><code>number:</code>用于设置自动编号<br><code>wrap:</code>用于设置当标题长度超过侧边栏长度时是否自动换行<br><code>expand_all:</code>用于设置是否展开全部目录，否的话会自动展开正在看的那部分<br><code>max_depth:</code>用于设置自动生成目录的最大深度，也就是生成到几级标题</p>
+<br/>
+
+<h3 id="返回顶部按钮"><a href="#返回顶部按钮" class="headerlink" title="返回顶部按钮"></a>返回顶部按钮</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">back2top:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Back to top in sidebar.</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Scroll percent label in b2t button.</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><code>enable:</code>用于设置是否开启回到顶部按钮<br><code>sidebar:</code>用于设置是否将按钮放到侧边栏中<br><code>scrollpercent:</code>用于设置是否显示阅读进度百分比</p>
+<br/>
+
+<h3 id="首页文章不展示全文显示摘要"><a href="#首页文章不展示全文显示摘要" class="headerlink" title="首页文章不展示全文显示摘要"></a>首页文章不展示全文显示摘要</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">&lt;!--</span> <span class="string">more</span> <span class="string">--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="首页文章属性"><a href="#首页文章属性" class="headerlink" title="首页文章属性"></a>首页文章属性</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">item_text:</span> <span class="literal">false</span>    <span class="comment"># 设为true 可以一行显示，文章的所有属性</span></span><br><span class="line">  <span class="attr">created_at:</span> <span class="literal">true</span>    <span class="comment"># 显示创建时间</span></span><br><span class="line">  <span class="attr">updated_at:</span></span><br><span class="line">    <span class="attr">enabled:</span> <span class="literal">true</span>     <span class="comment"># 显示修改的时间</span></span><br><span class="line">    <span class="attr">another_day:</span> <span class="literal">true</span> <span class="comment"># 设true时，如果创建时间和修改时间一样则显示一个时间</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="literal">true</span>    <span class="comment"># 显示分类信息</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="字数统计、阅读时长（⚠待考）"><a href="#字数统计、阅读时长（⚠待考）" class="headerlink" title="字数统计、阅读时长（⚠待考）"></a>字数统计、阅读时长（⚠待考）</h3><p><strong>安装插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-word-counter</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span>  <span class="comment"># false会显示一行</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span>  <span class="comment"># 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span> <span class="comment"># 底部footer是否显示字数统计属性文字</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>配置文件<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"> <span class="comment">#文章内是否显示</span></span><br><span class="line">  <span class="attr">symbols:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">time:</span> <span class="literal">true</span></span><br><span class="line"> <span class="comment"># 网页底部是否显示</span></span><br><span class="line">  <span class="attr">total_symbols:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">total_time:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="内容页里的代码块新增复制按钮"><a href="#内容页里的代码块新增复制按钮" class="headerlink" title="内容页里的代码块新增复制按钮"></a>内容页里的代码块新增复制按钮</h3><p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line">  <span class="attr">copy_button:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span>      <span class="comment"># 增加复制按钮的开关</span></span><br><span class="line">    <span class="attr">show_result:</span> <span class="literal">false</span> <span class="comment"># 点击复制完后是否显示 复制成功 结果提示</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="文章底部标签显示的优化"><a href="#文章底部标签显示的优化" class="headerlink" title="文章底部标签显示的优化"></a>文章底部标签显示的优化</h3><p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use icon instead of the symbol # to indicate the tag at the bottom of the post</span></span><br><span class="line"><span class="attr">tag_icon:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="Github角标"><a href="#Github角标" class="headerlink" title="Github角标"></a>Github角标</h3><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># `Follow me on GitHub` banner in the top-right corner.</span></span><br><span class="line"><span class="attr">github_banner:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/Siriusq</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Follow</span> <span class="string">me</span> <span class="string">on</span> <span class="string">GitHub</span></span><br></pre></td></tr></table></figure>
+
+<p><code>enable:</code>用于设置是否在页面右上角显示Github三角标<br><code>permalink:</code>后面填写你的Github地址<br><code>title:</code>用于设置鼠标移动到图标后显示的文字</p>
+<br/>
+
+<h3 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a>文章加密</h3><p><a href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md">中文说明文档</a></p>
+<p><strong>安装插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>标签加密：配置文件<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Security</span></span><br><span class="line"><span class="attr">encrypt:</span> <span class="comment"># hexo-blog-encrypt</span></span><br><span class="line">  <span class="attr">abstract:</span> <span class="string">有东西被加密了,</span> <span class="string">请输入密码查看.</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">您好,</span> <span class="string">这里需要密码.</span></span><br><span class="line">  <span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码A</span>&#125;</span><br><span class="line">  <span class="bullet">-</span> &#123;<span class="attr">name:</span> <span class="string">tagName</span>, <span class="attr">password:</span> <span class="string">密码B</span>&#125;</span><br><span class="line">  <span class="attr">template:</span> <span class="string">&lt;div</span> <span class="string">id=&quot;hexo-blog-encrypt&quot;</span> <span class="string">data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot;</span> <span class="string">data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div</span> <span class="string">class=&quot;hbe-input-container&quot;&gt;&lt;input</span> <span class="string">type=&quot;password&quot;</span> <span class="string">id=&quot;hbePass&quot;</span> <span class="string">placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot;</span> <span class="string">/&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div</span> <span class="string">class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script</span> <span class="string">id=&quot;hbeData&quot;</span> <span class="string">type=&quot;hbeData&quot;</span> <span class="string">data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;</span></span><br><span class="line">  <span class="attr">wrong_pass_message:</span> <span class="string">抱歉,</span> <span class="string">这个密码看着不太对,</span> <span class="string">请再试试.</span></span><br><span class="line">  <span class="attr">wrong_hash_message:</span> <span class="string">抱歉,</span> <span class="string">这个文章不能被校验,</span> <span class="string">不过您还是能看看解密后的内容.</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>对博文禁用 Tag 加密</strong></p>
+<p>只需要将博文头部的 <code>password</code> 设置为 <code>&quot;&quot;</code> 即可取消 Tag 加密。</p>
+</li>
+</ul>
+<p><strong>文章设定加密</strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2016-03-30 21:18:02</span></span><br><span class="line"><span class="attr">password:</span> <span class="string">mikemessi</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>密码优先级：文章＞标签</li>
+<li>配置优先级：文章＞配置文件＞默认</li>
+</ul>
+<p><strong>TOC无法正常展开</strong></p>
+<p>已知问题，无法解决。</p>
+<br/>
+
+<h2 id="CSS美化"><a href="#CSS美化" class="headerlink" title="CSS美化"></a>CSS美化</h2><h3 id="行内代码块配色"><a href="#行内代码块配色" class="headerlink" title="行内代码块配色"></a>行内代码块配色</h3><p>由于版本更新问题，无法从<code>themes/next/source/css/_custom/custom.styl</code>中直接进行修改，查询了一下最新文档决定使用<code>custom_file_path</code>功能，方便未来版本更新以及配置的调整。</p>
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+
+<p>打开对应目录，新建<code>styles.styl</code>文件，加入以下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// inline code</span></span><br><span class="line">p code &#123;</span><br><span class="line">    color: #c71585;</span><br><span class="line">    background: #fffafa;</span><br><span class="line">    margin: <span class="number">2</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="文章超链接配色"><a href="#文章超链接配色" class="headerlink" title="文章超链接配色"></a>文章超链接配色</h3><p>同理使用<code>custom_file_path</code></p>
+<p><strong>配置文件<code>source/_data/styles.styl</code></strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">    color: #0593d3;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #0593d3;</span><br><span class="line">    &amp;:hover &#123;</span><br><span class="line">        color: #fc6423;</span><br><span class="line">        border-bottom: none;</span><br><span class="line">        border-bottom: 1px solid #fc6423;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<h3 id="代码行配色"><a href="#代码行配色" class="headerlink" title="代码行配色"></a>代码行配色</h3><p><strong>配置文件<code>_config.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>安装插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install prism-themes</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置文件<code>_config.next.yml</code></strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">codeblock:</span></span><br><span class="line"><span class="comment"># Code Highlight theme</span></span><br><span class="line"><span class="comment"># All available themes: https://theme-next.js.org/highlight/</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">prism:</span></span><br><span class="line">    <span class="attr">light:</span> <span class="string">prism-atom-dark</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">prism-atom-dark</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+
+
+<br/>
+
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://theme-next.iissnan.com/getting-started.html#sidebar-settings">官方文档</a></li>
+<li><a href="https://tding.top/archives/42c38b10.html">Hexo-NexT (v7.0+) 主题配置</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《利兹与青鸟》原作摘录</title>
+    <url>/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</url>
+    <content><![CDATA[<p align="right">——摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
+
+<hr>
+<a id="more"></a>
+
+<h1 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h1><p>看了下自由曲《利兹和青鸟》的第三乐章，里面有长笛和双簧管的合同solo。双簧管感伤澄澈的音色加上便随其后长笛的低语，交错的旋律反映出利兹和青鸟各自的思虑。<strong>从第一次吹这首曲子起，希美就确信长笛这段solo非自己莫属，在这间学校里能配得上霙双簧管的，只有自己。</strong>    </p>
+<br/>
+
+<p>「总感觉我们就是利兹和青鸟，所以第一次听solo合奏的时候我就确信solo必须我们两个来。」<br>一年前，希美退部的时候霙留了下来。希美不知道霙是怎样想的，只是从她愿意和自己练习这一点看，她没有讨厌自己。<br><strong>如果希美是青鸟</strong>，肯定会再次回到利兹的身边，就算不能一起生活，偶尔见面何妨不可。至少希美认为悲剧不必以悲剧的形式结束。  </p>
+<br/>
+
+<h1 id="第一章-憧憬的弱起"><a href="#第一章-憧憬的弱起" class="headerlink" title="第一章 憧憬的弱起"></a>第一章 憧憬的弱起</h1><p>「今年的自由曲完全是双簧管的主场。」<br>丽奈看着久美子的眼神冷静得可怕。眨了下眼睛，久美子缩了缩脖子。<br>「戏份最多嘛，特别是第三乐章虽然最后加了长笛的solo，但双簧管还是太抢眼了，基本就是它的solo。」<br>「双簧管去年有solo，今年戏份还要加码……<strong>大概在泷老师眼中霙前辈是北宇治的第一战力吧。</strong>」</p>
+<br/>
+
+<p>希美和霙今年担任第三乐章的solo。她们实力有目共睹，加上是三年级，所以没有一人对她们担任solo表示异议。而对于知道事情渊源的优子，看到霙沐浴在后辈的祝福之中表情复杂。优子担心的只有一点，就是希美负责长笛solo。在旁人眼里，<strong>霙和希美对于互相抱有的感情的认识有很大出入</strong>。</p>
+<br/>
+
+<h1 id="第二章-独白和静默"><a href="#第二章-独白和静默" class="headerlink" title="第二章 独白和静默"></a>第二章 独白和静默</h1><blockquote>
+<p>京都大会后，丽奈和久美子聊天</p>
+</blockquote>
+<p>「现在霙前辈的演奏是不是对得起她原本的实力呢。」</p>
+<br/>
+
+<p>「霙前辈不必陪梨梨花闹的。」<br>「奏别说多余的话啦，万一前辈改变主意怎么办。」<br>梨梨花不满嘟起嘴唇，奏对此无视。霙手放在琴盘上摇摇头。<br>「没事。」<br>说完霙眯起眼看向长笛最边边的位置。从窗外射进来的阳光只照亮了那个位置。她薄薄的嘴唇微微上翘，如太过耀眼般落下眼皮。<br>「<strong>希美说要好好关心后辈。</strong>」<br>听到「希美」这两个字，丽奈眼皮跳了一下，她按捺不住张开的嘴唇，到头来什么都没说。</p>
+<br/>
+
+<p>希美的声音有种贯穿人心的凛然感。抑扬顿挫的演奏很好反映出感情的波动，每吹出的一音都包含惊人的力量感。然而霙的双簧管总感觉少了点什么。她的声音如同模板音源，少了自己的特色。<br>——现在霙前辈的演奏是否对得起她原本的实力呢？<br>开始自由曲练习后丽奈几次含蓄表达对霙演奏的不满，只是久美子从没明确表示赞同。往眼皮用力，久美子把全部精力放在双簧管的solo上。把霙的solo单独抽出来，是高水准的演奏。然而和希美的长笛却不能融合，有一种违和感，<strong>两人的声音是各走各的，没有协调感。两者都没错，只是配合性不行。</strong></p>
+<br/>
+
+<p>「你应该重回蓝天，你这美丽的翅膀能将你带往任何地方。」<br>「对我而言能待在你身边就足够幸福了，为何你要假装不见呢？」<br>对小鸟的话，利兹轻轻摇头。<br>「我是把你关住的鸟笼。小鸟不知何时会从鸟笼中逃脱，既然会在我意想不到时失去你，还不如让我亲手送走这份幸福。这就是我的爱，请让我能在最美好的时刻送走你。」<br>对利兹的话，小鸟流下眼泪。<br>「既然你这么说，我又怎么能拒绝。不过还请你能时不时想起我，想起这短暂幸福的日子，想起我爱着你这个事实。」<br>青鸟有力扇动美丽的翅膀飞向远方。面朝青鸟消失的方向，利兹一直一直看下去。</p>
+<br/>
+
+<blockquote>
+<p>以下为丽奈对《利兹和青鸟》的解释：</p>
+</blockquote>
+<pre><code>——面对太过幸福的自己，会时常恐惧幸福的终结，既然一直担心受怕那样的日子来临，还不如自己亲手断绝。</code></pre>
+<br/>
+
+<p>希美踮起脚擦高的地方，尽全力伸直的手刚好够好上面窗户的下沿。霙看着希美，犹豫地开口问。<br>「希美。」<br>「嗯？」<br>「可以叫其他人去吗？」<br><strong>希美指尖挂着的抹布掉到地上。</strong>希美捡起来，把变得黑黑的内面对折，用变成一半大小的抹布擦着，希美笑着说。<br>「真没想到霙会叫别人，是谁？」<br>「剑崎同学，之前她说想一起去玩。」</p>
+<br/>
+
+<p>「真没想到这么多人去。」<br>希美苦笑。霙对此睁圆眼睛。<br>「希美喜欢多点人的？」<br>「人多热闹嘛。」<br>「果然。」<br>握紧抹布，霙露出浅浅的笑容。<strong>她的眼中只倒影出希美的身影。</strong><br>「祭典时希美叫我叫上其他人。」<br>「所以才叫了剑崎吗？」<br>「嗯。」<br>「这样啊。」<br>希美开朗地回应。从她耳边垂下来的黑发看去，<strong>她的脸不自然地拉着</strong>。维持着开朗的笑容，希美抓住抹布的手加大力道，原本折得整整齐齐的抹布此时变成一团，<strong>刚才折到内面的脏脏一面此时重新露出来</strong>。</p>
+<br/>
+
+<blockquote>
+<p>秀一与久美子聊补习班的事情</p>
+</blockquote>
+<p>「就偶尔说说话啦，对了伞木前辈也在。」<br>「希美前辈？」<br>「她说成绩什么的，好像要去统考，貌似和中川前辈一所大学。」<br>出汗制服黏在了背上，室内空调有点强感觉有点冷，搓搓手臂，鸡皮一粒粒的。<br>「希美前辈不是和霙前辈考音大的吗？」<br>「改学校了吧，挺正常的。」<br>「可这不就。。。」<br>——背叛霙前辈了吗？</p>
+<br/>
+
+<p>「久美子和霙关系不错吧。」<br>「是，是吗？如果霙前辈也这样想就好了。」<br>久美子不好意思挠挠脸，希美摇摇头。<br>「不用谦虚，看你和霙说话的样子就知道了。她以前可没这么外向，所以啊。。。」<br>她把焦点放在远方。前方，在优子的引导下霙慢慢走进泳池，白色连衣裙像水母一样张开。旁边看着的梨梨花把刚才优子吹好的泳圈递过去。看来排球打完了。<br>「<strong>看到霙和别人玩得这么欢就感觉很奇怪。</strong>」<br>希美舀起刨冰，上面的糖浆透明眼看不见，冰粒在阳光下一点点消融。久美子不知作何回答。<br>「我和霙一直是朋友，<strong>但以前和她不太熟所以不怎么懂和她相处</strong>。她的话很少，想了什么都不说出来，一直弄不太懂她。啊，我不是diss她别误会了，她是我一个好朋友。」<br>希美赶紧摇手补充。久美子关注的只有一点，就是<strong>霙不过是希美众多朋友中的一个</strong>，她平淡道出的这个事实，让久美子心一阵酸。<br>「想和她搞好关系但总是不能称心如意。在和久美子优子你们相处时她挺放松的，<strong>可一轮到我，就感觉很见外。</strong>」<br>「是，是这样吗？」<br>「嗯绝对这样没错。<strong>solo时合不上调吧，最近就想是不是霙她不喜欢我——</strong>」</p>
+<br/>
+
+<p>「升上高三才第一次意识到毕业离自己这么近，才认真思考将来。不是没有按自己兴趣靠这行吃饭的想法，但兴趣每个人都有，同时很清楚光靠兴趣养不活自己。」<br>漂白液的味道窜过鼻尖，风吹过草地，孩子在面前欢快跑过，世界还是和平得恐怖。希美把下巴抵在膝盖上，自嘲地说。<br>「我喜欢长笛，可实力够吗？又或者我真的想靠这行吃饭吗？乐器什么的当上白领也能吹，而且社会上还有别的乐团，到时一边工作一边享受吹奏的快乐就行了。靠这行吃饭和兴趣，我觉得完全是两回事。」<br>希美一连串的话是对自己说的，这些话到底在她心里重复多少次了呢？久美子被她连珠炮的话压得插不上嘴，希美此时才反应过来，挠挠脸。<br>「最近就一直想东想西的。四月要交的进路调查我交了白纸，虽然大家都是。」<br>「。。。霙前辈知道前辈纠结志愿的事吗」<br>「别突然问这些，这可不是特意能说的事。」</p>
+<br/>
+
+<p>「总之万事学为先，不论怎么选都要笔试。对了对了你有听霙说她要考的那间音大是泷老师以前的学校吗？」<br>久美子还是第一次听，希美看久美子的脸就知道怎么回事了<br>「霙一直对这些没什么兴趣。那是私立学校，报录比挺高的。很多人是从一年级开始准备的，霙这种情况算很晚的了。」<br>「那希美前辈为什么选这间呢，音大不是有很多吗？」<br>以前久美子也问过霙为何要报这间，她的回答很简单，就是希美报了这间。如按霙的话，那最初选这间的人是希美，霙只是盲目跟从而已。既然如此希美自然有选这间学校的理由。<br>「这个嘛。」<br>希美一下子绷紧脸，温度从眼中消退。见此久美子握紧手中的杯子吞了口唾液。脚趾弯曲，垫子和地面发出ささ恼人的声音。犹豫了一下后希美还是开口了，她放下杯子挺直背，脚不讲究直直往前伸，笑着说。<br>「就随性子选的。」<br>久美子一听就知道她在说谎。刚才对自己未来想那么多的人绝不会因一时兴起而妄下决定。</p>
+<br/>
+
+<h1 id="第三章-她的共鸣"><a href="#第三章-她的共鸣" class="headerlink" title="第三章 她的共鸣"></a>第三章 她的共鸣</h1><p>「我也很久没全体指导过木管了，虽然个人指导还有。」<br>新山视线在霙身上停留了一会，霙轻轻点头。大概之前指导过双簧管的solo。</p>
+<br/>
+
+<p>「那下次大学开放日一起去？叫上其他人也可以。」<br>霙若无其事的邀请让久美子睁大眼睛，毕竟<strong>在1年前霙可不会邀请别人做什么东西</strong>。不知霙怎么理解短暂的沉默，她从画面移开眼睛，微微侧头。<br>「不想去？」<br>「才没这没事。对了，前辈的志愿是泷老师的大学吧。」<br>「我也去。」<br>听到久美子的话丽奈速答。对她毫无掩饰的态度久美子笑出来。霙放下游戏机稍稍猫起身子。<br>「还真不知道。」<br>「我是从希美前辈那里听来的，霙前辈没问新山老师吗？」<br>「没有，<strong>跟着希美就行。</strong>」<br>霙关了游戏机， 周围一下子暗下来。用手摸了摸脖子上的汗，久美子想起之前和希美的谈话。自己该不该向霙透露希美可能不去音大呢。霙又对希美进路了解多少呢。从希美参观其他学校，就可知她还有其他选择。<br>丽奈没注意久美子沉默，问道。<br>「希美前辈乐器课程怎么安排的？」<br>「不知道，没问过。」<br>「对了，新山老师怎么会介绍老师给前辈呢？是前辈主动找老师的吗？」<br>「不是。」<br>霙摇摇头。<br>「<strong>四月进路调查我交了白纸，然后新山老师特意来学校找我说我有能力，然后给我介绍双簧管的老师。</strong>」</p>
+<br/>
+
+<p>「新山老师说我不去音大就太可惜了。优子听我去音大也很高兴。」<br>听到优子名字久美子心跳了一下。<strong>换做以前霙对优子没什么反应，看来霙的心中渐渐有了除希美外其他人的位置。</strong>久美子咬着唇思考如何回话。丽奈伸出身子看着霙，她长长的黑发有甘甜橘子香气，说怕伤发质洗发水是特意从家里带来的。</p>
+<br/>
+
+<p>「可从刚才的话也不见得希美前辈一定考那间音大，还有可能考不上。如果希美前辈去不了怎么办？」<br>霙睁大眼睛，半开的口惊恐地说。<br>「……没想过。」<br>「真的假的？」<br>「希美考不上怎么办？」<br>「就没想过是自己考不上吗？」<br>听到久美子无意识吐槽，霙眨了眨眼。<br>「……对哦。」<br>「没想到霙前辈这么有自信。」<br>丽奈愉悦翘起嘴角。久美子倒是无法将“自信”和“霙”联系到一起就对了。霙在丽奈心目中和久美子心目中的不同。</p>
+<br/>
+
+<p>不管慌忙的久美子，丽奈直切核心。<br>「自由曲solo一直合不上，原因是不是前辈们相性不好？」<br>霙不禁发出疑惑的声音，<strong>眼神充满动摇</strong>。</p>
+<br/>
+
+<p>「我觉得优子没错，那不是妥协，是冷静考虑后才作的判断。勉强反而适得其反。」<br>一直默默听着的霙此时明确表态。在支持优子时霙的话便多起来。</p>
+<br/>
+
+<p>「我当然知道按实力排序硬把小日向放在第一肯定不行，也懂优子前辈是为大局才这样做的。可就是觉得太忧忧寡断……霙前辈也是。」<br>「我？」<br>「前辈明明能吹得更好，可就是故意压着。」<br>「没这回事。」<br>「真的吗？我认为<strong>霙前辈没相信希美前辈，所以演奏才那个样子。是觉得希美前辈不会配合自己才不肯把真正的自己表现出来。</strong>」<br>「那——」<br>「我想听霙前辈真正的声音，我想大家发挥自己最真实的实力去参加比赛。」<br>匆匆说完一大段丽奈总算停了下来，意识到自己说太过，抓起被汗润湿的头发丽奈小小道歉。在窗对面听到夜晚的虫鸣，今晚很热一直出汗，衣服都粘到背上了。久美子扇着风偷偷看霙。前辈还是面无表情，冻结的嘴唇吐出一语。<br>「**……希美不知什么时候就不在了，怎么可能信得了。<strong>」<br>她直直看着这边的瞳孔让人联想到夜晚的大海，在无人见过的深处有一抹黑暗。脸白得毫无血色，薄薄的嘴唇发白。挤出的话语让久美子吞气。两年前的风波至今没有消散。眼中薄薄的水膜在贩卖机的光线下一闪一闪。<br>「我当不了利兹，放手不了青鸟，我不想她从我眼前消失。不是不相信，</strong>是我当不了利兹**，无法对希美松手。」</p>
+<br/>
+
+<p>「就是一年级生中流行的那个抱抱然后互相说你喜欢对方的点，出发点貌似是好演奏的基础是好的人际关系。」<br>「我知道，南中的。」<br>难得霙把久美子的话抢过去。吹过走廊的风湿热，感觉粘粘的，相当不快。<br>「我不喜欢那个。」<br>霙表示明确的拒绝。久美子留下冷汗。<br>「这，这样啊。」<br>「嗯……我和希美都没干过。」<br>把耳机戴好霙站起来，塞住耳朵的耳机表达了对久美子明确的拒绝。</p>
+<br/>
+
+<p>「霙前辈把希美前辈看得很重，但在希美前辈眼中霙前辈不过是一个朋友。就<strong>互相认识不对等</strong>。」<br>目前明白的一点是霙最重视的是希美，可霙对希美只是一个普通朋友。在希美口中，霙是发小，是朋友。久美子听后不禁痛心，因为自己清楚希美对霙而言是多么重要，而希美却无法给予霙相应的期待。霙双簧管确实吹得很好，但缺乏自身的特色。洗练不多余的音色是她努力练习的成果。而丽奈口中霙最好的演奏，对她自身而言是否为最高实力的表现呢？目前而言霙的实力远超他人，还要求她更多是否有点坏心眼？<br>丽奈知道闭口不谈的久美子在想些什么。<br>「我觉得正好相反。」<br>「相反？」<br>丽奈换了下脚。把头发别到耳后丽奈把脸贴近久美子耳朵。<br>「希美前辈太过在意霙前辈了。」<br>「我觉得不是咯。希美前辈倒是自由得不行，她自己说不知是不是真的要考音大。」<br>「大概在意霙前辈才那样的。」<br>「在意不才更应该马上决定去同一间学校吗？」<br>两人旁边贩卖机发出低鸣，不断刺激耳膜让人厌烦。丽奈认真的眼神直直盯着久美子，仿佛教导弄不清事理的小孩子，丽奈慢慢地清晰地说。<br>「在意可不光是好意的感情。」<br>「就是说——」<br>对屏气的久美子，丽奈说道。<br>「<strong>希美前辈大概从以前起无意识地在嫉妒霙前辈。</strong>」</p>
+<br/>
+
+<p>桥本耸耸肩，把视线移到希美身上。担心看着霙的她注意到桥本的视线赶紧调整好坐姿。<br>「长笛吹得很生动，我就挺喜欢的。但感情太过丰富有点喧宾夺主的味道，要多配合下双簧管的声音。」</p>
+<br/>
+
+<p>——开玩笑的。<br>她的口吻带有玩弄意味，不自然僵住的脸部肌肉正是她假笑失败的证据。<br>「我还没见过有人能简简单单决定自己将来怎么走的。」<br>「希美前辈果然在为进路伤脑筋吗？」<br>「也不是……<strong>就不服气或是执着这样的。</strong>」<br>她再次拿起西瓜大大叹了口气。<br>「90%看透现实决定好了方向，但10%还不服气期待梦想。」<br>「那10%是音大吗？」<br>「如果那是90%我早就去上乐器课了。」</p>
+<br/>
+
+<p>「如果我说我也不清楚为何当初要跟霙说要考音大的事你会吃惊吗？<br>「？？」<br>久美子张大嘴一脸蠢样，希美见此没有笑。中庭有谁发出欢呼，看来是成功打到西瓜了。看着别开视线希美的侧脸久美子压低声音问。<br>「到底怎么回事？」<br>「就那回事。跟霙说了后就后悔得要死，想撤回的时候已经晚了，就一直拖着拖着……」<br>「那个……说真的？」<br>「如果我说是呢？会看不起我？」<br>希美一把抓住自己的刘海，她强装镇定的语气背后却透露出一丝颤抖。希美眼中映出久美子一脸疑惑的样子，往常有灵气的眼睛此刻黯淡无光，仿佛一汪看不到底的泉水。<br>——才不会。<br>如此回答很简单，但这种场面话此刻无论如何是说不出来。喉咙发干，吞吞口水，口腔深处的舌头这时异常烦人。<br>「……会。」<br>听到自己的回答希美什么都没说。阴郁的眼睛轱辘一转，她露出牙齿挤出笑容，头发因汗贴在额头上。<br>「假的是吗？」<br>久美子祈祷希美能说“是”，不愿承认希美做过如此不经大脑的事。如果一切是真的，那一股劲相信希美话的霙就太可伶了。久美子寻求希望般抓住她的双手，夜风吹过，一阵温热。<br>「我要回去了。」<br>希美一把甩开久美子。以前和她说过几次话，但一次也没有像这次一样强硬把话切断。希美瞥了眼惊住的久美子，把纸盘收拾好。刚才还在空中摇晃的她的双脚此刻踏实站在地面上，矫健的双脚将让她走上对她而言最理想的道路。<br>伞木希美原本就是那样的人，为了贯彻自己的道路连有人踩在自己脚下都浑然不觉。久美子想在很想见霙，很想像告诉纯洁的孩子圣诞老人不存在一样将她内心脆弱的崇拜心理一击粉碎。既然担心受怕不时有人踩雷，还不如借自己的手将一切重置；既然害怕事情暴露的一天来临，长痛不如短痛。</p>
+<br/>
+
+<p>「霙前辈有什么想让希美前辈做的吗？」<br>「嗯。」<br>「那究竟是……」<br>「<strong>想一直和她一起。</strong>」</p>
+<br/>
+
+<p>「前辈一直说要和希美前辈上同一间大学，如果这样前辈的志愿校应该也有几间才对。但前辈一直说的就只有那间音大，理由真的是希美前辈而已吗？」<br>霙既没肯定也没否定，她睁大的眼睛中光在摇晃着。咬唇，她的视线看着自己大腿上的手，如同遇到解不开的问题一副走投无路的表情。</p>
+<br/>
+
+<p>「<strong>可我不懂能不能和希美的合上。</strong>」<br>吐露的不安正是霙隐藏至此的真心话。</p>
+<br/>
+
+<p>贯穿第二乐章最后的寂静双簧管solo从中突出。在听到第一个音的时候大家都屏住了呼吸。<br>复杂的指法没有丝毫停顿，如歌声的旋律纤细的同时带有坚定的力度。浓缩的感情一下子压倒室内的空气。如同无形的锤子，久美子觉得头发一阵发晕，意识本能被那声音吸引过去。而木管的伴奏此时则完全黯然失色，脑中只剩下双簧管的声音。<br>胸口一阵苦楚，久美子不禁发出叹息，视野一阵模糊眼睛发热。霙用音乐塑造了属于她自己的世界。<strong>就算长笛也开始了solo，但进入久美子耳朵的，只有双簧管。</strong><br>就算不愿和利兹分开想永远和利兹在一起，青鸟最后还是听从了利兹的话。要问原因，就是青鸟爱着利兹。涌上来的悲伤寂寞就算不说出口也无所谓，只要对方幸福便心满意足了。张开翅膀，代表幸福的青鸟从利兹身边离开飞向了蓝天。<br>充满悲哀的双簧管把周围的声音抹去，就算音量不大，现在能听到的就只有双簧管的声音。长笛的solo不知何时消失了，往旁看去<strong>希美眼中滴落大滴眼泪</strong>。虽然她的嘴仍抵在长笛上，但吹奏停止了。其他乐器也被霙打乱了步伐，曲子完全崩溃了。然而集中精力的霙没有注意到周围的异样，声音魄力渐渐加大。她没有注意到长笛停下，伴奏崩塌。手指舞动，直到休止符拉出长长的一音。</p>
+<br/>
+
+<p>「你能理解我的震惊吗？」<br>「对霙前辈演奏震惊吗？」<br>「嗯。实力上的差距竟然如此露骨就摆在了面前。霙她太犯规了。」<br>假装淡定的声音音调有些高。希美露出白色的牙齿，她一直以为这样的在别人眼中是笑容。直直照射的阳光让皮肤一阵发烫，灼烧的感觉一点点蔓延。<br>「霙为了配合我实力一直都在放水吧。」<br>「我觉得不是。」<br>「可实力差距这么大是事实吧。我也真是傻，一直叫霙solo加油殊不知拖后腿的是自己。」<br>——我脸皮真是厚，好想死。<br>声音细若游丝，她把脸埋入手臂中，蜷缩起来的姿势让她看起来小了不少。<br>「我一开始就知道霙实力有多强了，对她而言练习就像呼吸一样，中学时实力有目共睹，只是我不愿承认一直自欺欺人而已。内心的某处一直觉得自己实力比霙强，因为论喜欢音乐霙怎么比得上我。然而事实是就算我多不愿意都好，霙的实力就是比我强。」<br>遮住脸的希美一口气把肮脏没出息的真心话全部暴露在久美子面前。<br>「昨天跟你说了告诉霙我去音大的理由，那全是真的。五月黄金周的时候霙把宣传册子拿来给我看，说是新山老师给她的，那一刻我就懂了，霙和自己不是同个世界的。」<br>压抑不住的哽咽从她口中泻出，她继续说。<br>「四月进路调查交白纸的不只霙，我也是。可新山老师之后没来找我。一开始以为是偏心，但后来我错了，新山老师单纯看中了霙的才华。如果我去找老师商量肯定能得到悉心的指导，但这些不重要，重要的是我的实力还不值得老师主动来找我，霙比我更有实力。」<br>「就是说……」<br>「<strong>我不想输给霙，不想被人瞧不起为了跟她站在同一高度上所以我才跟霙说我去考音大。</strong>现在想起来也真是天真，光耍嘴皮子有什么用。如久美子所说，我这个人实在不敢恭维。」<br>久美子才终于明白夏纪叫自己来的理由。希美对自己过去做过的蠢事无比自责，她所希望的不是治标不治本的安慰，而是对自身罪行的宣判。所以夏纪才叫久美子来，夏纪无法责备希美。<br>她吸了汗的T恤露出内衣的颜色。久美子一把轻轻拍在她的后背上。把脸埋在手臂里的希美慢慢把头抬起来，泛着泪光的眼睛直直看着久美子。<br>「希美前辈喜欢霙前辈吗？」<br>希美吞了口气，紧闭的嘴唇害怕般颤抖。<br>「不讨厌。」<br>「那喜欢和霙前辈两人的solo吗？」<br>希美盯着自己，流出的泪水用手擦去。<br>「……能说件傻事吗？」<br>「请。」<br>「自由曲定为『利兹和青鸟』的时候我觉得很像我和霙，霙是利兹我是青鸟。我辞掉社团霙留了下来，霙一直等着我回去。」<br>到此久美子一样。只能目送青鸟离开的利兹身影不禁让人想起去年时两人的样子。希美脸扭曲道。<br>「然而我错了，霙才是青鸟。」<br>被利兹所救的青鸟经由利兹的手重返蓝天，没有束缚的笼子，青鸟两翼将无尽高飞。<br>——啪<br>希美大力拍自己的脸，仿佛要和刚才难为情的自己说再见，她一下子站起来。逆光看不清她的表情。<br>「我也不能再这样拖后腿了，我唯一的反抗就是完美为她的solo伴奏。喜欢也好讨厌也罢，目前我能和她对等的手段就只剩这个了。这么难堪的样子是最后一次了，我的任务就是尽好自己职责。」<br>久美子脑中闪过去年霙的样子。<strong>两人隔着无法跨越的鸿沟，互相的执着没有交叉点。和霙对希美的完全不同，希美同样对霙抱有强烈的执着。嫉妒羡慕屈辱罪恶感，</strong>这些完全称不上好的心态在久美子眼中正慢慢往好的方向发展。比起单纯的友人A，这样的对霙来说无疑更好。</p>
+<br/>
+
+<p>「……爱的抱抱。」<br>「？？」<br>突然冒出的词语让久美子摸不着头脑。霙面无表情看着自己说。<br>「中学流行这个的时候我光是在旁边看。」<br>「挺什么的嘛？」<br>「光是等别人邀请我。」<br>霙用力抓住把手，推开重重的门。会场里观众席微暗，灯光只照亮舞台。霙咬着嘴唇说。<br>「<strong>如果那个时候主动点，事情可能就不一样了。</strong>」</p>
+<br/>
+
+<p>「希美一直都自作主张。」<br>语气平淡，但每字每字咬字清晰，霙的脚踩在区分内外的门槛上。希美无意识往后退一步。夕阳沉下的世界，一片猩红。<br>「前两年也是，瞒着我退部。」<br>「为什么突然说起以前的事？」<br>「不是『以前』，对我来说是『现在』。」</p>
+<br/>
+
+<p>「我一直追在希美后面，为了不被希美抛弃一直坚持吹奏。在我心目中希美一直是第一的，我想呆在希美身边！所以双簧管才这么努力！」<br>被霙的气势吓到希美往后退了几步，汗顺着脸滴下，染湿了地面。<br>「别说得这么夸张。」<br>「没夸张，是真的。」<br>「竟然说这样的你太狡猾了。」<br>希美喉咙颤抖，拉紧沙哑的声音融入黄昏的空气。<br>「你比我有实力竟然对我说这样的？说什么为了我才坚持吹奏，就用这样简单的理由把至今的努力总结吗？对你来说双簧管就这么不重要吗？」<br>「不是。」<br>「什么不是。」<br>「不是双簧管不重要，<strong>是希美你对我太重要了。</strong>」<br>「我不懂你为何要这样说，我才不是那么特别的人。」<br>「希美怎么想自己的我不管，对我来说希美就是特别的，所以——」<br>说到这霙突然停下来。虫鸣满静，泪沾湿，何奈摇头把话噤。<br>「……抱歉，不是想说这个的，原本是想谢谢你的。」<br>听到夏纪在旁边咽了口气。久美子把手叠在她颤抖的手腕上。在更里面，优子默默伫立着。越过霙希美注意到优子，露出为难的表情，她用手抓抓脸。<br>「我没做什么要霙谢我的，反而你生我气不考音大才对。」<br>「没生气。」<br>「为什么？」<br>「这是希美选的，希美认为这样好就行。」<br>太阳落到地平线下，猩红被蓝和紫取代。霙黑发随着光线而变色。<strong>几分无奈，希美露出笑容，轻轻颤动的喉咙说出深埋内心的情感。</strong><br>「被霙说这个觉得挺难受的。」<br>「不喜欢？」<br>「也不是，怎么说……算了没事。谢了霙。」<br>「不用谢？」<br>「为什么是疑问句啦。直直说出来就好了。」<br>希美带着几分笑意，她从裙子下露出的双腿像是隐藏什么似的交叉着。霙目光游移，突然想到什么张开双手，希美吓一跳。<br>「怎，怎么了？」<br>「……爱的抱抱。」<br>霙一脸认真声音有些破音。希美马上懂了。<br>「这个啊，好久之前的了。」<br>希美张开手，霙飞扑进希美的怀中，紧紧把手弯在希美后背霙的样子就像抱住布偶的小孩子。<br>「如果希美不在，我肯定无法吹下去，一事无成。谢谢，全都是希美给我的。」<br>「我什么都没做啦，全都是你自己努力得来的。」<br>「就算如此，至今我都是为希美而吹的。」<br>霙闭上的眼睛，泻出的低喃，搭在希美肩上她的额头。<br>「第一次见面时谢谢你温柔对我，跟我说话，和我成为朋友。」<br>「我喜欢霙的努力。后天大会solo的背后就交给我吧。」<br>「最喜欢希美了。」<br>有一瞬间不自然的沉默，霙的手指陷入希美后背，她不安抬起头来。希美低头看着霙，无力地笑道。<br>「嗯……我也最喜欢霙的演奏了。」<br>希美温柔推开霙，霙没说什么，只是默默点头。</p>
+<br/>
+
+<h1 id="第四章-通往未来的延长音"><a href="#第四章-通往未来的延长音" class="headerlink" title="第四章 通往未来的延长音"></a>第四章 通往未来的延长音</h1><p>「决定考音大了吗？」<br>「不仅于此，就算希美不去，我也会继续。音乐是希美给我的。」<br>霙害羞低下头。<br>「我会支持前辈的。」<br>「……嗯。」<br>霙紧紧握住双簧管点头。盖在白色脖颈上的黑发，比夏天时长了一点。</p>
+]]></content>
+      <categories>
+        <category>ACG</category>
+      </categories>
+      <tags>
+        <tag>利兹与青鸟</tag>
+        <tag>轻小说</tag>
+      </tags>
+  </entry>
+</search>
