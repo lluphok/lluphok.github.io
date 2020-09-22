@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo基础建站</title>
-    <url>/2020/09/20/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
+    <url>/2020/09/18/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<p>之前为了建立一个自己的个人博客，浏览过各种网站搭建方法，最后选择Hexo+Github Pages的方式建站。</p>
 <p>时隔半年多NexT主题更新至7.8.0，为了系统地升级blog决定把Hexo和NexT主题重装一次，重新记录全过程作为技术笔记保存，待未来遇到问题时能有据可循地查漏、解决疑难问题。</p>
 <a id="more"></a>
@@ -163,7 +163,7 @@
   </entry>
   <entry>
     <title>Onedrive软连接搭建实例——mklink命令的使用</title>
-    <url>/2020/09/20/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B%E2%80%94%E2%80%94mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <url>/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B%E2%80%94%E2%80%94mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。</p>
 <p>尝试解决方案：利用DOS命令<code>mklink</code>给待同步的文件目录在OneDrive文件夹下创建映射。</p>
 <a id="more"></a>
@@ -271,7 +271,7 @@
   </entry>
   <entry>
     <title>Typora使用心得</title>
-    <url>/2020/09/20/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<blockquote>
 <p>胡说八道</p>
 </blockquote>
@@ -398,7 +398,7 @@
   </entry>
   <entry>
     <title>实用工具</title>
-    <url>/2020/09/20/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
+    <url>/2020/09/19/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<blockquote>
 <p>想起来就更新</p>
 </blockquote>
@@ -435,9 +435,9 @@
   </entry>
   <entry>
     <title>NexT主题配置及优化</title>
-    <url>/2020/09/20/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
+    <url>/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<blockquote>
-<p>熬夜伤身。</p>
+<p>熬夜伤身。test</p>
 </blockquote>
 <a id="more"></a>
 
