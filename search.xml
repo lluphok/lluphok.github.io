@@ -825,10 +825,11 @@
 
 <br/>
 
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
 <li><a href="https://theme-next.iissnan.com/getting-started.html#sidebar-settings">官方文档</a></li>
 <li><a href="https://tding.top/archives/42c38b10.html">Hexo-NexT (v7.0+) 主题配置</a></li>
-</ul>
+<li><a href="https://guanqr.com/tech/website/hexo-theme-next-customization/">Hexo-NexT 主题个性优化 - 荷戟独彷徨</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>Tech</category>
