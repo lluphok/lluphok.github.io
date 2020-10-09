@@ -341,14 +341,13 @@
 <li><strong>换段</strong>：可以通过<code>Enter</code>完成一次换段，等同Typora自动完成两次<code>Shift + Enter</code>。</li>
 </ul>
 <p>在偏好中选择<strong>「保留连续的空格与单个换行」</strong>，实时预览与导出模式即可保持一致。</p>
-<h3 id="审查元素"><a href="#审查元素" class="headerlink" title="审查元素"></a>审查元素</h3><p>Typora是用Electron开发的，Electron 把 Chromium 浏览器和 Node.js 打包起来，并且向开发者提供了一些 native API，从而允许人们用 Web 技术开发桌面端应用。实质是借由某种编程语言的转化（解析器）将Markdown文档解析成HTML文档，这也解释了Typora同时支持HTML格式的原因。</p>
-<p>因此，相较于一般的文本编辑器，Typora实质更类似于浏览器。按下<code>Shift + F12</code>页面会弹出类似于Chrome的开发者工具栏。</p>
+<h3 id="审查元素"><a href="#审查元素" class="headerlink" title="审查元素"></a>审查元素</h3><p>Typora是基于Electron开发的一款软件，Electron 把 Chromium 浏览器和 Node.js 打包起来，并且向开发者提供了一些 native API，从而允许人们用 Web 技术开发桌面端应用。实质是借由某种编程语言的转化（解析器）将Markdown文档解析成HTML文档，这也解释了Typora同时支持HTML格式的原因。</p>
+<p>因此，相较于一般的文本编辑器，Typora实质更类似于浏览器，官方也提供了调试功能，按下<code>Shift + F12</code>页面会弹出类似于Chrome的开发者工具栏。</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
 <li><a href="https://sspai.com/post/54912">Typora完全使用详解 - 少数派</a></li>
 <li><a href="https://www.v2ex.com/t/552016">为什么 markdown 都要设计成按 2 次回车，才能换 1 行？ - V2EX</a></li>
 <li><a href="https://88250.b3log.org/articles/2019/08/27/1566893557720.html">CommonMark 规范要点解读 - D的个人博客</a></li>
 <li><a href="https://blog.csdn.net/Seabiscuit_92/article/details/83857488">CR, LF, CR/LF区别与关系 - CSDN</a></li>
-<li></li>
 </ol>
 ]]></content>
       <categories>
@@ -804,12 +803,16 @@
 <p>打开对应目录，新建<code>styles.styl</code>文件，加入以下代码：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// inline code</span></span><br><span class="line">p code &#123;</span><br><span class="line">    color: #c71585;</span><br><span class="line">    background: #fffafa;</span><br><span class="line">    margin: <span class="number">2</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong><em>2020/10/09更新——</em></strong></p>
+<p>原始代码无法渲染部分块内超链接，检查后发现是CSS语法层级问题，删除<code>p</code>后即可文章内全局渲染。</p>
 <br/>
 
 <h3 id="文章超链接配色"><a href="#文章超链接配色" class="headerlink" title="文章超链接配色"></a>文章超链接配色</h3><p>同理使用<code>custom_file_path</code></p>
 <p><strong>配置文件<code>source/_data/styles.styl</code></strong></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">    color: #0593d3;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #0593d3;</span><br><span class="line">    &amp;:hover &#123;</span><br><span class="line">        color: #fc6423;</span><br><span class="line">        border-bottom: none;</span><br><span class="line">        border-bottom: 1px solid #fc6423;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong><em>2020/10/09更新——</em></strong></p>
+<p>原始代码无法渲染部分块内超链接，检查后发现是CSS语法层级问题，删除<code>p</code>后即可文章内全局渲染。</p>
 <br/>
 
 <h3 id="代码行配色"><a href="#代码行配色" class="headerlink" title="代码行配色"></a>代码行配色</h3><p><strong>配置文件<code>_config.yml</code></strong></p>

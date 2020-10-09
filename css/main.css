@@ -3016,16 +3016,52 @@ mark.search-keyword {
     padding: 10px 12px;
   }
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4281a4;
+}
+.site-title {
+  color: #fff;
+}
+.post-title {
+  color: #555;
+}
+/*--- 三级标题左边的小圆点 ---
+h3:before {
+  border-radius: 50%;
+  background-color: #4876FF;
+  content: '';
+  width: 6px;
+  display: inline-block;
+  height: 6px;
+  vertical-align: middle;
+  margin-bottom: .18em;
+  margin-right: 8px
+}*/
+/*--- 引用 ---*/
+blockquote {
+  border-left: 4px solid #42b983;
+  padding: 10px 15px;
+  color: #777;
+  background-color: rgba(66,185,131,0.1);
+}
+/*--- 行内代码块 ---*/
 code {
   color: #e96900;
-  background: #fffafa;
+  background: #f8f8f8;
   margin: 2px;
+  font-size: 0.9em;
 }
 /* code:not([class]) {
     color: #E96900;
     background: #fffafa;
     margin: 2px;
-    }*/
+}*/
+/*--- 超链接 ---*/
 .post-body a {
   color: #42b983;
   border-bottom: none;
