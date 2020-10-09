@@ -22,18 +22,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta name="description" content="胡说八道">
+  <meta name="description" content="Typora是一款支持Markdown语法的文本编辑器，同时可支持简单的LaTeX语法，兼顾文本写作与学术写作。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Typora使用心得">
 <meta property="og:url" content="http://example.com/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/index.html">
 <meta property="og:site_name" content="Dolor y gloria">
-<meta property="og:description" content="胡说八道">
+<meta property="og:description" content="Typora是一款支持Markdown语法的文本编辑器，同时可支持简单的LaTeX语法，兼顾文本写作与学术写作。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-16T13:50:17.000Z">
-<meta property="article:modified_time" content="2020-09-20T09:29:40.689Z">
+<meta property="article:modified_time" content="2020-10-09T07:07:56.000Z">
 <meta property="article:author" content="lluphok">
 <meta property="article:tag" content="Typora">
-<meta property="article:tag" content="Note">
+<meta property="article:tag" content="文本编辑器">
+<meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
 
 
@@ -138,7 +139,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">13</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -148,7 +149,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -195,7 +196,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -207,6 +208,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%B9%E7%82%B9"><span class="nav-number">1.</span> <span class="nav-text">特点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E6%97%B6%E9%A2%84%E8%A7%88%E4%B8%8E%E6%BA%90%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">实时预览与源代码模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emoji%E8%A1%A8%E6%83%85"><span class="nav-number">1.2.</span> <span class="nav-text">emoji表情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.3.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YAML-Front-Matter"><span class="nav-number">1.4.</span> <span class="nav-text">YAML Front Matter</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3"><span class="nav-number">2.</span> <span class="nav-text">功能详解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C"><span class="nav-number">2.1.</span> <span class="nav-text">回车与换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%A1%E6%9F%A5%E5%85%83%E7%B4%A0"><span class="nav-number">2.2.</span> <span class="nav-text">审查元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -222,7 +224,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -235,7 +237,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -315,7 +317,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-09-20 09:29:40" itemprop="dateModified" datetime="2020-09-20T09:29:40Z">2020-09-20</time>
+        <time title="修改时间：2020-10-09 07:07:56" itemprop="dateModified" datetime="2020-10-09T07:07:56Z">2020-10-09</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -342,17 +344,83 @@
     
     <div class="post-body" itemprop="articleBody">
         <blockquote>
-<p>胡说八道</p>
+<p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
 </blockquote>
 <a id="more"></a>
 
-<p><strong>Tips:</strong></p>
 <ul>
-<li>复制网页文本时会自动粘贴Markdown格式，并在软件中打开时自动渲染。对于文件原始数据的储存而言是个十分便捷的小功能。<ul>
-<li><strong>2020/09/17 补</strong>：才发现网页文本的复制粘贴过程都是保留HTML格式的……word甚至会自动读取生成标题目录，以前只用记事本copy的我整个人都傻掉了</li>
+<li><a target="_blank" rel="noopener" href="https://support.typora.io/">官方说明文档</a></li>
+</ul>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="实时预览与源代码模式"><a href="#实时预览与源代码模式" class="headerlink" title="实时预览与源代码模式"></a>实时预览与源代码模式</h3><p>Typora与市场上的多款笔记类软件相比，编辑界面直接隐藏了Markdown语法的标记，真正意义上做到了<strong>「所见即所得」</strong>。</p>
+<p>Bear保留语法标记的方式可能是部分排版强迫症患者的福音，但对于我而言，直观简洁的编辑页面更有利于我进行专注写作。</p>
+<p>需要对语法进行修改时，可以点击相关内容自动显示语法标记；也可以使用<strong>源代码模式</strong>编辑内容格式，检查语法bug。</p>
+<p>进入<strong>源代码模式</strong>的方式：</p>
+<ul>
+<li>快捷键<code>Ctrl + /</code></li>
+<li>左下角<code>&lt;/&gt;</code>按钮</li>
+<li><code>视图 - 源代码模式</code></li>
+</ul>
+<h3 id="emoji表情"><a href="#emoji表情" class="headerlink" title="emoji表情"></a>emoji表情</h3><p>支持<code>:emoji</code>形式插入emoji表情。例如：:horse:、:cry:</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>相比较Markdown语法老老实实输入以下格式插入表格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<p>Typora提供了更便捷的插入表格功能，只需要在行内<code>鼠标右键 - 插入- 表格</code>，输入行数和列数，即可自动生成一张表格，表格自带的小组件也能更直观简单地对表格进行样式调整。</p>
+<h3 id="YAML-Front-Matter"><a href="#YAML-Front-Matter" class="headerlink" title="YAML Front Matter"></a>YAML Front Matter</h3><p>YAML（YAML ain’t markup language），是一种递归缩写，是一个可读性高并且容易被人类阅读，容易和脚本语言交互，用来表达资料序列的编程语言。</p>
+<p>Front-matter 是文件最上方以<code>---</code>分隔的区域，用于指定个别文件的变量。</p>
+<p>YAML Front Matter 用于定义文档的全局变量给模板引用。</p>
+<p>以本文为例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Typora使用心得</span><br><span class="line">date: 2020-09-16 13:50:17</span><br><span class="line">tags: </span><br><span class="line">- Typora</span><br><span class="line">- 文本编辑器</span><br><span class="line">- Markdown</span><br><span class="line">categories: </span><br><span class="line">- Tech</span><br><span class="line">- Software</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>适用于把 Markdown 文档分类归档上传到用 Hexo 框架搭建的博客中。</p>
+<h2 id="功能详解"><a href="#功能详解" class="headerlink" title="功能详解"></a>功能详解</h2><h3 id="回车与换行"><a href="#回车与换行" class="headerlink" title="回车与换行"></a>回车与换行</h3><p><strong>Windows与Unix换行符</strong></p>
+<p>行结束符分为<strong>CR（Carriage Return）</strong>与<strong>LF（Line Feed</strong>）</p>
+<p>CR表示回车<code>\r</code>，即光标移动到当前行行首。</p>
+<p>LF表示换行<code>\n</code>，即光标垂直下移到下一行，并不改变光标的水平位置。</p>
+<p>Windows换行符（CRLF）相当于「回车+换行」， Unix 风格（LF）的换行符是「换行」。</p>
+<p>Typora中可以在<code>文件 - 偏好设置 - 编辑器 - 默认换行符</code>中进行切换。</p>
+<p><strong>Markdown原生语法环境</strong></p>
+<p>首先，Markdown语法本身存在标准不统一的问题，为了解决这个问题，目前大多数软件在引入Markdown语法时都选择参考<a target="_blank" rel="noopener" href="https://commonmark.org/">CommonMark</a>标准。</p>
+<p>其次，应对块级元素与行级元素有一定的认识，分清换行与换段之间的区别。</p>
+<ul>
+<li><p><strong>块级元素</strong>包括：</p>
+<ul>
+<li>容器块：可包含其他块级元素，块引用（<code>&gt;</code>）、列表（有序<code>1.</code>与无序<code>-</code>）以及列表项。</li>
+<li>叶子块：不能包含其他块级元素，只能包含行级元素。如分割线（<code>---</code>）、标题（<code>#</code>）、代码块（<code>```</code>）、某些HTML块、段落等。</li>
 </ul>
 </li>
+<li><p><strong>行级元素</strong>包括：行内代码块（<code>code</code>）、强调、加粗、链接、图片、某些 HTML 标签、文本等。</p>
+</li>
+<li><p><strong>软换行</strong>：换行不换段。</p>
+</li>
+<li><p><strong>硬换行</strong>：换行又换段。</p>
+</li>
 </ul>
+<p>Markdown的自然语言文本中并不存在“换行”的概念，只存在“换段”的概念。出现这个问题是基于历史原因，当时提出标准是针对命令行编辑器的使用，设计者希望原生文本的展示效果和HTML渲染后的展示效果一致。（<strong>refer：</strong><a target="_blank" rel="noopener" href="https://meta.stackexchange.com/questions/40976/what-is-the-reason-for-the-top-secret-two-space-newline-markdown-weirdness">What is the reason for the top secret two space newline markdown weirdness? </a>）</p>
+<p>这就导致在命令行之外的地方使用Markdown语法，呈现出的结果变成了编辑器与HTML渲染视图不一样：回车键<code>Enter</code>相当于单个换行符。单次回车是硬换行，对应 <code>&lt;br&gt;</code>，两次回车是换段，对应 <code>&lt;p&gt;</code>。</p>
+<p>同时部分编辑器支持段末双空格换行，但其他编辑器可能会删除<strong>trialing space</strong>。</p>
+<p><em>（注：Github Markdown语法支持单回车对应换行，以及双空格换行。）</em></p>
+<p><strong>Typora环境</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://support.typora.io/Line-Break/">官方说明</a></li>
+</ul>
+<p>Typora支持在<code>文件 - 偏好设置 - Markdown - 空格与换行</code>中个性化设置换行的偏好。</p>
+<p>默认设置下：</p>
+<ul>
+<li><strong>空格</strong>：连续输入多个空格，Typora编辑器视图将保留这些空格，但打印或导出时多个空格会被省略成一个。可以通过源代码模式下，在每个空格前添加一个<code>\</code>转义符，或者使用HTML风格的<code>&amp;nbps</code>保持连续的空格。</li>
+<li><strong>软换行 or 单个换行</strong>：可以通过<code>Shift + Enter</code>完成一次软换行。软换行只在编辑界面可视，导出时换行会被省略成单个空格。</li>
+<li><strong>硬换行</strong>：可以通过 <code>空格 + 空格 + Shift + Enter</code> 完成一次硬换行。硬换行导出时会保留，同时没有换段的段后距。</li>
+<li><strong>换段</strong>：可以通过<code>Enter</code>完成一次换段，等同Typora自动完成两次<code>Shift + Enter</code>。</li>
+</ul>
+<p>在偏好中选择<strong>「保留连续的空格与单个换行」</strong>，实时预览与导出模式即可保持一致。</p>
+<h3 id="审查元素"><a href="#审查元素" class="headerlink" title="审查元素"></a>审查元素</h3><p>Typora是用Electron开发的，Electron 把 Chromium 浏览器和 Node.js 打包起来，并且向开发者提供了一些 native API，从而允许人们用 Web 技术开发桌面端应用。实质是借由某种编程语言的转化（解析器）将Markdown文档解析成HTML文档，这也解释了Typora同时支持HTML格式的原因。</p>
+<p>因此，相较于一般的文本编辑器，Typora实质更类似于浏览器。按下<code>Shift + F12</code>页面会弹出类似于Chrome的开发者工具栏。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/54912">Typora完全使用详解 - 少数派</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.v2ex.com/t/552016">为什么 markdown 都要设计成按 2 次回车，才能换 1 行？ - V2EX</a></li>
+<li><a target="_blank" rel="noopener" href="https://88250.b3log.org/articles/2019/08/27/1566893557720.html">CommonMark 规范要点解读 - D的个人博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Seabiscuit_92/article/details/83857488">CR, LF, CR/LF区别与关系 - CSDN</a></li>
+<li></li>
+</ol>
 
     </div>
 
@@ -363,7 +431,8 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Typora/" rel="tag"><i class="fa fa-tag"></i> Typora</a>
-              <a href="/tags/Note/" rel="tag"><i class="fa fa-tag"></i> Note</a>
+              <a href="/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/" rel="tag"><i class="fa fa-tag"></i> 文本编辑器</a>
+              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
           </div>
 
         
