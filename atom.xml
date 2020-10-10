@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-09T02:47:34.000Z</updated>
+  <updated>2020-10-10T04:02:32.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>WorkFlowy使用心得</title>
-    <link href="http://example.com/2020/10/23/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
-    <id>http://example.com/2020/10/23/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</id>
-    <published>2020-10-23T10:23:00.000Z</published>
-    <updated>2020-10-09T02:47:34.000Z</updated>
+    <link href="http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
+    <id>http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</id>
+    <published>2020-10-09T10:23:00.000Z</published>
+    <updated>2020-10-10T04:02:32.000Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -42,32 +42,11 @@
   </entry>
   
   <entry>
-    <title>实用工具</title>
-    <link href="http://example.com/2020/09/19/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    <id>http://example.com/2020/09/19/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
-    <published>2020-09-19T09:00:27.765Z</published>
-    <updated>2020-10-09T02:38:21.000Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;想起来就更新&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="Tech" scheme="http://example.com/categories/Tech/"/>
-    
-    <category term="Software" scheme="http://example.com/categories/Tech/Software/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>NexT主题配置及优化</title>
     <link href="http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/"/>
     <id>http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</id>
     <published>2020-09-17T22:43:25.000Z</published>
-    <updated>2020-10-09T12:33:14.672Z</updated>
+    <updated>2020-10-10T07:06:29.000Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -159,6 +138,27 @@
     <category term="文本编辑器" scheme="http://example.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
     <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Product Hunt</title>
+    <link href="http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <id>http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
+    <published>2020-01-20T17:40:07.000Z</published>
+    <updated>2020-10-10T10:54:06.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;想起来就更新&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Tech" scheme="http://example.com/categories/Tech/"/>
+    
+    <category term="Software" scheme="http://example.com/categories/Tech/Software/"/>
+    
     
   </entry>
   

@@ -362,7 +362,7 @@
   </entry>
   <entry>
     <title>WorkFlowy使用心得</title>
-    <url>/2020/10/23/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <url>/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<blockquote>
 <p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy尝鲜，进行一段时间的使用测评。</p>
 </blockquote>
@@ -485,34 +485,96 @@
       </tags>
   </entry>
   <entry>
-    <title>实用工具</title>
-    <url>/2020/09/19/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
+    <title>Product Hunt</title>
+    <url>/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<blockquote>
 <p>想起来就更新</p>
 </blockquote>
 <a id="more"></a>
 
-<h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制工具"><a href="#压制工具" class="headerlink" title="压制工具"></a>压制工具</h3><p><strong>1.MediaCode x64</strong><br>老牌专业压制工具。<br><strong>2.小丸工具箱</strong><br>B站特供，方便直接选择类型压制。<br><strong>3.FFmpeg</strong><br>集大成之作，实用短板FFmpeg_Joiner</p>
+<h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制软件"><a href="#压制软件" class="headerlink" title="压制软件"></a>压制软件</h3><ol>
+<li><strong><a href="http://www.mediacoderhq.com/dlfull_zh.htm">MediaCode x64</a></strong><br>老牌专业压制工具，<del>平常其实用不到</del></li>
+<li><strong><a href="https://maruko.appinn.me/">小丸工具箱</a></strong><br>B站特供，方便直接选择类型压制，集成各种常用功能的综合性辅助软件</li>
+<li><strong><a href="https://ffmpeg.org/download.html">FFmpeg</a></strong><br>万物起源，实用简版可选择<strong>FFmpeg_Joiner</strong></li>
+</ol>
 <br/>
 
-<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><p><strong>1.Gifcam</strong><br>目前使用的Gif录制工具，其实也可以考虑通过Pr导出<del>就是麻烦了一点</del></p>
+<h3 id="动图编辑软件"><a href="#动图编辑软件" class="headerlink" title="动图编辑软件"></a>动图编辑软件</h3><ol>
+<li><strong><a href="https://gifcam.en.softonic.com/">Gifcam</a></strong><br>目前使用的Gif录制工具，其实也可以考虑通过Pr导出<del>就是麻烦了一点</del></li>
+</ol>
 <br/>
 
-<h3 id="播放工具"><a href="#播放工具" class="headerlink" title="播放工具"></a>播放工具</h3><p><strong>1.Potplayer</strong><br>最方便实用<br><strong>2.FFmpeg - ffplay</strong><br>测试直播源效果极佳<br><strong>3.VLC</strong><br>听说是直播源播放神器，<del>没一次使用成功</del></p>
+<h3 id="播放软件"><a href="#播放软件" class="headerlink" title="播放软件"></a>播放软件</h3><ol>
+<li><p><strong><a href="https://potplayer.org/">Potplayer</a></strong><br>最方便实用</p>
+</li>
+<li><p><strong>FFmpeg - ffplay</strong><br>测试直播源效果极佳</p>
+</li>
+<li><p><strong><a href="https://www.videolan.org/">VLC</a></strong><br>听说是直播源播放神器，<del>没一次使用成功</del></p>
+</li>
+<li><p><strong><a href="https://sourceforge.net/projects/mpcbe/">MPC-BE</a></strong></p>
+<p>LoliHouse字幕组推荐使用Win播放器，还没试过</p>
+</li>
+</ol>
 <br/>
 
-<h2 id="下载类"><a href="#下载类" class="headerlink" title="下载类"></a>下载类</h2><h3 id="非BT"><a href="#非BT" class="headerlink" title="非BT"></a>非BT</h3><p><strong>1.IDM</strong><br>捕捉浏览器下载行为，但有时不如Chrome直连</p>
-<h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><p><strong>1.迅雷</strong><br>国内最好用<br><strong>2.百度云</strong><br>垃圾限速软件<br><strong>3.FDM</strong><br>动漫类使用效果比较好<br><strong>4.Aria2</strong><br>设定比较繁琐<br><strong>5.亿寻</strong><br><a href="https://yixun.writeas.com/yi-xun">官网</a></p>
+<h2 id="下载类"><a href="#下载类" class="headerlink" title="下载类"></a>下载类</h2><h3 id="非BT"><a href="#非BT" class="headerlink" title="非BT"></a>非BT</h3><ol>
+<li><p><strong><a href="http://www.internetdownloadmanager.com/">IDM</a></strong><br>捕捉浏览器下载行为，抓取直播源最便捷的方法，速度取决于网速和<del>墙</del></p>
+<p>可以在<a href="https://www.runningcheese.com/">奔跑中的奶酪</a>的博客里搜索最新破解版</p>
+</li>
+</ol>
+<h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><ol>
+<li><p><strong><a href="https://www.xunlei.com/">迅雷</a></strong><br>国内最好用，但对版权资源比较敏感</p>
+</li>
+<li><p><strong><a href="https://pan.baidu.com/">百度云</a></strong><br>垃圾限速软件</p>
+</li>
+<li><p><strong><a href="https://www.freedownloadmanager.org/zh/">FDM</a></strong><br>动漫类使用效果比较好</p>
+<p><strong><em>2020/10/10 更新</em></strong></p>
+<p>怀疑设置有问题，元数据检索太慢，弃用</p>
+</li>
+<li><p><strong><a href="http://aria2.github.io/">Aria2</a></strong><br>设定比较繁琐，适合爱折腾的人</p>
+</li>
+<li><p><strong><a href="https://yixun.writeas.com/yi-xun">亿寻</a></strong><br>比较便捷，但更新换代频率过高，偶尔失效，弃用</p>
+</li>
+<li><p><strong><a href="http://www.baidu.com/link?url=vAmopF0EvviW88d1baYFr0TKPnx25u8einNkYpBeCqv7QkbA5nehBOwNS86sDTJA">qBittorrent</a></strong></p>
+<p>VCB推荐下载工具，确实好用</p>
+</li>
+</ol>
 <br/>
 
-<h2 id="办公类"><a href="#办公类" class="headerlink" title="办公类"></a>办公类</h2><h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><p><strong>1.印象笔记</strong><br>文章摘录、信息储存、整理型笔记<br><strong>2.Pocket</strong><br>稍后阅读<br><strong>3.Inoreader</strong><br>rss<br><strong>4.Notion</strong><br>可以尝试</p>
-<h3 id="Remind"><a href="#Remind" class="headerlink" title="Remind"></a>Remind</h3><p><strong>1.To-do</strong><br>Microsoft系列，联动Outlook实用</p>
-<h3 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h3><p><strong>1.Onedrive</strong><br><strong>2.iCloud</strong></p>
-<h3 id="Write"><a href="#Write" class="headerlink" title="Write"></a>Write</h3><p><strong>1.Sublime</strong><br>Python编辑器、Markdown编辑器<br><strong>2.Typora</strong><br>纯粹写作</p>
+<h2 id="效率类"><a href="#效率类" class="headerlink" title="效率类"></a>效率类</h2><h3 id="信息搜集整理"><a href="#信息搜集整理" class="headerlink" title="信息搜集整理"></a>信息搜集整理</h3><ol>
+<li><strong><a href="https://yinxiang.com/">印象笔记</a>/<a href="https://evernote.com/">Evernote</a></strong><br>文章摘录、信息储存、整理型笔记</li>
+<li><strong><a href="https://getpocket.com/">Pocket</a></strong><br>稍后阅读，与其他软件间的联动较多，同时支持Chrome插件，相较于Instapaper</li>
+<li><strong><a href="https://www.inoreader.com/">Inoreader</a></strong><br>RSS工具，配合<a href="https://ifttt.com/home">IFTTT</a>使用可完成定向信息筛选推送</li>
+</ol>
+<h3 id="清单"><a href="#清单" class="headerlink" title="清单"></a>清单</h3><ol>
+<li><strong><a href="https://todo.microsoft.com/">To-do</a></strong><br>Microsoft系列，联动Outlook比较实用，适合办公</li>
+</ol>
+<h3 id="云盘"><a href="#云盘" class="headerlink" title="云盘"></a>云盘</h3><ol>
+<li><strong>Onedrive</strong></li>
+<li><strong>iCloud</strong></li>
+</ol>
+<h3 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h3><ol>
+<li><p><strong><a href="https://www.sublimetext.com/">Sublime Text</a></strong><br>程序员适用</p>
+</li>
+<li><p><strong><a href="https://www.typora.io/">Typora</a></strong><br>简洁明了的文本编辑器</p>
+<p><strong>详见</strong>：<a href="https://lluphok.github.io/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">Typora使用心得</a></p>
+</li>
+</ol>
+<h3 id="大纲写作"><a href="#大纲写作" class="headerlink" title="大纲写作"></a>大纲写作</h3><ol>
+<li><strong><a href="https://workflowy.com/">Workflowy</a></strong></li>
+</ol>
+<h3 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h3><ol>
+<li><strong><a href="https://www.notion.so/">Notion</a></strong></li>
+</ol>
 <br/>
 
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><strong>1.Foobar2000</strong><br>注意媒体库转移<br><strong>2.Bandizip</strong><br>香，太香了</p>
-<p>1</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li><p><strong><a href="http://www.foobar2000.org/">Foobar2000</a></strong></p>
+<p>各类插件齐全，上限很高的PC端播放器</p>
+</li>
+<li><p><strong><a href="http://www.bandisoft.com/bandizip/">Bandizip</a></strong><br>解压软件还是越简单越好</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Tech</category>
@@ -803,7 +865,7 @@
 <p>打开对应目录，新建<code>styles.styl</code>文件，加入以下代码：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// inline code</span></span><br><span class="line">p code &#123;</span><br><span class="line">    color: #c71585;</span><br><span class="line">    background: #fffafa;</span><br><span class="line">    margin: <span class="number">2</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong><em>2020/10/09更新——</em></strong></p>
+<p><strong><em>2020/10/09 更新</em></strong></p>
 <p>原始代码无法渲染部分块内超链接，检查后发现是CSS语法层级问题，删除<code>p</code>后即可文章内全局渲染。</p>
 <br/>
 
@@ -811,7 +873,7 @@
 <p><strong>配置文件<code>source/_data/styles.styl</code></strong></p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">    color: #0593d3;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #0593d3;</span><br><span class="line">    &amp;:hover &#123;</span><br><span class="line">        color: #fc6423;</span><br><span class="line">        border-bottom: none;</span><br><span class="line">        border-bottom: 1px solid #fc6423;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong><em>2020/10/09更新——</em></strong></p>
+<p><strong><em>2020/10/09 更新</em></strong></p>
 <p>原始代码无法渲染部分块内超链接，检查后发现是CSS语法层级问题，删除<code>p</code>后即可文章内全局渲染。</p>
 <br/>
 
