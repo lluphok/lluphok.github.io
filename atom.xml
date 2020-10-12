@@ -133,11 +133,11 @@
     <category term="Software" scheme="http://example.com/categories/Tech/Software/"/>
     
     
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
     <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
     <category term="文本编辑器" scheme="http://example.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
@@ -164,10 +164,10 @@
   
   <entry>
     <title>Cmd Markdown语法参考</title>
-    <link href="http://example.com/2020/01/09/markdown/"/>
-    <id>http://example.com/2020/01/09/markdown/</id>
+    <link href="http://example.com/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/"/>
+    <id>http://example.com/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</id>
     <published>2020-01-09T06:33:56.000Z</published>
-    <updated>2020-09-18T20:11:57.689Z</updated>
+    <updated>2020-10-10T13:28:52.199Z</updated>
     
     
     <summary type="html">&lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;</summary>
@@ -177,7 +177,7 @@
     <category term="Tech" scheme="http://example.com/categories/Tech/"/>
     
     
-    <category term="MarkDown" scheme="http://example.com/tags/MarkDown/"/>
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
