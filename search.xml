@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CAD进阶笔记</title>
+    <url>/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">快捷键</th>
+<th align="center">命令说明</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>LTSCALE</code></td>
+<td align="center"><code>LTS</code></td>
+<td align="center">线性比例因子</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>HATCH</code></td>
+<td align="center"><code>H</code></td>
+<td align="center">填充</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>ROTATE</code></td>
+<td align="center"><code>RO</code></td>
+<td align="center">旋转</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>SCALE</code></td>
+<td align="center"><code>SC</code></td>
+<td align="center">比例缩放</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>EXPLODE</code></td>
+<td align="center"><code>X</code></td>
+<td align="center">分解</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>PSPACE</code></td>
+<td align="center"><code>PS</code></td>
+<td align="center">图纸空间</td>
+<td align="center">布局中使用</td>
+</tr>
+<tr>
+<td align="center"><code>MSPACE</code></td>
+<td align="center"><code>MS</code></td>
+<td align="center">模型空间</td>
+<td align="center">布局中使用</td>
+</tr>
+</tbody></table>
+<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="隐藏外部参考边框"><a href="#隐藏外部参考边框" class="headerlink" title="隐藏外部参考边框"></a>隐藏外部参考边框</h3><p>输入命令行：<code>XCLIPFRAME</code><br>新值为0，不显示边框；新值不为0，显示边框。</p>
+<h3 id="重命名块"><a href="#重命名块" class="headerlink" title="重命名块"></a>重命名块</h3><p>输入命令行 <code>RENAME</code></p>
+<h3 id="清理项目"><a href="#清理项目" class="headerlink" title="清理项目"></a>清理项目</h3><p>输入命令行：<code>PURGE</code> or <code>PU</code><br><em>注:参照使用中的块无法被清除</em></p>
+<h3 id="布局中显示线性比例"><a href="#布局中显示线性比例" class="headerlink" title="布局中显示线性比例"></a>布局中显示线性比例</h3><p><strong>方法一</strong><br><code>线性特性</code> — <code>其他</code> — <code>隐藏细节</code> — [ x ]<code>缩放时使用图纸空间单位</code><br><em>注：需要输入新的比例因子值，刷新后才能显示</em></p>
+<p><strong>方法一</strong><br>布局中输入命令行：<code>PSLTSCALE</code> 新值取0</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>CAD</tag>
+        <tag>办公</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cmd Markdown语法参考</title>
     <url>/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</url>
     <content><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
@@ -106,7 +176,7 @@
     <title>Hexo基础建站</title>
     <url>/2020/09/18/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<p>之前为了建立一个自己的个人博客，浏览过各种网站搭建方法，最后选择Hexo+Github Pages的方式建站。</p>
-<p>时隔半年多NexT主题更新至7.8.0，为了系统地升级blog决定把Hexo和NexT主题重装一次，重新记录全过程作为技术笔记保存，待未来遇到问题时能有据可循地查漏、解决疑难问题。</p>
+<p>时隔半年多NexT主题更新至8.0.0，为了系统地升级blog决定把Hexo和NexT主题重装一次，重新记录全过程作为技术笔记保存，待未来遇到问题时能有据可循地查漏、解决疑难问题。</p>
 <a id="more"></a>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo 是一个由<a href="https://nodejs.org/">Node.js</a>支持的快速，简单且功能强大的博客框架。</p>
@@ -157,7 +227,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
 <p>新建完成后，指定文件夹的目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml        # 全局配置文件</span><br><span class="line">├── package.json       # 记录hexo需要的包的信息</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── node_modules       # hexo需要的模块</span><br><span class="line">├── scaffolds          # 文章模板</span><br><span class="line">├── source             # 博文.md文件</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes             # 主题配置文件</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p><strong>_config.yml</strong></p>
@@ -264,8 +334,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Onedrive软连接搭建实例——mklink命令的使用</title>
-    <url>/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B%E2%80%94%E2%80%94mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <title>Onedrive软连接搭建实例_mklink命令的使用</title>
+    <url>/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B_mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。</p>
 <p>尝试解决方案：利用DOS命令<code>mklink</code>给待同步的文件目录在OneDrive文件夹下创建映射。</p>
 <a id="more"></a>
@@ -372,8 +442,77 @@
       </tags>
   </entry>
   <entry>
-    <title>Typora使用心得</title>
-    <url>/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <title>Hexo备份_Github方案</title>
+    <url>/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>为了解决Hexo源文件的备份与版本控制问题，将源文件托管到Github上方便多终端工作更新博客。</p>
+<a id="more"></a>
+
+
+
+<h2 id="方案概述"><a href="#方案概述" class="headerlink" title="方案概述"></a>方案概述</h2><p>Hexo每次部署后，会在本地源文件路径下生成<code>public</code>文件夹。<code>public</code>文件夹内是根据.md生成的html文件，也就是博客的静态页面。</p>
+<p>通常情况下，在执行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>就是将<code>public</code>文件夹内的文件同步到Github。</p>
+<p>既然静态页面可以部署到Github文件夹中，利用Github的分支思路，就可以同时把源文件也同步到Github上。具体如下：</p>
+<p><strong>Hexo分支</strong>：存放Hexo源文件（配置文件）</p>
+<p><strong>master分支</strong>：存放生成的静态网页</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h3 id="Hexo分支配置"><a href="#Hexo分支配置" class="headerlink" title="Hexo分支配置"></a>Hexo分支配置</h3><ol>
+<li><p>创建<strong>Hexo分支</strong>，设置<strong>Hexo分支</strong>为默认分支</p>
+</li>
+<li><p>在其他目录下，克隆仓库到本地</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制隐藏的<code>.git</code>文件夹到使用的hexo博客目录。修改<code>.gitignore</code>文件忽略不需要的文件</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules&#x2F;</span><br><span class="line">public&#x2F;</span><br><span class="line">.deploy*&#x2F;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>检查<code>themes</code>文件夹中的主题是否有<code>.git</code>和<code>.gitignore</code>，如果有的话删除。因为git不能嵌套上传。</li>
+</ul>
+</li>
+<li><p>同步，依次执行</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;  # &quot;...&quot;可修改</span><br><span class="line">$ git push origin hexo</span><br></pre></td></tr></table></figure>
+
+<p> 提交网站相关文件，上传完毕，仓库中可以看到两个分支的差异。</p>
+<ul>
+<li>每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，记得先<code>git pull</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="master分支配置"><a href="#master分支配置" class="headerlink" title="master分支配置"></a>master分支配置</h3><p>修改<code>_config.yml</code>中的deploy参数，确保静态网页是提交到<strong>master分支</strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/lliuphok/lluphok.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="更新流程"><a href="#更新流程" class="headerlink" title="更新流程"></a>更新流程</h2><p>其他电脑需要进行同步维护和更新时，操作同上。</p>
+<h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul>
+<li>node.js</li>
+<li>git</li>
+<li>ssh key</li>
+</ul>
+<h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli  # 不需要初始化，即hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-deployer-git</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h3 id="提交博客"><a href="#提交博客" class="headerlink" title="提交博客"></a>提交博客</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git pull</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;</span><br><span class="line">$ git push origin hexo</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>安全起见建议新建private仓库上传源码，避免源文件中私密信息泄露。</p>
+<p><del>在不需要版本控制的情况下，还有什么比直接Onedrive同步更简单的操作吗？</del></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://www.zhihu.com/question/21193762">使用hexo，如果换了电脑怎么更新博客？</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+        <tag>Github</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora使用体验</title>
+    <url>/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
     <content><![CDATA[<blockquote>
 <p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
 </blockquote>
@@ -463,18 +602,91 @@
       </tags>
   </entry>
   <entry>
-    <title>WorkFlowy使用心得</title>
-    <url>/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <title>Word域应用</title>
+    <url>/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>简单来说就是Word文档中的信息代码，类似于Excel中的函数功能，善用域可以省去许多重复性操作。</p>
+<p><strong>特征字符</strong>：<code>&#123;&#125;</code></p>
+<p><strong>关系式</strong>：<code>&#123; Name [参数] [\Switches] &#125;</code></p>
+<p>​        <code>\Switches</code>：域开关</p>
+<p><strong>打开方式</strong>：</p>
+<ol>
+<li><code>插入</code> — <code>文档部件</code> — <code>域</code></li>
+<li><code>Ctrl + F9</code></li>
+</ol>
+<p><em>注：</em></p>
+<ul>
+<li><em>大括号不可手动输入，必须使用<code>Ctrl + F9</code>添加</em></li>
+<li><em>域大括号内侧各保留一个空格</em></li>
+<li><em>域名与其属性或开关之间保留一个空格</em></li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>Ctrl + F9</code></td>
+<td align="center">插入域</td>
+</tr>
+<tr>
+<td align="center"><code>F9</code></td>
+<td align="center">更新选定的域</td>
+</tr>
+<tr>
+<td align="center"><code>Shift + F9</code></td>
+<td align="center">在所选的域与结果之间切换</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + F9</code></td>
+<td align="center">在所有的域与结果之间切换</td>
+</tr>
+<tr>
+<td align="center"><code>F11</code></td>
+<td align="center">定位下一个域</td>
+</tr>
+<tr>
+<td align="center"><code>Shift + F11</code></td>
+<td align="center">定位上一个域</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + D</code></td>
+<td align="center">插入日期域</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + P</code></td>
+<td align="center">插入页字段</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + T</code></td>
+<td align="center">插入时间域</td>
+</tr>
+</tbody></table>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://blog.csdn.net/songkexin/article/details/7304651">Word域的应用和详解</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>办公</tag>
+        <tag>Word</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WorkFlowy使用体验</title>
+    <url>/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
     <content><![CDATA[<blockquote>
 <p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy尝鲜，进行一段时间的使用测评。</p>
 </blockquote>
 <a id="more"></a>
 
-
-
-
-
-]]></content>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h2 id="竞品"><a href="#竞品" class="headerlink" title="竞品"></a>竞品</h2><h2 id="SWOT"><a href="#SWOT" class="headerlink" title="SWOT"></a>SWOT</h2>]]></content>
       <categories>
         <category>Tech</category>
         <category>Software</category>
@@ -909,8 +1121,8 @@
     <title>《利兹与青鸟》原作摘录</title>
     <url>/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</url>
     <content><![CDATA[<p align="right">——摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
+---
 
-<hr>
 <a id="more"></a>
 
 <h1 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h1><p>看了下自由曲《利兹和青鸟》的第三乐章，里面有长笛和双簧管的合同solo。双簧管感伤澄澈的音色加上便随其后长笛的低语，交错的旋律反映出利兹和青鸟各自的思虑。<strong>从第一次吹这首曲子起，希美就确信长笛这段solo非自己莫属，在这间学校里能配得上霙双簧管的，只有自己。</strong>    </p>
@@ -925,9 +1137,7 @@
 <p>希美和霙今年担任第三乐章的solo。她们实力有目共睹，加上是三年级，所以没有一人对她们担任solo表示异议。而对于知道事情渊源的优子，看到霙沐浴在后辈的祝福之中表情复杂。优子担心的只有一点，就是希美负责长笛solo。在旁人眼里，<strong>霙和希美对于互相抱有的感情的认识有很大出入</strong>。</p>
 <br/>
 
-<h1 id="第二章-独白和静默"><a href="#第二章-独白和静默" class="headerlink" title="第二章 独白和静默"></a>第二章 独白和静默</h1><blockquote>
-<p>京都大会后，丽奈和久美子聊天</p>
-</blockquote>
+<h1 id="第二章-独白和静默"><a href="#第二章-独白和静默" class="headerlink" title="第二章 独白和静默"></a>第二章 独白和静默</h1><p><em>京都大会后，丽奈和久美子聊天。</em></p>
 <p>「现在霙前辈的演奏是不是对得起她原本的实力呢。」</p>
 <br/>
 
@@ -940,10 +1150,10 @@
 <p>「你应该重回蓝天，你这美丽的翅膀能将你带往任何地方。」<br>「对我而言能待在你身边就足够幸福了，为何你要假装不见呢？」<br>对小鸟的话，利兹轻轻摇头。<br>「我是把你关住的鸟笼。小鸟不知何时会从鸟笼中逃脱，既然会在我意想不到时失去你，还不如让我亲手送走这份幸福。这就是我的爱，请让我能在最美好的时刻送走你。」<br>对利兹的话，小鸟流下眼泪。<br>「既然你这么说，我又怎么能拒绝。不过还请你能时不时想起我，想起这短暂幸福的日子，想起我爱着你这个事实。」<br>青鸟有力扇动美丽的翅膀飞向远方。面朝青鸟消失的方向，利兹一直一直看下去。</p>
 <br/>
 
+<p><em>丽奈对《利兹和青鸟》的解释：</em></p>
 <blockquote>
-<p>以下为丽奈对《利兹和青鸟》的解释：</p>
+<p>——面对太过幸福的自己，会时常恐惧幸福的终结，既然一直担心受怕那样的日子来临，还不如自己亲手断绝。</p>
 </blockquote>
-<pre><code>——面对太过幸福的自己，会时常恐惧幸福的终结，既然一直担心受怕那样的日子来临，还不如自己亲手断绝。</code></pre>
 <br/>
 
 <p>希美踮起脚擦高的地方，尽全力伸直的手刚好够好上面窗户的下沿。霙看着希美，犹豫地开口问。<br>「希美。」<br>「嗯？」<br>「可以叫其他人去吗？」<br><strong>希美指尖挂着的抹布掉到地上。</strong>希美捡起来，把变得黑黑的内面对折，用变成一半大小的抹布擦着，希美笑着说。<br>「真没想到霙会叫别人，是谁？」<br>「剑崎同学，之前她说想一起去玩。」</p>
@@ -952,9 +1162,7 @@
 <p>「真没想到这么多人去。」<br>希美苦笑。霙对此睁圆眼睛。<br>「希美喜欢多点人的？」<br>「人多热闹嘛。」<br>「果然。」<br>握紧抹布，霙露出浅浅的笑容。<strong>她的眼中只倒影出希美的身影。</strong><br>「祭典时希美叫我叫上其他人。」<br>「所以才叫了剑崎吗？」<br>「嗯。」<br>「这样啊。」<br>希美开朗地回应。从她耳边垂下来的黑发看去，<strong>她的脸不自然地拉着</strong>。维持着开朗的笑容，希美抓住抹布的手加大力道，原本折得整整齐齐的抹布此时变成一团，<strong>刚才折到内面的脏脏一面此时重新露出来</strong>。</p>
 <br/>
 
-<blockquote>
-<p>秀一与久美子聊补习班的事情</p>
-</blockquote>
+<p><em>秀一与久美子聊补习班的事情。</em></p>
 <p>「就偶尔说说话啦，对了伞木前辈也在。」<br>「希美前辈？」<br>「她说成绩什么的，好像要去统考，貌似和中川前辈一所大学。」<br>出汗制服黏在了背上，室内空调有点强感觉有点冷，搓搓手臂，鸡皮一粒粒的。<br>「希美前辈不是和霙前辈考音大的吗？」<br>「改学校了吧，挺正常的。」<br>「可这不就。。。」<br>——背叛霙前辈了吗？</p>
 <br/>
 
