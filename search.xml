@@ -3,7 +3,11 @@
   <entry>
     <title>CAD进阶笔记</title>
     <url>/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
+    <content><![CDATA[<p align="center">应用过程中的笔记整理</p>
+
+<a id="more"></a>
+
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
 <thead>
 <tr>
 <th align="center">命令</th>
@@ -334,6 +338,73 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo备份_Github方案</title>
+    <url>/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>为了解决Hexo源文件的备份与版本控制问题，将源文件托管到Github上方便多终端工作更新博客。</p>
+<a id="more"></a>
+
+<h2 id="方案概述"><a href="#方案概述" class="headerlink" title="方案概述"></a>方案概述</h2><p>Hexo每次部署后，会在本地源文件路径下生成<code>public</code>文件夹。<code>public</code>文件夹内是根据.md生成的html文件，也就是博客的静态页面。</p>
+<p>通常情况下，在执行：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>就是将<code>public</code>文件夹内的文件同步到Github。</p>
+<p>既然静态页面可以部署到Github文件夹中，利用Github的分支思路，就可以同时把源文件也同步到Github上。具体如下：</p>
+<p><strong>Hexo分支</strong>：存放Hexo源文件（配置文件）</p>
+<p><strong>master分支</strong>：存放生成的静态网页</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h3 id="Hexo分支配置"><a href="#Hexo分支配置" class="headerlink" title="Hexo分支配置"></a>Hexo分支配置</h3><ol>
+<li><p>创建<strong>Hexo分支</strong>，设置<strong>Hexo分支</strong>为默认分支</p>
+</li>
+<li><p>在其他目录下，克隆仓库到本地</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制隐藏的<code>.git</code>文件夹到使用的hexo博客目录。修改<code>.gitignore</code>文件忽略不需要的文件</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules&#x2F;</span><br><span class="line">public&#x2F;</span><br><span class="line">.deploy*&#x2F;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>检查<code>themes</code>文件夹中的主题是否有<code>.git</code>和<code>.gitignore</code>，如果有的话删除。因为git不能嵌套上传。</li>
+</ul>
+</li>
+<li><p>同步，依次执行</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;  # &quot;...&quot;可修改</span><br><span class="line">$ git push origin hexo</span><br></pre></td></tr></table></figure>
+
+<p> 提交网站相关文件，上传完毕，仓库中可以看到两个分支的差异。</p>
+<ul>
+<li>每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，记得先<code>git pull</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="master分支配置"><a href="#master分支配置" class="headerlink" title="master分支配置"></a>master分支配置</h3><p>修改<code>_config.yml</code>中的deploy参数，确保静态网页是提交到<strong>master分支</strong></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/lliuphok/lluphok.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="更新流程"><a href="#更新流程" class="headerlink" title="更新流程"></a>更新流程</h2><p>其他电脑需要进行同步维护和更新时，操作同上。</p>
+<h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul>
+<li>node.js</li>
+<li>git</li>
+<li>ssh key</li>
+</ul>
+<h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli  # 不需要初始化，即hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-deployer-git</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h3 id="提交博客"><a href="#提交博客" class="headerlink" title="提交博客"></a>提交博客</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git pull</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;</span><br><span class="line">$ git push origin hexo</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>安全起见建议新建private仓库上传源码，避免源文件中私密信息泄露。</p>
+<p><del>在不需要版本控制的情况下，还有什么比直接Onedrive同步更简单的操作吗？</del></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://www.zhihu.com/question/21193762">使用hexo，如果换了电脑怎么更新博客？</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+        <tag>Github</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Onedrive软连接搭建实例_mklink命令的使用</title>
     <url>/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B_mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。</p>
@@ -442,80 +513,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo备份_Github方案</title>
-    <url>/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>为了解决Hexo源文件的备份与版本控制问题，将源文件托管到Github上方便多终端工作更新博客。</p>
-<a id="more"></a>
-
-
-
-<h2 id="方案概述"><a href="#方案概述" class="headerlink" title="方案概述"></a>方案概述</h2><p>Hexo每次部署后，会在本地源文件路径下生成<code>public</code>文件夹。<code>public</code>文件夹内是根据.md生成的html文件，也就是博客的静态页面。</p>
-<p>通常情况下，在执行：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<p>就是将<code>public</code>文件夹内的文件同步到Github。</p>
-<p>既然静态页面可以部署到Github文件夹中，利用Github的分支思路，就可以同时把源文件也同步到Github上。具体如下：</p>
-<p><strong>Hexo分支</strong>：存放Hexo源文件（配置文件）</p>
-<p><strong>master分支</strong>：存放生成的静态网页</p>
-<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h3 id="Hexo分支配置"><a href="#Hexo分支配置" class="headerlink" title="Hexo分支配置"></a>Hexo分支配置</h3><ol>
-<li><p>创建<strong>Hexo分支</strong>，设置<strong>Hexo分支</strong>为默认分支</p>
-</li>
-<li><p>在其他目录下，克隆仓库到本地</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制隐藏的<code>.git</code>文件夹到使用的hexo博客目录。修改<code>.gitignore</code>文件忽略不需要的文件</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules&#x2F;</span><br><span class="line">public&#x2F;</span><br><span class="line">.deploy*&#x2F;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>检查<code>themes</code>文件夹中的主题是否有<code>.git</code>和<code>.gitignore</code>，如果有的话删除。因为git不能嵌套上传。</li>
-</ul>
-</li>
-<li><p>同步，依次执行</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;  # &quot;...&quot;可修改</span><br><span class="line">$ git push origin hexo</span><br></pre></td></tr></table></figure>
-
-<p> 提交网站相关文件，上传完毕，仓库中可以看到两个分支的差异。</p>
-<ul>
-<li>每次换电脑进行博客更新时，不管上次在其他电脑有没有更新，记得先<code>git pull</code></li>
-</ul>
-</li>
-</ol>
-<h3 id="master分支配置"><a href="#master分支配置" class="headerlink" title="master分支配置"></a>master分支配置</h3><p>修改<code>_config.yml</code>中的deploy参数，确保静态网页是提交到<strong>master分支</strong></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/lliuphok/lluphok.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="更新流程"><a href="#更新流程" class="headerlink" title="更新流程"></a>更新流程</h2><p>其他电脑需要进行同步维护和更新时，操作同上。</p>
-<h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul>
-<li>node.js</li>
-<li>git</li>
-<li>ssh key</li>
-</ul>
-<h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone git@github.com&#x2F;lliuphok&#x2F;lluphok.github.io.git</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli  # 不需要初始化，即hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-deployer-git</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<h3 id="提交博客"><a href="#提交博客" class="headerlink" title="提交博客"></a>提交博客</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git pull</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;...&quot;</span><br><span class="line">$ git push origin hexo</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>安全起见建议新建private仓库上传源码，避免源文件中私密信息泄露。</p>
-<p><del>在不需要版本控制的情况下，还有什么比直接Onedrive同步更简单的操作吗？</del></p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
-<li><a href="https://www.zhihu.com/question/21193762">使用hexo，如果换了电脑怎么更新博客？</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tech</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Blog</tag>
-        <tag>Github</tag>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Typora使用体验</title>
     <url>/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<blockquote>
-<p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
-</blockquote>
+    <content><![CDATA[<p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
 <a id="more"></a>
 
 <ul>
@@ -604,10 +604,10 @@
   <entry>
     <title>Word域应用</title>
     <url>/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<a id="more"></a>
+    <content><![CDATA[<p>Word文档中的信息代码，类似Excel中的函数功能，善用域可以省去许多重复性操作。</p>
+<a id="more"></a>
 
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>简单来说就是Word文档中的信息代码，类似于Excel中的函数功能，善用域可以省去许多重复性操作。</p>
-<p><strong>特征字符</strong>：<code>&#123;&#125;</code></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>特征字符</strong>：<code>&#123;&#125;</code></p>
 <p><strong>关系式</strong>：<code>&#123; Name [参数] [\Switches] &#125;</code></p>
 <p>​        <code>\Switches</code>：域开关</p>
 <p><strong>打开方式</strong>：</p>
@@ -681,9 +681,7 @@
   <entry>
     <title>WorkFlowy使用体验</title>
     <url>/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<blockquote>
-<p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy尝鲜，进行一段时间的使用测评。</p>
-</blockquote>
+    <content><![CDATA[<p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy进行一段时间的使用测评。</p>
 <a id="more"></a>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h2 id="竞品"><a href="#竞品" class="headerlink" title="竞品"></a>竞品</h2><h2 id="SWOT"><a href="#SWOT" class="headerlink" title="SWOT"></a>SWOT</h2>]]></content>
@@ -699,9 +697,8 @@
   <entry>
     <title>Product Hunt</title>
     <url>/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<blockquote>
-<p>想起来就更新</p>
-</blockquote>
+    <content><![CDATA[<p align="center">想起来就更新</p>
+
 <a id="more"></a>
 
 <h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制软件"><a href="#压制软件" class="headerlink" title="压制软件"></a>压制软件</h3><ol>
@@ -796,9 +793,8 @@
   <entry>
     <title>NexT主题配置及优化</title>
     <url>/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<blockquote>
-<p>熬夜伤身</p>
-</blockquote>
+    <content><![CDATA[<p align="center">熬夜伤身</p>
+
 <a id="more"></a>
 
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>进入Hexo目录，使用<code>git bash</code>安装</p>
@@ -1120,9 +1116,9 @@
   <entry>
     <title>《利兹与青鸟》原作摘录</title>
     <url>/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</url>
-    <content><![CDATA[<p align="right">——摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
----
+    <content><![CDATA[<p align="center">摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
 
+<hr>
 <a id="more"></a>
 
 <h1 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h1><p>看了下自由曲《利兹和青鸟》的第三乐章，里面有长笛和双簧管的合同solo。双簧管感伤澄澈的音色加上便随其后长笛的低语，交错的旋律反映出利兹和青鸟各自的思虑。<strong>从第一次吹这首曲子起，希美就确信长笛这段solo非自己莫属，在这间学校里能配得上霙双簧管的，只有自己。</strong>    </p>

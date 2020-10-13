@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-13T06:17:14.000Z</updated>
+  <updated>2020-10-13T14:10:41.037Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/"/>
     <id>http://example.com/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</id>
     <published>2020-10-13T11:07:27.000Z</published>
-    <updated>2020-10-13T06:17:14.000Z</updated>
+    <updated>2020-10-13T14:10:41.037Z</updated>
     
     
     <summary type="html">&lt;p&gt;为了解决Hexo源文件的备份与版本控制问题，将源文件托管到Github上方便多终端工作更新博客。&lt;/p&gt;</summary>
@@ -46,18 +46,10 @@
     <link href="http://example.com/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/"/>
     <id>http://example.com/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/</id>
     <published>2020-10-12T10:30:21.000Z</published>
-    <updated>2020-10-13T06:17:18.000Z</updated>
+    <updated>2020-10-13T14:07:51.507Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;Word文档中的信息代码，类似Excel中的函数功能，善用域可以省去许多重复性操作。&lt;/p&gt;</summary>
     
     
     
@@ -77,12 +69,10 @@
     <link href="http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
     <published>2020-10-09T10:23:00.000Z</published>
-    <updated>2020-10-12T01:01:29.000Z</updated>
+    <updated>2020-10-13T14:11:14.686Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy尝鲜，进行一段时间的使用测评。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p&gt;对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy进行一段时间的使用测评。&lt;/p&gt;</summary>
     
     
     
@@ -102,12 +92,10 @@
     <link href="http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/"/>
     <id>http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</id>
     <published>2020-09-17T22:43:25.000Z</published>
-    <updated>2020-10-10T07:06:29.000Z</updated>
+    <updated>2020-10-13T14:11:24.774Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;熬夜伤身&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;熬夜伤身&lt;/p&gt;</summary>
     
     
     
@@ -175,12 +163,10 @@
     <link href="http://example.com/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>http://example.com/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
     <published>2020-09-16T13:50:17.000Z</published>
-    <updated>2020-10-12T01:01:46.000Z</updated>
+    <updated>2020-10-13T14:10:34.885Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Typora是一款支持&lt;strong&gt;Markdown&lt;/strong&gt;语法的文本编辑器，同时可支持简单的&lt;strong&gt;LaTeX&lt;/strong&gt;语法，兼顾文本写作与学术写作。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p&gt;Typora是一款支持&lt;strong&gt;Markdown&lt;/strong&gt;语法的文本编辑器，同时可支持简单的&lt;strong&gt;LaTeX&lt;/strong&gt;语法，兼顾文本写作与学术写作。&lt;/p&gt;</summary>
     
     
     
@@ -202,20 +188,10 @@
     <link href="http://example.com/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</id>
     <published>2020-09-16T09:07:21.000Z</published>
-    <updated>2020-10-12T03:15:02.000Z</updated>
+    <updated>2020-10-13T14:10:54.203Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;常用快捷键&quot;&gt;&lt;a href=&quot;#常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;常用快捷键&quot;&gt;&lt;/a&gt;常用快捷键&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;命令&lt;/th&gt;
-&lt;th</summary>
-        
-      
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;应用过程中的笔记整理&lt;/p&gt;</summary>
     
     
     
@@ -235,12 +211,10 @@
     <link href="http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     <id>http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
     <published>2020-01-20T17:40:07.000Z</published>
-    <updated>2020-10-10T10:54:06.000Z</updated>
+    <updated>2020-10-13T14:10:26.752Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;想起来就更新&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;想起来就更新&lt;/p&gt;</summary>
     
     
     
@@ -275,11 +249,12 @@
     <link href="http://example.com/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/"/>
     <id>http://example.com/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</id>
     <published>2020-01-09T05:53:56.000Z</published>
-    <updated>2020-10-13T07:29:10.000Z</updated>
+    <updated>2020-10-13T14:09:50.886Z</updated>
     
     
-    <summary type="html">&lt;p align=&quot;right&quot;&gt;——摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》&lt;/p&gt;
----</summary>
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》&lt;/p&gt;
+
+&lt;hr&gt;</summary>
     
     
     
