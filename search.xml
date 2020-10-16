@@ -1,82 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CAD进阶笔记</title>
-    <url>/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p align="center">应用过程中的笔记整理</p>
-
-<a id="more"></a>
-
-<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
-<thead>
-<tr>
-<th align="center">命令</th>
-<th align="center">快捷键</th>
-<th align="center">命令说明</th>
-<th align="center">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>LTSCALE</code></td>
-<td align="center"><code>LTS</code></td>
-<td align="center">线性比例因子</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><code>HATCH</code></td>
-<td align="center"><code>H</code></td>
-<td align="center">填充</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><code>ROTATE</code></td>
-<td align="center"><code>RO</code></td>
-<td align="center">旋转</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><code>SCALE</code></td>
-<td align="center"><code>SC</code></td>
-<td align="center">比例缩放</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><code>EXPLODE</code></td>
-<td align="center"><code>X</code></td>
-<td align="center">分解</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><code>PSPACE</code></td>
-<td align="center"><code>PS</code></td>
-<td align="center">图纸空间</td>
-<td align="center">布局中使用</td>
-</tr>
-<tr>
-<td align="center"><code>MSPACE</code></td>
-<td align="center"><code>MS</code></td>
-<td align="center">模型空间</td>
-<td align="center">布局中使用</td>
-</tr>
-</tbody></table>
-<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="隐藏外部参考边框"><a href="#隐藏外部参考边框" class="headerlink" title="隐藏外部参考边框"></a>隐藏外部参考边框</h3><p>输入命令行：<code>XCLIPFRAME</code><br>新值为0，不显示边框；新值不为0，显示边框。</p>
-<h3 id="重命名块"><a href="#重命名块" class="headerlink" title="重命名块"></a>重命名块</h3><p>输入命令行 <code>RENAME</code></p>
-<h3 id="清理项目"><a href="#清理项目" class="headerlink" title="清理项目"></a>清理项目</h3><p>输入命令行：<code>PURGE</code> or <code>PU</code><br><em>注:参照使用中的块无法被清除</em></p>
-<h3 id="布局中显示线性比例"><a href="#布局中显示线性比例" class="headerlink" title="布局中显示线性比例"></a>布局中显示线性比例</h3><p><strong>方法一</strong><br><code>线性特性</code> — <code>其他</code> — <code>隐藏细节</code> — [ x ]<code>缩放时使用图纸空间单位</code><br><em>注：需要输入新的比例因子值，刷新后才能显示</em></p>
-<p><strong>方法一</strong><br>布局中输入命令行：<code>PSLTSCALE</code> 新值取0</p>
-]]></content>
-      <categories>
-        <category>Tech</category>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>CAD</tag>
-        <tag>办公</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cmd Markdown语法参考</title>
-    <url>/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</url>
+    <url>/2020/01/09/Tech_Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</url>
     <content><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <a id="more"></a>
 
@@ -178,7 +104,7 @@
   </entry>
   <entry>
     <title>Hexo基础建站</title>
-    <url>/2020/09/18/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
+    <url>/2020/09/18/Tech_Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<p>之前为了建立一个自己的个人博客，浏览过各种网站搭建方法，最后选择Hexo+Github Pages的方式建站。</p>
 <p>时隔半年多NexT主题更新至8.0.0，为了系统地升级blog决定把Hexo和NexT主题重装一次，重新记录全过程作为技术笔记保存，待未来遇到问题时能有据可循地查漏、解决疑难问题。</p>
 <a id="more"></a>
@@ -339,7 +265,7 @@
   </entry>
   <entry>
     <title>Hexo备份_Github方案</title>
-    <url>/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</url>
+    <url>/2020/10/13/Tech_Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>为了解决Hexo源文件的备份与版本控制问题，将源文件托管到Github上方便多终端工作更新博客。</p>
 <a id="more"></a>
 
@@ -405,8 +331,377 @@
       </tags>
   </entry>
   <entry>
-    <title>Onedrive软连接搭建实例_mklink命令的使用</title>
-    <url>/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B_mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <title>CAD进阶笔记</title>
+    <url>/2020/09/16/Tech_Software_CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p align="center">应用过程中的笔记整理</p>
+
+<a id="more"></a>
+
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">快捷键</th>
+<th align="center">命令说明</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>LTSCALE</code></td>
+<td align="center"><code>LTS</code></td>
+<td align="center">线性比例因子</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>HATCH</code></td>
+<td align="center"><code>H</code></td>
+<td align="center">填充</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>ROTATE</code></td>
+<td align="center"><code>RO</code></td>
+<td align="center">旋转</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>SCALE</code></td>
+<td align="center"><code>SC</code></td>
+<td align="center">比例缩放</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>EXPLODE</code></td>
+<td align="center"><code>X</code></td>
+<td align="center">分解</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><code>PSPACE</code></td>
+<td align="center"><code>PS</code></td>
+<td align="center">图纸空间</td>
+<td align="center">布局中使用</td>
+</tr>
+<tr>
+<td align="center"><code>MSPACE</code></td>
+<td align="center"><code>MS</code></td>
+<td align="center">模型空间</td>
+<td align="center">布局中使用</td>
+</tr>
+</tbody></table>
+<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="隐藏外部参考边框"><a href="#隐藏外部参考边框" class="headerlink" title="隐藏外部参考边框"></a>隐藏外部参考边框</h3><p>输入命令行：<code>XCLIPFRAME</code><br>新值为0，不显示边框；新值不为0，显示边框。</p>
+<h3 id="重命名块"><a href="#重命名块" class="headerlink" title="重命名块"></a>重命名块</h3><p>输入命令行 <code>RENAME</code></p>
+<h3 id="清理项目"><a href="#清理项目" class="headerlink" title="清理项目"></a>清理项目</h3><p>输入命令行：<code>PURGE</code> or <code>PU</code><br><em>注:参照使用中的块无法被清除</em></p>
+<h3 id="布局中显示线性比例"><a href="#布局中显示线性比例" class="headerlink" title="布局中显示线性比例"></a>布局中显示线性比例</h3><p><strong>方法一</strong><br><code>线性特性</code> — <code>其他</code> — <code>隐藏细节</code> — [ x ]<code>缩放时使用图纸空间单位</code><br><em>注：需要输入新的比例因子值，刷新后才能显示</em></p>
+<p><strong>方法一</strong><br>布局中输入命令行：<code>PSLTSCALE</code> 新值取0</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>CAD</tag>
+        <tag>办公</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Word域应用</title>
+    <url>/2020/10/12/Tech_Software_Word%E5%9F%9F%E5%BA%94%E7%94%A8/</url>
+    <content><![CDATA[<p>Word文档中的信息代码，类似Excel中的函数功能，善用域可以省去许多重复性操作。</p>
+<a id="more"></a>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>特征字符</strong>：<code>&#123;&#125;</code></p>
+<p><strong>关系式</strong>：<code>&#123; Name [参数] [\Switches] &#125;</code></p>
+<p>​        <code>\Switches</code>：域开关</p>
+<p><strong>打开方式</strong>：</p>
+<ol>
+<li><code>插入</code> — <code>文档部件</code> — <code>域</code></li>
+<li><code>Ctrl + F9</code></li>
+</ol>
+<p><em>注：</em></p>
+<ul>
+<li><em>大括号不可手动输入，必须使用<code>Ctrl + F9</code>添加</em></li>
+<li><em>域大括号内侧各保留一个空格</em></li>
+<li><em>域名与其属性或开关之间保留一个空格</em></li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><table>
+<thead>
+<tr>
+<th align="center">快捷键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>Ctrl + F9</code></td>
+<td align="center">插入域</td>
+</tr>
+<tr>
+<td align="center"><code>F9</code></td>
+<td align="center">更新选定的域</td>
+</tr>
+<tr>
+<td align="center"><code>Shift + F9</code></td>
+<td align="center">在所选的域与结果之间切换</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + F9</code></td>
+<td align="center">在所有的域与结果之间切换</td>
+</tr>
+<tr>
+<td align="center"><code>F11</code></td>
+<td align="center">定位下一个域</td>
+</tr>
+<tr>
+<td align="center"><code>Shift + F11</code></td>
+<td align="center">定位上一个域</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + D</code></td>
+<td align="center">插入日期域</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + P</code></td>
+<td align="center">插入页字段</td>
+</tr>
+<tr>
+<td align="center"><code>Alt + Shift + T</code></td>
+<td align="center">插入时间域</td>
+</tr>
+</tbody></table>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a href="https://blog.csdn.net/songkexin/article/details/7304651">Word域的应用和详解</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>办公</tag>
+        <tag>Word</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Product Hunt</title>
+    <url>/2020/01/21/Tech_Software_Product%20Hunt/</url>
+    <content><![CDATA[<p align="center">想起来就更新</p>
+<a id="more"></a>
+
+<h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制软件"><a href="#压制软件" class="headerlink" title="压制软件"></a>压制软件</h3><ol>
+<li><strong><a href="http://www.mediacoderhq.com/dlfull_zh.htm">MediaCode x64</a></strong><br>老牌专业压制工具，<del>平常其实用不到</del></li>
+<li><strong><a href="https://maruko.appinn.me/">小丸工具箱</a></strong><br>B站特供，方便直接选择类型压制，集成各种常用功能的综合性辅助软件</li>
+<li><strong><a href="https://ffmpeg.org/download.html">FFmpeg</a></strong><br>万物起源，实用简版可选择<strong>FFmpeg_Joiner</strong></li>
+</ol>
+<br/>
+
+<h3 id="动图编辑软件"><a href="#动图编辑软件" class="headerlink" title="动图编辑软件"></a>动图编辑软件</h3><ol>
+<li><strong><a href="https://gifcam.en.softonic.com/">Gifcam</a></strong><br>目前使用的Gif录制工具，其实也可以考虑通过Pr导出<del>就是麻烦了一点</del></li>
+</ol>
+<br/>
+
+<h3 id="播放软件"><a href="#播放软件" class="headerlink" title="播放软件"></a>播放软件</h3><ol>
+<li><p><strong><a href="https://potplayer.org/">Potplayer</a></strong><br>最方便实用</p>
+</li>
+<li><p><strong>FFmpeg - ffplay</strong><br>测试直播源效果极佳</p>
+</li>
+<li><p><strong><a href="https://www.videolan.org/">VLC</a></strong><br>听说是直播源播放神器，<del>没一次使用成功</del></p>
+</li>
+<li><p><strong><a href="https://sourceforge.net/projects/mpcbe/">MPC-BE</a></strong></p>
+<p>LoliHouse字幕组推荐使用Win播放器，还没试过</p>
+</li>
+</ol>
+<br/>
+
+<h2 id="下载类"><a href="#下载类" class="headerlink" title="下载类"></a>下载类</h2><h3 id="非BT"><a href="#非BT" class="headerlink" title="非BT"></a>非BT</h3><ol>
+<li><p><strong><a href="http://www.internetdownloadmanager.com/">IDM</a></strong><br>捕捉浏览器下载行为，抓取直播源最便捷的方法，速度取决于网速和<del>墙</del></p>
+<p>可以在<a href="https://www.runningcheese.com/">奔跑中的奶酪</a>的博客里搜索最新破解版</p>
+</li>
+</ol>
+<h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><ol>
+<li><p><strong><a href="https://www.xunlei.com/">迅雷</a></strong><br>国内最好用，但对版权资源比较敏感</p>
+</li>
+<li><p><strong><a href="https://pan.baidu.com/">百度云</a></strong><br>垃圾限速软件</p>
+</li>
+<li><p><strong><a href="https://www.freedownloadmanager.org/zh/">FDM</a></strong><br>动漫类使用效果比较好</p>
+<p><strong><em>2020/10/10 更新</em></strong></p>
+<p>怀疑设置有问题，元数据检索太慢，弃用</p>
+</li>
+<li><p><strong><a href="http://aria2.github.io/">Aria2</a></strong><br>设定比较繁琐，适合爱折腾的人</p>
+</li>
+<li><p><strong><a href="https://yixun.writeas.com/yi-xun">亿寻</a></strong><br>比较便捷，但更新换代频率过高，偶尔失效，弃用</p>
+</li>
+<li><p><strong><a href="http://www.baidu.com/link?url=vAmopF0EvviW88d1baYFr0TKPnx25u8einNkYpBeCqv7QkbA5nehBOwNS86sDTJA">qBittorrent</a></strong></p>
+<p>VCB推荐下载工具，确实好用</p>
+</li>
+</ol>
+<br/>
+
+<h2 id="效率类"><a href="#效率类" class="headerlink" title="效率类"></a>效率类</h2><h3 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h3><ol>
+<li><strong><a href="https://yinxiang.com/">印象笔记</a>/<a href="https://evernote.com/">Evernote</a></strong><br>文章摘录、信息储存、整理型笔记</li>
+<li><strong><a href="https://getpocket.com/">Pocket</a></strong><br>稍后阅读，相较于Instapaper与其他软件间的联动较多，同时支持Chrome插件</li>
+<li><strong><a href="https://www.inoreader.com/">Inoreader</a></strong><br>RSS工具，配合<a href="https://ifttt.com/home">IFTTT</a>使用可完成定向信息筛选推送</li>
+</ol>
+<h3 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h3><ol>
+<li><p><strong><a href="https://workflowy.com/">Workflowy</a></strong></p>
+</li>
+<li><p><strong><a href="https://dynalist.io/">Dynalist</a></strong></p>
+</li>
+<li><p><strong><a href="https://mubu.com/">幕布</a></strong></p>
+</li>
+<li><p><strong><a href="https://roamresearch.com/">Roam Research</a></strong></p>
+<p>“如果你是穷鬼，那请滚得远一点，Roam不稀罕你。如果你愿意向我们证明你很穷，我们会考虑给你半价。”</p>
+</li>
+</ol>
+<h3 id="时间管理"><a href="#时间管理" class="headerlink" title="时间管理"></a>时间管理</h3><ol>
+<li><p><strong><a href="https://todo.microsoft.com/">To-do</a></strong><br>Microsoft系列，联动Outlook比较实用，适合办公</p>
+</li>
+<li><p><strong><a href="https://www.todoist.com/">Todoist</a></strong></p>
+<p>观望中</p>
+</li>
+<li><p><strong>Google Calendar</strong></p>
+<p>支持<code>提醒</code>、<code>活动</code>、<code>任务</code>、<code>目标</code>事项类别，主要还是有钱，功能几乎全免费，与其他App的联动性也好</p>
+</li>
+</ol>
+<h3 id="云盘"><a href="#云盘" class="headerlink" title="云盘"></a>云盘</h3><ol>
+<li><strong>Onedrive</strong></li>
+<li><strong>iCloud</strong></li>
+</ol>
+<h3 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h3><ol>
+<li><p><strong><a href="https://www.sublimetext.com/">Sublime Text</a></strong><br>程序员适用</p>
+</li>
+<li><p><strong><a href="https://www.typora.io/">Typora</a></strong><br>简洁明了的文本编辑器</p>
+<p><strong>详见</strong>：<a href="https://lluphok.github.io/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">Typora使用心得</a></p>
+</li>
+</ol>
+<h3 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h3><ol>
+<li><p><strong><a href="https://www.notion.so/">Notion</a></strong></p>
+<p>观望中</p>
+</li>
+</ol>
+<br/>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li><p><strong><a href="http://www.foobar2000.org/">Foobar2000</a></strong></p>
+<p>各类插件齐全，上限很高的PC端播放器</p>
+</li>
+<li><p><strong><a href="http://www.bandisoft.com/bandizip/">Bandizip</a></strong><br>解压软件还是越简单越好</p>
+</li>
+</ol>
+<h2 id="信息管理方式"><a href="#信息管理方式" class="headerlink" title="信息管理方式"></a>信息管理方式</h2><p>rss - &gt; pocket/workflowy - &gt; 印象笔记 - &gt; Typora输出</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Typora使用体验</title>
+    <url>/2020/09/16/Tech_Software_Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
+<a id="more"></a>
+
+<ul>
+<li><a href="https://support.typora.io/">官方说明文档</a></li>
+</ul>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="实时预览与源代码模式"><a href="#实时预览与源代码模式" class="headerlink" title="实时预览与源代码模式"></a>实时预览与源代码模式</h3><p>Typora与市场上的多款笔记类软件相比，编辑界面直接隐藏了Markdown语法的标记，真正意义上做到了<strong>「所见即所得」</strong>。</p>
+<p>Bear保留语法标记的方式可能是部分排版强迫症患者的福音，但对于我而言，直观简洁的编辑页面更有利于我进行专注写作。</p>
+<p>需要对语法进行修改时，可以点击相关内容自动显示语法标记；也可以使用<strong>源代码模式</strong>编辑内容格式，检查语法bug。</p>
+<p>进入<strong>源代码模式</strong>的方式：</p>
+<ul>
+<li>快捷键<code>Ctrl + /</code></li>
+<li>左下角<code>&lt;/&gt;</code>按钮</li>
+<li><code>视图 - 源代码模式</code></li>
+</ul>
+<h3 id="emoji表情"><a href="#emoji表情" class="headerlink" title="emoji表情"></a>emoji表情</h3><p>支持<code>:emoji</code>形式插入emoji表情。例如：:horse:、:cry:</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>相比较Markdown语法老老实实输入以下格式插入表格</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<p>Typora提供了更便捷的插入表格功能，只需要在行内<code>鼠标右键 - 插入- 表格</code>，输入行数和列数，即可自动生成一张表格，表格自带的小组件也能更直观简单地对表格进行样式调整。</p>
+<h3 id="YAML-Front-Matter"><a href="#YAML-Front-Matter" class="headerlink" title="YAML Front Matter"></a>YAML Front Matter</h3><p>YAML（YAML ain’t markup language），是一种递归缩写，是一个可读性高并且容易被人类阅读，容易和脚本语言交互，用来表达资料序列的编程语言。</p>
+<p>Front-matter 是文件最上方以<code>---</code>分隔的区域，用于指定个别文件的变量。</p>
+<p>YAML Front Matter 用于定义文档的全局变量给模板引用。</p>
+<p>以本文为例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Typora使用心得</span><br><span class="line">date: 2020-09-16 13:50:17</span><br><span class="line">tags: </span><br><span class="line">- Typora</span><br><span class="line">- 文本编辑器</span><br><span class="line">- Markdown</span><br><span class="line">categories: </span><br><span class="line">- Tech</span><br><span class="line">- Software</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>适用于把 Markdown 文档分类归档上传到用 Hexo 框架搭建的博客中。</p>
+<h2 id="功能详解"><a href="#功能详解" class="headerlink" title="功能详解"></a>功能详解</h2><h3 id="回车与换行"><a href="#回车与换行" class="headerlink" title="回车与换行"></a>回车与换行</h3><p><strong>Windows与Unix换行符</strong></p>
+<p>行结束符分为<strong>CR（Carriage Return）</strong>与<strong>LF（Line Feed</strong>）</p>
+<p>CR表示回车<code>\r</code>，即光标移动到当前行行首。</p>
+<p>LF表示换行<code>\n</code>，即光标垂直下移到下一行，并不改变光标的水平位置。</p>
+<p>Windows换行符（CRLF）相当于「回车+换行」， Unix 风格（LF）的换行符是「换行」。</p>
+<p>Typora中可以在<code>文件 - 偏好设置 - 编辑器 - 默认换行符</code>中进行切换。</p>
+<p><strong>Markdown原生语法环境</strong></p>
+<p>首先，Markdown语法本身存在标准不统一的问题，为了解决这个问题，目前大多数软件在引入Markdown语法时都选择参考<a href="https://commonmark.org/">CommonMark</a>标准。</p>
+<p>其次，应对块级元素与行级元素有一定的认识，分清换行与换段之间的区别。</p>
+<ul>
+<li><p><strong>块级元素</strong>包括：</p>
+<ul>
+<li>容器块：可包含其他块级元素，块引用（<code>&gt;</code>）、列表（有序<code>1.</code>与无序<code>-</code>）以及列表项。</li>
+<li>叶子块：不能包含其他块级元素，只能包含行级元素。如分割线（<code>---</code>）、标题（<code>#</code>）、代码块（<code>```</code>）、某些HTML块、段落等。</li>
+</ul>
+</li>
+<li><p><strong>行级元素</strong>包括：行内代码块（<code>code</code>）、强调、加粗、链接、图片、某些 HTML 标签、文本等。</p>
+</li>
+<li><p><strong>软换行</strong>：换行不换段。</p>
+</li>
+<li><p><strong>硬换行</strong>：换行又换段。</p>
+</li>
+</ul>
+<p>Markdown的自然语言文本中并不存在“换行”的概念，只存在“换段”的概念。出现这个问题是基于历史原因，当时提出标准是针对命令行编辑器的使用，设计者希望原生文本的展示效果和HTML渲染后的展示效果一致。（<strong>refer：</strong><a href="https://meta.stackexchange.com/questions/40976/what-is-the-reason-for-the-top-secret-two-space-newline-markdown-weirdness">What is the reason for the top secret two space newline markdown weirdness? </a>）</p>
+<p>这就导致在命令行之外的地方使用Markdown语法，呈现出的结果变成了编辑器与HTML渲染视图不一样：回车键<code>Enter</code>相当于单个换行符。单次回车是硬换行，对应 <code>&lt;br&gt;</code>，两次回车是换段，对应 <code>&lt;p&gt;</code>。</p>
+<p>同时部分编辑器支持段末双空格换行，但其他编辑器可能会删除<strong>trialing space</strong>。</p>
+<p><em>（注：Github Markdown语法支持单回车对应换行，以及双空格换行。）</em></p>
+<p><strong>Typora环境</strong></p>
+<ul>
+<li><a href="http://support.typora.io/Line-Break/">官方说明</a></li>
+</ul>
+<p>Typora支持在<code>文件 - 偏好设置 - Markdown - 空格与换行</code>中个性化设置换行的偏好。</p>
+<p>默认设置下：</p>
+<ul>
+<li><strong>空格</strong>：连续输入多个空格，Typora编辑器视图将保留这些空格，但打印或导出时多个空格会被省略成一个。可以通过源代码模式下，在每个空格前添加一个<code>\</code>转义符，或者使用HTML风格的<code>&amp;nbps</code>保持连续的空格。</li>
+<li><strong>软换行 or 单个换行</strong>：可以通过<code>Shift + Enter</code>完成一次软换行。软换行只在编辑界面可视，导出时换行会被省略成单个空格。</li>
+<li><strong>硬换行</strong>：可以通过 <code>空格 + 空格 + Shift + Enter</code> 完成一次硬换行。硬换行导出时会保留，同时没有换段的段后距。</li>
+<li><strong>换段</strong>：可以通过<code>Enter</code>完成一次换段，等同Typora自动完成两次<code>Shift + Enter</code>。</li>
+</ul>
+<p>在偏好中选择<strong>「保留连续的空格与单个换行」</strong>，实时预览与导出模式即可保持一致。</p>
+<h3 id="审查元素"><a href="#审查元素" class="headerlink" title="审查元素"></a>审查元素</h3><p>Typora是基于Electron开发的一款软件，Electron 把 Chromium 浏览器和 Node.js 打包起来，并且向开发者提供了一些 native API，从而允许人们用 Web 技术开发桌面端应用。实质是借由某种编程语言的转化（解析器）将Markdown文档解析成HTML文档，这也解释了Typora同时支持HTML格式的原因。</p>
+<p>因此，相较于一般的文本编辑器，Typora实质更类似于浏览器，官方也提供了调试功能，按下<code>Shift + F12</code>页面会弹出类似于Chrome的开发者工具栏。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a href="https://sspai.com/post/54912">Typora完全使用详解 - 少数派</a></li>
+<li><a href="https://www.v2ex.com/t/552016">为什么 markdown 都要设计成按 2 次回车，才能换 1 行？ - V2EX</a></li>
+<li><a href="https://88250.b3log.org/articles/2019/08/27/1566893557720.html">CommonMark 规范要点解读 - D的个人博客</a></li>
+<li><a href="https://blog.csdn.net/Seabiscuit_92/article/details/83857488">CR, LF, CR/LF区别与关系 - CSDN</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Typora</tag>
+        <tag>文本编辑器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WorkFlowy使用体验</title>
+    <url>/2020/10/09/Tech_Software_WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy进行一段时间的使用测评。</p>
+<a id="more"></a>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h2 id="竞品"><a href="#竞品" class="headerlink" title="竞品"></a>竞品</h2><h2 id="SWOT"><a href="#SWOT" class="headerlink" title="SWOT"></a>SWOT</h2>]]></content>
+      <categories>
+        <category>Tech</category>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>WorkFlowy</tag>
+        <tag>大纲笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mlink命令搭建Onedrive软连接实例</title>
+    <url>/2020/09/17/Tech_mlink%E5%91%BD%E4%BB%A4%E6%90%AD%E5%BB%BAOnedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E4%BE%8B/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。</p>
 <p>尝试解决方案：利用DOS命令<code>mklink</code>给待同步的文件目录在OneDrive文件夹下创建映射。</p>
 <a id="more"></a>
@@ -513,286 +808,161 @@
       </tags>
   </entry>
   <entry>
-    <title>Typora使用体验</title>
-    <url>/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<p>Typora是一款支持<strong>Markdown</strong>语法的文本编辑器，同时可支持简单的<strong>LaTeX</strong>语法，兼顾文本写作与学术写作。</p>
+    <title>《利兹与青鸟》原作摘录</title>
+    <url>/2020/01/09/ACG_%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</url>
+    <content><![CDATA[<p align="center">摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
+
+<hr>
 <a id="more"></a>
 
-<ul>
-<li><a href="https://support.typora.io/">官方说明文档</a></li>
-</ul>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="实时预览与源代码模式"><a href="#实时预览与源代码模式" class="headerlink" title="实时预览与源代码模式"></a>实时预览与源代码模式</h3><p>Typora与市场上的多款笔记类软件相比，编辑界面直接隐藏了Markdown语法的标记，真正意义上做到了<strong>「所见即所得」</strong>。</p>
-<p>Bear保留语法标记的方式可能是部分排版强迫症患者的福音，但对于我而言，直观简洁的编辑页面更有利于我进行专注写作。</p>
-<p>需要对语法进行修改时，可以点击相关内容自动显示语法标记；也可以使用<strong>源代码模式</strong>编辑内容格式，检查语法bug。</p>
-<p>进入<strong>源代码模式</strong>的方式：</p>
-<ul>
-<li>快捷键<code>Ctrl + /</code></li>
-<li>左下角<code>&lt;/&gt;</code>按钮</li>
-<li><code>视图 - 源代码模式</code></li>
-</ul>
-<h3 id="emoji表情"><a href="#emoji表情" class="headerlink" title="emoji表情"></a>emoji表情</h3><p>支持<code>:emoji</code>形式插入emoji表情。例如：:horse:、:cry:</p>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>相比较Markdown语法老老实实输入以下格式插入表格</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+<h1 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h1><p>看了下自由曲《利兹和青鸟》的第三乐章，里面有长笛和双簧管的合同solo。双簧管感伤澄澈的音色加上便随其后长笛的低语，交错的旋律反映出利兹和青鸟各自的思虑。<strong>从第一次吹这首曲子起，希美就确信长笛这段solo非自己莫属，在这间学校里能配得上霙双簧管的，只有自己。</strong>    </p>
+<br/>
 
-<p>Typora提供了更便捷的插入表格功能，只需要在行内<code>鼠标右键 - 插入- 表格</code>，输入行数和列数，即可自动生成一张表格，表格自带的小组件也能更直观简单地对表格进行样式调整。</p>
-<h3 id="YAML-Front-Matter"><a href="#YAML-Front-Matter" class="headerlink" title="YAML Front Matter"></a>YAML Front Matter</h3><p>YAML（YAML ain’t markup language），是一种递归缩写，是一个可读性高并且容易被人类阅读，容易和脚本语言交互，用来表达资料序列的编程语言。</p>
-<p>Front-matter 是文件最上方以<code>---</code>分隔的区域，用于指定个别文件的变量。</p>
-<p>YAML Front Matter 用于定义文档的全局变量给模板引用。</p>
-<p>以本文为例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Typora使用心得</span><br><span class="line">date: 2020-09-16 13:50:17</span><br><span class="line">tags: </span><br><span class="line">- Typora</span><br><span class="line">- 文本编辑器</span><br><span class="line">- Markdown</span><br><span class="line">categories: </span><br><span class="line">- Tech</span><br><span class="line">- Software</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>「总感觉我们就是利兹和青鸟，所以第一次听solo合奏的时候我就确信solo必须我们两个来。」<br>一年前，希美退部的时候霙留了下来。希美不知道霙是怎样想的，只是从她愿意和自己练习这一点看，她没有讨厌自己。<br><strong>如果希美是青鸟</strong>，肯定会再次回到利兹的身边，就算不能一起生活，偶尔见面何妨不可。至少希美认为悲剧不必以悲剧的形式结束。  </p>
+<br/>
 
-<p>适用于把 Markdown 文档分类归档上传到用 Hexo 框架搭建的博客中。</p>
-<h2 id="功能详解"><a href="#功能详解" class="headerlink" title="功能详解"></a>功能详解</h2><h3 id="回车与换行"><a href="#回车与换行" class="headerlink" title="回车与换行"></a>回车与换行</h3><p><strong>Windows与Unix换行符</strong></p>
-<p>行结束符分为<strong>CR（Carriage Return）</strong>与<strong>LF（Line Feed</strong>）</p>
-<p>CR表示回车<code>\r</code>，即光标移动到当前行行首。</p>
-<p>LF表示换行<code>\n</code>，即光标垂直下移到下一行，并不改变光标的水平位置。</p>
-<p>Windows换行符（CRLF）相当于「回车+换行」， Unix 风格（LF）的换行符是「换行」。</p>
-<p>Typora中可以在<code>文件 - 偏好设置 - 编辑器 - 默认换行符</code>中进行切换。</p>
-<p><strong>Markdown原生语法环境</strong></p>
-<p>首先，Markdown语法本身存在标准不统一的问题，为了解决这个问题，目前大多数软件在引入Markdown语法时都选择参考<a href="https://commonmark.org/">CommonMark</a>标准。</p>
-<p>其次，应对块级元素与行级元素有一定的认识，分清换行与换段之间的区别。</p>
-<ul>
-<li><p><strong>块级元素</strong>包括：</p>
-<ul>
-<li>容器块：可包含其他块级元素，块引用（<code>&gt;</code>）、列表（有序<code>1.</code>与无序<code>-</code>）以及列表项。</li>
-<li>叶子块：不能包含其他块级元素，只能包含行级元素。如分割线（<code>---</code>）、标题（<code>#</code>）、代码块（<code>```</code>）、某些HTML块、段落等。</li>
-</ul>
-</li>
-<li><p><strong>行级元素</strong>包括：行内代码块（<code>code</code>）、强调、加粗、链接、图片、某些 HTML 标签、文本等。</p>
-</li>
-<li><p><strong>软换行</strong>：换行不换段。</p>
-</li>
-<li><p><strong>硬换行</strong>：换行又换段。</p>
-</li>
-</ul>
-<p>Markdown的自然语言文本中并不存在“换行”的概念，只存在“换段”的概念。出现这个问题是基于历史原因，当时提出标准是针对命令行编辑器的使用，设计者希望原生文本的展示效果和HTML渲染后的展示效果一致。（<strong>refer：</strong><a href="https://meta.stackexchange.com/questions/40976/what-is-the-reason-for-the-top-secret-two-space-newline-markdown-weirdness">What is the reason for the top secret two space newline markdown weirdness? </a>）</p>
-<p>这就导致在命令行之外的地方使用Markdown语法，呈现出的结果变成了编辑器与HTML渲染视图不一样：回车键<code>Enter</code>相当于单个换行符。单次回车是硬换行，对应 <code>&lt;br&gt;</code>，两次回车是换段，对应 <code>&lt;p&gt;</code>。</p>
-<p>同时部分编辑器支持段末双空格换行，但其他编辑器可能会删除<strong>trialing space</strong>。</p>
-<p><em>（注：Github Markdown语法支持单回车对应换行，以及双空格换行。）</em></p>
-<p><strong>Typora环境</strong></p>
-<ul>
-<li><a href="http://support.typora.io/Line-Break/">官方说明</a></li>
-</ul>
-<p>Typora支持在<code>文件 - 偏好设置 - Markdown - 空格与换行</code>中个性化设置换行的偏好。</p>
-<p>默认设置下：</p>
-<ul>
-<li><strong>空格</strong>：连续输入多个空格，Typora编辑器视图将保留这些空格，但打印或导出时多个空格会被省略成一个。可以通过源代码模式下，在每个空格前添加一个<code>\</code>转义符，或者使用HTML风格的<code>&amp;nbps</code>保持连续的空格。</li>
-<li><strong>软换行 or 单个换行</strong>：可以通过<code>Shift + Enter</code>完成一次软换行。软换行只在编辑界面可视，导出时换行会被省略成单个空格。</li>
-<li><strong>硬换行</strong>：可以通过 <code>空格 + 空格 + Shift + Enter</code> 完成一次硬换行。硬换行导出时会保留，同时没有换段的段后距。</li>
-<li><strong>换段</strong>：可以通过<code>Enter</code>完成一次换段，等同Typora自动完成两次<code>Shift + Enter</code>。</li>
-</ul>
-<p>在偏好中选择<strong>「保留连续的空格与单个换行」</strong>，实时预览与导出模式即可保持一致。</p>
-<h3 id="审查元素"><a href="#审查元素" class="headerlink" title="审查元素"></a>审查元素</h3><p>Typora是基于Electron开发的一款软件，Electron 把 Chromium 浏览器和 Node.js 打包起来，并且向开发者提供了一些 native API，从而允许人们用 Web 技术开发桌面端应用。实质是借由某种编程语言的转化（解析器）将Markdown文档解析成HTML文档，这也解释了Typora同时支持HTML格式的原因。</p>
-<p>因此，相较于一般的文本编辑器，Typora实质更类似于浏览器，官方也提供了调试功能，按下<code>Shift + F12</code>页面会弹出类似于Chrome的开发者工具栏。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
-<li><a href="https://sspai.com/post/54912">Typora完全使用详解 - 少数派</a></li>
-<li><a href="https://www.v2ex.com/t/552016">为什么 markdown 都要设计成按 2 次回车，才能换 1 行？ - V2EX</a></li>
-<li><a href="https://88250.b3log.org/articles/2019/08/27/1566893557720.html">CommonMark 规范要点解读 - D的个人博客</a></li>
-<li><a href="https://blog.csdn.net/Seabiscuit_92/article/details/83857488">CR, LF, CR/LF区别与关系 - CSDN</a></li>
-</ol>
+<h1 id="第一章-憧憬的弱起"><a href="#第一章-憧憬的弱起" class="headerlink" title="第一章 憧憬的弱起"></a>第一章 憧憬的弱起</h1><p>「今年的自由曲完全是双簧管的主场。」<br>丽奈看着久美子的眼神冷静得可怕。眨了下眼睛，久美子缩了缩脖子。<br>「戏份最多嘛，特别是第三乐章虽然最后加了长笛的solo，但双簧管还是太抢眼了，基本就是它的solo。」<br>「双簧管去年有solo，今年戏份还要加码……<strong>大概在泷老师眼中霙前辈是北宇治的第一战力吧。</strong>」</p>
+<br/>
+
+<p>希美和霙今年担任第三乐章的solo。她们实力有目共睹，加上是三年级，所以没有一人对她们担任solo表示异议。而对于知道事情渊源的优子，看到霙沐浴在后辈的祝福之中表情复杂。优子担心的只有一点，就是希美负责长笛solo。在旁人眼里，<strong>霙和希美对于互相抱有的感情的认识有很大出入</strong>。</p>
+<br/>
+
+<h1 id="第二章-独白和静默"><a href="#第二章-独白和静默" class="headerlink" title="第二章 独白和静默"></a>第二章 独白和静默</h1><p><em>京都大会后，丽奈和久美子聊天。</em></p>
+<p>「现在霙前辈的演奏是不是对得起她原本的实力呢。」</p>
+<br/>
+
+<p>「霙前辈不必陪梨梨花闹的。」<br>「奏别说多余的话啦，万一前辈改变主意怎么办。」<br>梨梨花不满嘟起嘴唇，奏对此无视。霙手放在琴盘上摇摇头。<br>「没事。」<br>说完霙眯起眼看向长笛最边边的位置。从窗外射进来的阳光只照亮了那个位置。她薄薄的嘴唇微微上翘，如太过耀眼般落下眼皮。<br>「<strong>希美说要好好关心后辈。</strong>」<br>听到「希美」这两个字，丽奈眼皮跳了一下，她按捺不住张开的嘴唇，到头来什么都没说。</p>
+<br/>
+
+<p>希美的声音有种贯穿人心的凛然感。抑扬顿挫的演奏很好反映出感情的波动，每吹出的一音都包含惊人的力量感。然而霙的双簧管总感觉少了点什么。她的声音如同模板音源，少了自己的特色。<br>——现在霙前辈的演奏是否对得起她原本的实力呢？<br>开始自由曲练习后丽奈几次含蓄表达对霙演奏的不满，只是久美子从没明确表示赞同。往眼皮用力，久美子把全部精力放在双簧管的solo上。把霙的solo单独抽出来，是高水准的演奏。然而和希美的长笛却不能融合，有一种违和感，<strong>两人的声音是各走各的，没有协调感。两者都没错，只是配合性不行。</strong></p>
+<br/>
+
+<p>「你应该重回蓝天，你这美丽的翅膀能将你带往任何地方。」<br>「对我而言能待在你身边就足够幸福了，为何你要假装不见呢？」<br>对小鸟的话，利兹轻轻摇头。<br>「我是把你关住的鸟笼。小鸟不知何时会从鸟笼中逃脱，既然会在我意想不到时失去你，还不如让我亲手送走这份幸福。这就是我的爱，请让我能在最美好的时刻送走你。」<br>对利兹的话，小鸟流下眼泪。<br>「既然你这么说，我又怎么能拒绝。不过还请你能时不时想起我，想起这短暂幸福的日子，想起我爱着你这个事实。」<br>青鸟有力扇动美丽的翅膀飞向远方。面朝青鸟消失的方向，利兹一直一直看下去。</p>
+<br/>
+
+<p><em>丽奈对《利兹和青鸟》的解释：</em></p>
+<blockquote>
+<p>——面对太过幸福的自己，会时常恐惧幸福的终结，既然一直担心受怕那样的日子来临，还不如自己亲手断绝。</p>
+</blockquote>
+<br/>
+
+<p>希美踮起脚擦高的地方，尽全力伸直的手刚好够好上面窗户的下沿。霙看着希美，犹豫地开口问。<br>「希美。」<br>「嗯？」<br>「可以叫其他人去吗？」<br><strong>希美指尖挂着的抹布掉到地上。</strong>希美捡起来，把变得黑黑的内面对折，用变成一半大小的抹布擦着，希美笑着说。<br>「真没想到霙会叫别人，是谁？」<br>「剑崎同学，之前她说想一起去玩。」</p>
+<br/>
+
+<p>「真没想到这么多人去。」<br>希美苦笑。霙对此睁圆眼睛。<br>「希美喜欢多点人的？」<br>「人多热闹嘛。」<br>「果然。」<br>握紧抹布，霙露出浅浅的笑容。<strong>她的眼中只倒影出希美的身影。</strong><br>「祭典时希美叫我叫上其他人。」<br>「所以才叫了剑崎吗？」<br>「嗯。」<br>「这样啊。」<br>希美开朗地回应。从她耳边垂下来的黑发看去，<strong>她的脸不自然地拉着</strong>。维持着开朗的笑容，希美抓住抹布的手加大力道，原本折得整整齐齐的抹布此时变成一团，<strong>刚才折到内面的脏脏一面此时重新露出来</strong>。</p>
+<br/>
+
+<p><em>秀一与久美子聊补习班的事情。</em></p>
+<p>「就偶尔说说话啦，对了伞木前辈也在。」<br>「希美前辈？」<br>「她说成绩什么的，好像要去统考，貌似和中川前辈一所大学。」<br>出汗制服黏在了背上，室内空调有点强感觉有点冷，搓搓手臂，鸡皮一粒粒的。<br>「希美前辈不是和霙前辈考音大的吗？」<br>「改学校了吧，挺正常的。」<br>「可这不就。。。」<br>——背叛霙前辈了吗？</p>
+<br/>
+
+<p>「久美子和霙关系不错吧。」<br>「是，是吗？如果霙前辈也这样想就好了。」<br>久美子不好意思挠挠脸，希美摇摇头。<br>「不用谦虚，看你和霙说话的样子就知道了。她以前可没这么外向，所以啊。。。」<br>她把焦点放在远方。前方，在优子的引导下霙慢慢走进泳池，白色连衣裙像水母一样张开。旁边看着的梨梨花把刚才优子吹好的泳圈递过去。看来排球打完了。<br>「<strong>看到霙和别人玩得这么欢就感觉很奇怪。</strong>」<br>希美舀起刨冰，上面的糖浆透明眼看不见，冰粒在阳光下一点点消融。久美子不知作何回答。<br>「我和霙一直是朋友，<strong>但以前和她不太熟所以不怎么懂和她相处</strong>。她的话很少，想了什么都不说出来，一直弄不太懂她。啊，我不是diss她别误会了，她是我一个好朋友。」<br>希美赶紧摇手补充。久美子关注的只有一点，就是<strong>霙不过是希美众多朋友中的一个</strong>，她平淡道出的这个事实，让久美子心一阵酸。<br>「想和她搞好关系但总是不能称心如意。在和久美子优子你们相处时她挺放松的，<strong>可一轮到我，就感觉很见外。</strong>」<br>「是，是这样吗？」<br>「嗯绝对这样没错。<strong>solo时合不上调吧，最近就想是不是霙她不喜欢我——</strong>」</p>
+<br/>
+
+<p>「升上高三才第一次意识到毕业离自己这么近，才认真思考将来。不是没有按自己兴趣靠这行吃饭的想法，但兴趣每个人都有，同时很清楚光靠兴趣养不活自己。」<br>漂白液的味道窜过鼻尖，风吹过草地，孩子在面前欢快跑过，世界还是和平得恐怖。希美把下巴抵在膝盖上，自嘲地说。<br>「我喜欢长笛，可实力够吗？又或者我真的想靠这行吃饭吗？乐器什么的当上白领也能吹，而且社会上还有别的乐团，到时一边工作一边享受吹奏的快乐就行了。靠这行吃饭和兴趣，我觉得完全是两回事。」<br>希美一连串的话是对自己说的，这些话到底在她心里重复多少次了呢？久美子被她连珠炮的话压得插不上嘴，希美此时才反应过来，挠挠脸。<br>「最近就一直想东想西的。四月要交的进路调查我交了白纸，虽然大家都是。」<br>「。。。霙前辈知道前辈纠结志愿的事吗」<br>「别突然问这些，这可不是特意能说的事。」</p>
+<br/>
+
+<p>「总之万事学为先，不论怎么选都要笔试。对了对了你有听霙说她要考的那间音大是泷老师以前的学校吗？」<br>久美子还是第一次听，希美看久美子的脸就知道怎么回事了<br>「霙一直对这些没什么兴趣。那是私立学校，报录比挺高的。很多人是从一年级开始准备的，霙这种情况算很晚的了。」<br>「那希美前辈为什么选这间呢，音大不是有很多吗？」<br>以前久美子也问过霙为何要报这间，她的回答很简单，就是希美报了这间。如按霙的话，那最初选这间的人是希美，霙只是盲目跟从而已。既然如此希美自然有选这间学校的理由。<br>「这个嘛。」<br>希美一下子绷紧脸，温度从眼中消退。见此久美子握紧手中的杯子吞了口唾液。脚趾弯曲，垫子和地面发出ささ恼人的声音。犹豫了一下后希美还是开口了，她放下杯子挺直背，脚不讲究直直往前伸，笑着说。<br>「就随性子选的。」<br>久美子一听就知道她在说谎。刚才对自己未来想那么多的人绝不会因一时兴起而妄下决定。</p>
+<br/>
+
+<h1 id="第三章-她的共鸣"><a href="#第三章-她的共鸣" class="headerlink" title="第三章 她的共鸣"></a>第三章 她的共鸣</h1><p>「我也很久没全体指导过木管了，虽然个人指导还有。」<br>新山视线在霙身上停留了一会，霙轻轻点头。大概之前指导过双簧管的solo。</p>
+<br/>
+
+<p>「那下次大学开放日一起去？叫上其他人也可以。」<br>霙若无其事的邀请让久美子睁大眼睛，毕竟<strong>在1年前霙可不会邀请别人做什么东西</strong>。不知霙怎么理解短暂的沉默，她从画面移开眼睛，微微侧头。<br>「不想去？」<br>「才没这没事。对了，前辈的志愿是泷老师的大学吧。」<br>「我也去。」<br>听到久美子的话丽奈速答。对她毫无掩饰的态度久美子笑出来。霙放下游戏机稍稍猫起身子。<br>「还真不知道。」<br>「我是从希美前辈那里听来的，霙前辈没问新山老师吗？」<br>「没有，<strong>跟着希美就行。</strong>」<br>霙关了游戏机， 周围一下子暗下来。用手摸了摸脖子上的汗，久美子想起之前和希美的谈话。自己该不该向霙透露希美可能不去音大呢。霙又对希美进路了解多少呢。从希美参观其他学校，就可知她还有其他选择。<br>丽奈没注意久美子沉默，问道。<br>「希美前辈乐器课程怎么安排的？」<br>「不知道，没问过。」<br>「对了，新山老师怎么会介绍老师给前辈呢？是前辈主动找老师的吗？」<br>「不是。」<br>霙摇摇头。<br>「<strong>四月进路调查我交了白纸，然后新山老师特意来学校找我说我有能力，然后给我介绍双簧管的老师。</strong>」</p>
+<br/>
+
+<p>「新山老师说我不去音大就太可惜了。优子听我去音大也很高兴。」<br>听到优子名字久美子心跳了一下。<strong>换做以前霙对优子没什么反应，看来霙的心中渐渐有了除希美外其他人的位置。</strong>久美子咬着唇思考如何回话。丽奈伸出身子看着霙，她长长的黑发有甘甜橘子香气，说怕伤发质洗发水是特意从家里带来的。</p>
+<br/>
+
+<p>「可从刚才的话也不见得希美前辈一定考那间音大，还有可能考不上。如果希美前辈去不了怎么办？」<br>霙睁大眼睛，半开的口惊恐地说。<br>「……没想过。」<br>「真的假的？」<br>「希美考不上怎么办？」<br>「就没想过是自己考不上吗？」<br>听到久美子无意识吐槽，霙眨了眨眼。<br>「……对哦。」<br>「没想到霙前辈这么有自信。」<br>丽奈愉悦翘起嘴角。久美子倒是无法将“自信”和“霙”联系到一起就对了。霙在丽奈心目中和久美子心目中的不同。</p>
+<br/>
+
+<p>不管慌忙的久美子，丽奈直切核心。<br>「自由曲solo一直合不上，原因是不是前辈们相性不好？」<br>霙不禁发出疑惑的声音，<strong>眼神充满动摇</strong>。</p>
+<br/>
+
+<p>「我觉得优子没错，那不是妥协，是冷静考虑后才作的判断。勉强反而适得其反。」<br>一直默默听着的霙此时明确表态。在支持优子时霙的话便多起来。</p>
+<br/>
+
+<p>「我当然知道按实力排序硬把小日向放在第一肯定不行，也懂优子前辈是为大局才这样做的。可就是觉得太忧忧寡断……霙前辈也是。」<br>「我？」<br>「前辈明明能吹得更好，可就是故意压着。」<br>「没这回事。」<br>「真的吗？我认为<strong>霙前辈没相信希美前辈，所以演奏才那个样子。是觉得希美前辈不会配合自己才不肯把真正的自己表现出来。</strong>」<br>「那——」<br>「我想听霙前辈真正的声音，我想大家发挥自己最真实的实力去参加比赛。」<br>匆匆说完一大段丽奈总算停了下来，意识到自己说太过，抓起被汗润湿的头发丽奈小小道歉。在窗对面听到夜晚的虫鸣，今晚很热一直出汗，衣服都粘到背上了。久美子扇着风偷偷看霙。前辈还是面无表情，冻结的嘴唇吐出一语。<br>「**……希美不知什么时候就不在了，怎么可能信得了。<strong>」<br>她直直看着这边的瞳孔让人联想到夜晚的大海，在无人见过的深处有一抹黑暗。脸白得毫无血色，薄薄的嘴唇发白。挤出的话语让久美子吞气。两年前的风波至今没有消散。眼中薄薄的水膜在贩卖机的光线下一闪一闪。<br>「我当不了利兹，放手不了青鸟，我不想她从我眼前消失。不是不相信，</strong>是我当不了利兹**，无法对希美松手。」</p>
+<br/>
+
+<p>「就是一年级生中流行的那个抱抱然后互相说你喜欢对方的点，出发点貌似是好演奏的基础是好的人际关系。」<br>「我知道，南中的。」<br>难得霙把久美子的话抢过去。吹过走廊的风湿热，感觉粘粘的，相当不快。<br>「我不喜欢那个。」<br>霙表示明确的拒绝。久美子留下冷汗。<br>「这，这样啊。」<br>「嗯……我和希美都没干过。」<br>把耳机戴好霙站起来，塞住耳朵的耳机表达了对久美子明确的拒绝。</p>
+<br/>
+
+<p>「霙前辈把希美前辈看得很重，但在希美前辈眼中霙前辈不过是一个朋友。就<strong>互相认识不对等</strong>。」<br>目前明白的一点是霙最重视的是希美，可霙对希美只是一个普通朋友。在希美口中，霙是发小，是朋友。久美子听后不禁痛心，因为自己清楚希美对霙而言是多么重要，而希美却无法给予霙相应的期待。霙双簧管确实吹得很好，但缺乏自身的特色。洗练不多余的音色是她努力练习的成果。而丽奈口中霙最好的演奏，对她自身而言是否为最高实力的表现呢？目前而言霙的实力远超他人，还要求她更多是否有点坏心眼？<br>丽奈知道闭口不谈的久美子在想些什么。<br>「我觉得正好相反。」<br>「相反？」<br>丽奈换了下脚。把头发别到耳后丽奈把脸贴近久美子耳朵。<br>「希美前辈太过在意霙前辈了。」<br>「我觉得不是咯。希美前辈倒是自由得不行，她自己说不知是不是真的要考音大。」<br>「大概在意霙前辈才那样的。」<br>「在意不才更应该马上决定去同一间学校吗？」<br>两人旁边贩卖机发出低鸣，不断刺激耳膜让人厌烦。丽奈认真的眼神直直盯着久美子，仿佛教导弄不清事理的小孩子，丽奈慢慢地清晰地说。<br>「在意可不光是好意的感情。」<br>「就是说——」<br>对屏气的久美子，丽奈说道。<br>「<strong>希美前辈大概从以前起无意识地在嫉妒霙前辈。</strong>」</p>
+<br/>
+
+<p>桥本耸耸肩，把视线移到希美身上。担心看着霙的她注意到桥本的视线赶紧调整好坐姿。<br>「长笛吹得很生动，我就挺喜欢的。但感情太过丰富有点喧宾夺主的味道，要多配合下双簧管的声音。」</p>
+<br/>
+
+<p>——开玩笑的。<br>她的口吻带有玩弄意味，不自然僵住的脸部肌肉正是她假笑失败的证据。<br>「我还没见过有人能简简单单决定自己将来怎么走的。」<br>「希美前辈果然在为进路伤脑筋吗？」<br>「也不是……<strong>就不服气或是执着这样的。</strong>」<br>她再次拿起西瓜大大叹了口气。<br>「90%看透现实决定好了方向，但10%还不服气期待梦想。」<br>「那10%是音大吗？」<br>「如果那是90%我早就去上乐器课了。」</p>
+<br/>
+
+<p>「如果我说我也不清楚为何当初要跟霙说要考音大的事你会吃惊吗？<br>「？？」<br>久美子张大嘴一脸蠢样，希美见此没有笑。中庭有谁发出欢呼，看来是成功打到西瓜了。看着别开视线希美的侧脸久美子压低声音问。<br>「到底怎么回事？」<br>「就那回事。跟霙说了后就后悔得要死，想撤回的时候已经晚了，就一直拖着拖着……」<br>「那个……说真的？」<br>「如果我说是呢？会看不起我？」<br>希美一把抓住自己的刘海，她强装镇定的语气背后却透露出一丝颤抖。希美眼中映出久美子一脸疑惑的样子，往常有灵气的眼睛此刻黯淡无光，仿佛一汪看不到底的泉水。<br>——才不会。<br>如此回答很简单，但这种场面话此刻无论如何是说不出来。喉咙发干，吞吞口水，口腔深处的舌头这时异常烦人。<br>「……会。」<br>听到自己的回答希美什么都没说。阴郁的眼睛轱辘一转，她露出牙齿挤出笑容，头发因汗贴在额头上。<br>「假的是吗？」<br>久美子祈祷希美能说“是”，不愿承认希美做过如此不经大脑的事。如果一切是真的，那一股劲相信希美话的霙就太可伶了。久美子寻求希望般抓住她的双手，夜风吹过，一阵温热。<br>「我要回去了。」<br>希美一把甩开久美子。以前和她说过几次话，但一次也没有像这次一样强硬把话切断。希美瞥了眼惊住的久美子，把纸盘收拾好。刚才还在空中摇晃的她的双脚此刻踏实站在地面上，矫健的双脚将让她走上对她而言最理想的道路。<br>伞木希美原本就是那样的人，为了贯彻自己的道路连有人踩在自己脚下都浑然不觉。久美子想在很想见霙，很想像告诉纯洁的孩子圣诞老人不存在一样将她内心脆弱的崇拜心理一击粉碎。既然担心受怕不时有人踩雷，还不如借自己的手将一切重置；既然害怕事情暴露的一天来临，长痛不如短痛。</p>
+<br/>
+
+<p>「霙前辈有什么想让希美前辈做的吗？」<br>「嗯。」<br>「那究竟是……」<br>「<strong>想一直和她一起。</strong>」</p>
+<br/>
+
+<p>「前辈一直说要和希美前辈上同一间大学，如果这样前辈的志愿校应该也有几间才对。但前辈一直说的就只有那间音大，理由真的是希美前辈而已吗？」<br>霙既没肯定也没否定，她睁大的眼睛中光在摇晃着。咬唇，她的视线看着自己大腿上的手，如同遇到解不开的问题一副走投无路的表情。</p>
+<br/>
+
+<p>「<strong>可我不懂能不能和希美的合上。</strong>」<br>吐露的不安正是霙隐藏至此的真心话。</p>
+<br/>
+
+<p>贯穿第二乐章最后的寂静双簧管solo从中突出。在听到第一个音的时候大家都屏住了呼吸。<br>复杂的指法没有丝毫停顿，如歌声的旋律纤细的同时带有坚定的力度。浓缩的感情一下子压倒室内的空气。如同无形的锤子，久美子觉得头发一阵发晕，意识本能被那声音吸引过去。而木管的伴奏此时则完全黯然失色，脑中只剩下双簧管的声音。<br>胸口一阵苦楚，久美子不禁发出叹息，视野一阵模糊眼睛发热。霙用音乐塑造了属于她自己的世界。<strong>就算长笛也开始了solo，但进入久美子耳朵的，只有双簧管。</strong><br>就算不愿和利兹分开想永远和利兹在一起，青鸟最后还是听从了利兹的话。要问原因，就是青鸟爱着利兹。涌上来的悲伤寂寞就算不说出口也无所谓，只要对方幸福便心满意足了。张开翅膀，代表幸福的青鸟从利兹身边离开飞向了蓝天。<br>充满悲哀的双簧管把周围的声音抹去，就算音量不大，现在能听到的就只有双簧管的声音。长笛的solo不知何时消失了，往旁看去<strong>希美眼中滴落大滴眼泪</strong>。虽然她的嘴仍抵在长笛上，但吹奏停止了。其他乐器也被霙打乱了步伐，曲子完全崩溃了。然而集中精力的霙没有注意到周围的异样，声音魄力渐渐加大。她没有注意到长笛停下，伴奏崩塌。手指舞动，直到休止符拉出长长的一音。</p>
+<br/>
+
+<p>「你能理解我的震惊吗？」<br>「对霙前辈演奏震惊吗？」<br>「嗯。实力上的差距竟然如此露骨就摆在了面前。霙她太犯规了。」<br>假装淡定的声音音调有些高。希美露出白色的牙齿，她一直以为这样的在别人眼中是笑容。直直照射的阳光让皮肤一阵发烫，灼烧的感觉一点点蔓延。<br>「霙为了配合我实力一直都在放水吧。」<br>「我觉得不是。」<br>「可实力差距这么大是事实吧。我也真是傻，一直叫霙solo加油殊不知拖后腿的是自己。」<br>——我脸皮真是厚，好想死。<br>声音细若游丝，她把脸埋入手臂中，蜷缩起来的姿势让她看起来小了不少。<br>「我一开始就知道霙实力有多强了，对她而言练习就像呼吸一样，中学时实力有目共睹，只是我不愿承认一直自欺欺人而已。内心的某处一直觉得自己实力比霙强，因为论喜欢音乐霙怎么比得上我。然而事实是就算我多不愿意都好，霙的实力就是比我强。」<br>遮住脸的希美一口气把肮脏没出息的真心话全部暴露在久美子面前。<br>「昨天跟你说了告诉霙我去音大的理由，那全是真的。五月黄金周的时候霙把宣传册子拿来给我看，说是新山老师给她的，那一刻我就懂了，霙和自己不是同个世界的。」<br>压抑不住的哽咽从她口中泻出，她继续说。<br>「四月进路调查交白纸的不只霙，我也是。可新山老师之后没来找我。一开始以为是偏心，但后来我错了，新山老师单纯看中了霙的才华。如果我去找老师商量肯定能得到悉心的指导，但这些不重要，重要的是我的实力还不值得老师主动来找我，霙比我更有实力。」<br>「就是说……」<br>「<strong>我不想输给霙，不想被人瞧不起为了跟她站在同一高度上所以我才跟霙说我去考音大。</strong>现在想起来也真是天真，光耍嘴皮子有什么用。如久美子所说，我这个人实在不敢恭维。」<br>久美子才终于明白夏纪叫自己来的理由。希美对自己过去做过的蠢事无比自责，她所希望的不是治标不治本的安慰，而是对自身罪行的宣判。所以夏纪才叫久美子来，夏纪无法责备希美。<br>她吸了汗的T恤露出内衣的颜色。久美子一把轻轻拍在她的后背上。把脸埋在手臂里的希美慢慢把头抬起来，泛着泪光的眼睛直直看着久美子。<br>「希美前辈喜欢霙前辈吗？」<br>希美吞了口气，紧闭的嘴唇害怕般颤抖。<br>「不讨厌。」<br>「那喜欢和霙前辈两人的solo吗？」<br>希美盯着自己，流出的泪水用手擦去。<br>「……能说件傻事吗？」<br>「请。」<br>「自由曲定为『利兹和青鸟』的时候我觉得很像我和霙，霙是利兹我是青鸟。我辞掉社团霙留了下来，霙一直等着我回去。」<br>到此久美子一样。只能目送青鸟离开的利兹身影不禁让人想起去年时两人的样子。希美脸扭曲道。<br>「然而我错了，霙才是青鸟。」<br>被利兹所救的青鸟经由利兹的手重返蓝天，没有束缚的笼子，青鸟两翼将无尽高飞。<br>——啪<br>希美大力拍自己的脸，仿佛要和刚才难为情的自己说再见，她一下子站起来。逆光看不清她的表情。<br>「我也不能再这样拖后腿了，我唯一的反抗就是完美为她的solo伴奏。喜欢也好讨厌也罢，目前我能和她对等的手段就只剩这个了。这么难堪的样子是最后一次了，我的任务就是尽好自己职责。」<br>久美子脑中闪过去年霙的样子。<strong>两人隔着无法跨越的鸿沟，互相的执着没有交叉点。和霙对希美的完全不同，希美同样对霙抱有强烈的执着。嫉妒羡慕屈辱罪恶感，</strong>这些完全称不上好的心态在久美子眼中正慢慢往好的方向发展。比起单纯的友人A，这样的对霙来说无疑更好。</p>
+<br/>
+
+<p>「……爱的抱抱。」<br>「？？」<br>突然冒出的词语让久美子摸不着头脑。霙面无表情看着自己说。<br>「中学流行这个的时候我光是在旁边看。」<br>「挺什么的嘛？」<br>「光是等别人邀请我。」<br>霙用力抓住把手，推开重重的门。会场里观众席微暗，灯光只照亮舞台。霙咬着嘴唇说。<br>「<strong>如果那个时候主动点，事情可能就不一样了。</strong>」</p>
+<br/>
+
+<p>「希美一直都自作主张。」<br>语气平淡，但每字每字咬字清晰，霙的脚踩在区分内外的门槛上。希美无意识往后退一步。夕阳沉下的世界，一片猩红。<br>「前两年也是，瞒着我退部。」<br>「为什么突然说起以前的事？」<br>「不是『以前』，对我来说是『现在』。」</p>
+<br/>
+
+<p>「我一直追在希美后面，为了不被希美抛弃一直坚持吹奏。在我心目中希美一直是第一的，我想呆在希美身边！所以双簧管才这么努力！」<br>被霙的气势吓到希美往后退了几步，汗顺着脸滴下，染湿了地面。<br>「别说得这么夸张。」<br>「没夸张，是真的。」<br>「竟然说这样的你太狡猾了。」<br>希美喉咙颤抖，拉紧沙哑的声音融入黄昏的空气。<br>「你比我有实力竟然对我说这样的？说什么为了我才坚持吹奏，就用这样简单的理由把至今的努力总结吗？对你来说双簧管就这么不重要吗？」<br>「不是。」<br>「什么不是。」<br>「不是双簧管不重要，<strong>是希美你对我太重要了。</strong>」<br>「我不懂你为何要这样说，我才不是那么特别的人。」<br>「希美怎么想自己的我不管，对我来说希美就是特别的，所以——」<br>说到这霙突然停下来。虫鸣满静，泪沾湿，何奈摇头把话噤。<br>「……抱歉，不是想说这个的，原本是想谢谢你的。」<br>听到夏纪在旁边咽了口气。久美子把手叠在她颤抖的手腕上。在更里面，优子默默伫立着。越过霙希美注意到优子，露出为难的表情，她用手抓抓脸。<br>「我没做什么要霙谢我的，反而你生我气不考音大才对。」<br>「没生气。」<br>「为什么？」<br>「这是希美选的，希美认为这样好就行。」<br>太阳落到地平线下，猩红被蓝和紫取代。霙黑发随着光线而变色。<strong>几分无奈，希美露出笑容，轻轻颤动的喉咙说出深埋内心的情感。</strong><br>「被霙说这个觉得挺难受的。」<br>「不喜欢？」<br>「也不是，怎么说……算了没事。谢了霙。」<br>「不用谢？」<br>「为什么是疑问句啦。直直说出来就好了。」<br>希美带着几分笑意，她从裙子下露出的双腿像是隐藏什么似的交叉着。霙目光游移，突然想到什么张开双手，希美吓一跳。<br>「怎，怎么了？」<br>「……爱的抱抱。」<br>霙一脸认真声音有些破音。希美马上懂了。<br>「这个啊，好久之前的了。」<br>希美张开手，霙飞扑进希美的怀中，紧紧把手弯在希美后背霙的样子就像抱住布偶的小孩子。<br>「如果希美不在，我肯定无法吹下去，一事无成。谢谢，全都是希美给我的。」<br>「我什么都没做啦，全都是你自己努力得来的。」<br>「就算如此，至今我都是为希美而吹的。」<br>霙闭上的眼睛，泻出的低喃，搭在希美肩上她的额头。<br>「第一次见面时谢谢你温柔对我，跟我说话，和我成为朋友。」<br>「我喜欢霙的努力。后天大会solo的背后就交给我吧。」<br>「最喜欢希美了。」<br>有一瞬间不自然的沉默，霙的手指陷入希美后背，她不安抬起头来。希美低头看着霙，无力地笑道。<br>「嗯……我也最喜欢霙的演奏了。」<br>希美温柔推开霙，霙没说什么，只是默默点头。</p>
+<br/>
+
+<h1 id="第四章-通往未来的延长音"><a href="#第四章-通往未来的延长音" class="headerlink" title="第四章 通往未来的延长音"></a>第四章 通往未来的延长音</h1><p>「决定考音大了吗？」<br>「不仅于此，就算希美不去，我也会继续。音乐是希美给我的。」<br>霙害羞低下头。<br>「我会支持前辈的。」<br>「……嗯。」<br>霙紧紧握住双簧管点头。盖在白色脖颈上的黑发，比夏天时长了一点。</p>
 ]]></content>
       <categories>
-        <category>Tech</category>
-        <category>Software</category>
+        <category>ACG</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
-        <tag>Typora</tag>
-        <tag>文本编辑器</tag>
+        <tag>利兹与青鸟</tag>
+        <tag>轻小说</tag>
       </tags>
   </entry>
   <entry>
-    <title>Word域应用</title>
-    <url>/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/</url>
-    <content><![CDATA[<p>Word文档中的信息代码，类似Excel中的函数功能，善用域可以省去许多重复性操作。</p>
+    <title>HTML文本颜色设置</title>
+    <url>/2020/10/15/Tech_HTML%E6%96%87%E6%9C%AC%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<p align="center">内嵌HTML语言设置文本颜色</p>
 <a id="more"></a>
 
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>特征字符</strong>：<code>&#123;&#125;</code></p>
-<p><strong>关系式</strong>：<code>&#123; Name [参数] [\Switches] &#125;</code></p>
-<p>​        <code>\Switches</code>：域开关</p>
-<p><strong>打开方式</strong>：</p>
-<ol>
-<li><code>插入</code> — <code>文档部件</code> — <code>域</code></li>
-<li><code>Ctrl + F9</code></li>
-</ol>
-<p><em>注：</em></p>
-<ul>
-<li><em>大括号不可手动输入，必须使用<code>Ctrl + F9</code>添加</em></li>
-<li><em>域大括号内侧各保留一个空格</em></li>
-<li><em>域名与其属性或开关之间保留一个空格</em></li>
-</ul>
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><table>
-<thead>
-<tr>
-<th align="center">快捷键</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>Ctrl + F9</code></td>
-<td align="center">插入域</td>
-</tr>
-<tr>
-<td align="center"><code>F9</code></td>
-<td align="center">更新选定的域</td>
-</tr>
-<tr>
-<td align="center"><code>Shift + F9</code></td>
-<td align="center">在所选的域与结果之间切换</td>
-</tr>
-<tr>
-<td align="center"><code>Alt + F9</code></td>
-<td align="center">在所有的域与结果之间切换</td>
-</tr>
-<tr>
-<td align="center"><code>F11</code></td>
-<td align="center">定位下一个域</td>
-</tr>
-<tr>
-<td align="center"><code>Shift + F11</code></td>
-<td align="center">定位上一个域</td>
-</tr>
-<tr>
-<td align="center"><code>Alt + Shift + D</code></td>
-<td align="center">插入日期域</td>
-</tr>
-<tr>
-<td align="center"><code>Alt + Shift + P</code></td>
-<td align="center">插入页字段</td>
-</tr>
-<tr>
-<td align="center"><code>Alt + Shift + T</code></td>
-<td align="center">插入时间域</td>
-</tr>
-</tbody></table>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
-<li><a href="https://blog.csdn.net/songkexin/article/details/7304651">Word域的应用和详解</a></li>
-</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;Hotpink&quot;</span>&gt;</span>font标签设置字体颜色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color:Pink&quot;</span>&gt;</span>span标签设置字体颜色<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span> <span class="attr">style</span>=<span class="string">&quot;background:LightCoral&quot;</span>&gt;</span>句子背景颜色设置<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;background-color:LightSalmon&quot;</span>&gt;</span>段落字体背景颜色设置<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">td</span> <span class="attr">bgcolor</span>=<span class="string">&quot;Linen&quot;</span>&gt;</span>表格设置背景颜色<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mark</span>&gt;</span>高亮设置背景颜色<span class="tag">&lt;/<span class="name">mark</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="呈现效果"><a href="#呈现效果" class="headerlink" title="呈现效果"></a>呈现效果</h3><p><font color="Hotpink">font标签设置字体颜色</font></p>
+<p><span style="color:Pink">span标签设置字体颜色</span></p>
+<p><strong style="background:LightCoral">句子背景颜色设置</strong></p>
+<p style="background-color:LightSalmon">段落背景颜色设置</p>
+
+<table><td bgcolor="Linen">表格设置背景颜色</td></table>
+
+<p><mark>高亮设置背景颜色</mark></p>
+<h3 id="颜色列表"><a href="#颜色列表" class="headerlink" title="颜色列表"></a>颜色列表</h3><table><tbody><tr><th>颜色名</th><th>十六进制颜色值</th><th>颜色</th></tr><tr><td><font color="AliceBlue">AliceBlue</font></td><td><font color="#F0F8FF">#F0F8FF</font></td><td bgcolor="#F0F8FF">rgb(240, 248, 255)</td></tr><tr><td><font color="AntiqueWhite">AntiqueWhite</font></td><td><font color="#FAEBD7">#FAEBD7</font></td><td bgcolor="#FAEBD7">rgb(250, 235, 215)</td></tr><tr><td><font color="Aqua">Aqua</font></td><td><font color="#00FFFF">#00FFFF</font></td><td bgcolor="#00FFFF">rgb(0, 255, 255)</td></tr><tr><td><font color="Aquamarine">Aquamarine</font></td><td><font color="#7FFFD4">#7FFFD4</font></td><td bgcolor="#7FFFD4">rgb(127, 255, 212)</td></tr><tr><td><font color="Azure">Azure</font></td><td><font color="#F0FFFF">#F0FFFF</font></td><td bgcolor="#F0FFFF">rgb(240, 255, 255)</td></tr><tr><td><font color="Beige">Beige</font></td><td><font color="#F5F5DC">#F5F5DC</font></td><td bgcolor="#F5F5DC">rgb(245, 245, 220)</td></tr><tr><td><font color="Bisque">Bisque</font></td><td><font color="#FFE4C4">#FFE4C4</font></td><td bgcolor="#FFE4C4">rgb(255, 228, 196)</td></tr><tr><td><font color="Black">Black</font></td><td><font color="#000000">#000000</font></td><td bgcolor="#000000">rgb(0, 0, 0)</td></tr><tr><td><font color="BlanchedAlmond">BlanchedAlmond</font></td><td><font color="#FFEBCD">#FFEBCD</font></td><td bgcolor="#FFEBCD">rgb(255, 235, 205)</td></tr><tr><td><font color="Blue">Blue</font></td><td><font color="#0000FF">#0000FF</font></td><td bgcolor="#0000FF">rgb(0, 0, 255)</td></tr><tr><td><font color="BlueViolet">BlueViolet</font></td><td><font color="#8A2BE2">#8A2BE2</font></td><td bgcolor="#8A2BE2">rgb(138, 43, 226)</td></tr><tr><td><font color="Brown">Brown</font></td><td><font color="#A52A2A">#A52A2A</font></td><td bgcolor="#A52A2A">rgb(165, 42, 42)</td></tr><tr><td><font color="BurlyWood">BurlyWood</font></td><td><font color="#DEB887">#DEB887</font></td><td bgcolor="#DEB887">rgb(222, 184, 135)</td></tr><tr><td><font color="CadetBlue">CadetBlue</font></td><td><font color="#5F9EA0">#5F9EA0</font></td><td bgcolor="#5F9EA0">rgb(95, 158, 160)</td></tr><tr><td><font color="Chartreuse">Chartreuse</font></td><td><font color="#7FFF00">#7FFF00</font></td><td bgcolor="#7FFF00">rgb(127, 255, 0)</td></tr><tr><td><font color="Chocolate">Chocolate</font></td><td><font color="#D2691E">#D2691E</font></td><td bgcolor="#D2691E">rgb(210, 105, 30)</td></tr><tr><td><font color="Coral">Coral</font></td><td><font color="#FF7F50">#FF7F50</font></td><td bgcolor="#FF7F50">rgb(255, 127, 80)</td></tr><tr><td><font color="CornflowerBlue">CornflowerBlue</font></td><td><font color="#6495ED">#6495ED</font></td><td bgcolor="#6495ED">rgb(100, 149, 237)</td></tr><tr><td><font color="Cornsilk">Cornsilk</font></td><td><font color="#FFF8DC">#FFF8DC</font></td><td bgcolor="#FFF8DC">rgb(255, 248, 220)</td></tr><tr><td><font color="Crimson">Crimson</font></td><td><font color="#DC143C">#DC143C</font></td><td bgcolor="#DC143C">rgb(220, 20, 60)</td></tr><tr><td><font color="Cyan">Cyan</font></td><td><font color="#00FFFF">#00FFFF</font></td><td bgcolor="#00FFFF">rgb(0, 255, 255)</td></tr><tr><td><font color="DarkBlue">DarkBlue</font></td><td><font color="#00008B">#00008B</font></td><td bgcolor="#00008B">rgb(0, 0, 139)</td></tr><tr><td><font color="DarkCyan">DarkCyan</font></td><td><font color="#008B8B">#008B8B</font></td><td bgcolor="#008B8B">rgb(0, 139, 139)</td></tr><tr><td><font color="DarkGoldenRod">DarkGoldenRod</font></td><td><font color="#B8860B">#B8860B</font></td><td bgcolor="#B8860B">rgb(184, 134, 11)</td></tr><tr><td><font color="DarkGray">DarkGray</font></td><td><font color="#A9A9A9">#A9A9A9</font></td><td bgcolor="#A9A9A9">rgb(169, 169, 169)</td></tr><tr><td><font color="DarkGreen">DarkGreen</font></td><td><font color="#006400">#006400</font></td><td bgcolor="#006400">rgb(0, 100, 0)</td></tr><tr><td><font color="DarkKhaki">DarkKhaki</font></td><td><font color="#BDB76B">#BDB76B</font></td><td bgcolor="#BDB76B">rgb(189, 183, 107)</td></tr><tr><td><font color="DarkMagenta">DarkMagenta</font></td><td><font color="#8B008B">#8B008B</font></td><td bgcolor="#8B008B">rgb(139, 0, 139)</td></tr><tr><td><font color="DarkOliveGreen">DarkOliveGreen</font></td><td><font color="#556B2F">#556B2F</font></td><td bgcolor="#556B2F">rgb(85, 107, 47)</td></tr><tr><td><font color="Darkorange">Darkorange</font></td><td><font color="#FF8C00">#FF8C00</font></td><td bgcolor="#FF8C00">rgb(255, 140, 0)</td></tr><tr><td><font color="DarkOrchid">DarkOrchid</font></td><td><font color="#9932CC">#9932CC</font></td><td bgcolor="#9932CC">rgb(153, 50, 204)</td></tr><tr><td><font color="DarkRed">DarkRed</font></td><td><font color="#8B0000">#8B0000</font></td><td bgcolor="#8B0000">rgb(139, 0, 0)</td></tr><tr><td><font color="DarkSalmon">DarkSalmon</font></td><td><font color="#E9967A">#E9967A</font></td><td bgcolor="#E9967A">rgb(233, 150, 122)</td></tr><tr><td><font color="DarkSeaGreen">DarkSeaGreen</font></td><td><font color="#8FBC8F">#8FBC8F</font></td><td bgcolor="#8FBC8F">rgb(143, 188, 143)</td></tr><tr><td><font color="DarkSlateBlue">DarkSlateBlue</font></td><td><font color="#483D8B">#483D8B</font></td><td bgcolor="#483D8B">rgb(72, 61, 139)</td></tr><tr><td><font color="DarkSlateGray">DarkSlateGray</font></td><td><font color="#2F4F4F">#2F4F4F</font></td><td bgcolor="#2F4F4F">rgb(47, 79, 79)</td></tr><tr><td><font color="DarkTurquoise">DarkTurquoise</font></td><td><font color="#00CED1">#00CED1</font></td><td bgcolor="#00CED1">rgb(0, 206, 209)</td></tr><tr><td><font color="DarkViolet">DarkViolet</font></td><td><font color="#9400D3">#9400D3</font></td><td bgcolor="#9400D3">rgb(148, 0, 211)</td></tr><tr><td><font color="DeepPink">DeepPink</font></td><td><font color="#FF1493">#FF1493</font></td><td bgcolor="#FF1493">rgb(255, 20, 147)</td></tr><tr><td><font color="DeepSkyBlue">DeepSkyBlue</font></td><td><font color="#00BFFF">#00BFFF</font></td><td bgcolor="#00BFFF">rgb(0, 191, 255)</td></tr><tr><td><font color="DimGray">DimGray</font></td><td><font color="#696969">#696969</font></td><td bgcolor="#696969">rgb(105, 105, 105)</td></tr><tr><td><font color="DodgerBlue">DodgerBlue</font></td><td><font color="#1E90FF">#1E90FF</font></td><td bgcolor="#1E90FF">rgb(30, 144, 255)</td></tr><tr><td><font color="Feldspar">Feldspar</font></td><td><font color="#D19275">#D19275</font></td><td bgcolor="#D19275">rgb(209, 146, 117)</td></tr><tr><td><font color="FireBrick">FireBrick</font></td><td><font color="#B22222">#B22222</font></td><td bgcolor="#B22222">rgb(178, 34, 34)</td></tr><tr><td><font color="FloralWhite">FloralWhite</font></td><td><font color="#FFFAF0">#FFFAF0</font></td><td bgcolor="#FFFAF0">rgb(255, 250, 240)</td></tr><tr><td><font color="ForestGreen">ForestGreen</font></td><td><font color="#228B22">#228B22</font></td><td bgcolor="#228B22">rgb(34, 139, 34)</td></tr><tr><td><font color="Fuchsia">Fuchsia</font></td><td><font color="#FF00FF">#FF00FF</font></td><td bgcolor="#FF00FF">rgb(255, 0, 255)</td></tr><tr><td><font color="Gainsboro">Gainsboro</font></td><td><font color="#DCDCDC">#DCDCDC</font></td><td bgcolor="#DCDCDC">rgb(220, 220, 220)</td></tr><tr><td><font color="GhostWhite">GhostWhite</font></td><td><font color="#F8F8FF">#F8F8FF</font></td><td bgcolor="#F8F8FF">rgb(248, 248, 255)</td></tr><tr><td><font color="Gold">Gold</font></td><td><font color="#FFD700">#FFD700</font></td><td bgcolor="#FFD700">rgb(255, 215, 0)</td></tr><tr><td><font color="GoldenRod">GoldenRod</font></td><td><font color="#DAA520">#DAA520</font></td><td bgcolor="#DAA520">rgb(218, 165, 32)</td></tr><tr><td><font color="Gray">Gray</font></td><td><font color="#808080">#808080</font></td><td bgcolor="#808080">rgb(128, 128, 128)</td></tr><tr><td><font color="Green">Green</font></td><td><font color="#008000">#008000</font></td><td bgcolor="#008000">rgb(0, 128, 0)</td></tr><tr><td><font color="GreenYellow">GreenYellow</font></td><td><font color="#ADFF2F">#ADFF2F</font></td><td bgcolor="#ADFF2F">rgb(173, 255, 47)</td></tr><tr><td><font color="HoneyDew">HoneyDew</font></td><td><font color="#F0FFF0">#F0FFF0</font></td><td bgcolor="#F0FFF0">rgb(240, 255, 240)</td></tr><tr><td><font color="HotPink">HotPink</font></td><td><font color="#FF69B4">#FF69B4</font></td><td bgcolor="#FF69B4">rgb(255, 105, 180)</td></tr><tr><td><font color="IndianRed">IndianRed</font></td><td><font color="#CD5C5C">#CD5C5C</font></td><td bgcolor="#CD5C5C">rgb(205, 92, 92)</td></tr><tr><td><font color="Indigo">Indigo</font></td><td><font color="#4B0082">#4B0082</font></td><td bgcolor="#4B0082">rgb(75, 0, 130)</td></tr><tr><td><font color="Ivory">Ivory</font></td><td><font color="#FFFFF0">#FFFFF0</font></td><td bgcolor="#FFFFF0">rgb(255, 255, 240)</td></tr><tr><td><font color="Khaki">Khaki</font></td><td><font color="#F0E68C">#F0E68C</font></td><td bgcolor="#F0E68C">rgb(240, 230, 140)</td></tr><tr><td><font color="Lavender">Lavender</font></td><td><font color="#E6E6FA">#E6E6FA</font></td><td bgcolor="#E6E6FA">rgb(230, 230, 250)</td></tr><tr><td><font color="LavenderBlush">LavenderBlush</font></td><td><font color="#FFF0F5">#FFF0F5</font></td><td bgcolor="#FFF0F5">rgb(255, 240, 245)</td></tr><tr><td><font color="LawnGreen">LawnGreen</font></td><td><font color="#7CFC00">#7CFC00</font></td><td bgcolor="#7CFC00">rgb(124, 252, 0)</td></tr><tr><td><font color="LemonChiffon">LemonChiffon</font></td><td><font color="#FFFACD">#FFFACD</font></td><td bgcolor="#FFFACD">rgb(255, 250, 205)</td></tr><tr><td><font color="LightBlue">LightBlue</font></td><td><font color="#ADD8E6">#ADD8E6</font></td><td bgcolor="#ADD8E6">rgb(173, 216, 230)</td></tr><tr><td><font color="LightCoral">LightCoral</font></td><td><font color="#F08080">#F08080</font></td><td bgcolor="#F08080">rgb(240, 128, 128)</td></tr><tr><td><font color="LightCyan">LightCyan</font></td><td><font color="#E0FFFF">#E0FFFF</font></td><td bgcolor="#E0FFFF">rgb(224, 255, 255)</td></tr><tr><td><font color="LightGoldenRodYellow">LightGoldenRodYellow</font></td><td><font color="#FAFAD2">#FAFAD2</font></td><td bgcolor="#FAFAD2">rgb(250, 250, 210)</td></tr><tr><td><font color="LightGrey">LightGrey</font></td><td><font color="#D3D3D3">#D3D3D3</font></td><td bgcolor="#D3D3D3">rgb(211, 211, 211)</td></tr><tr><td><font color="LightGreen">LightGreen</font></td><td><font color="#90EE90">#90EE90</font></td><td bgcolor="#90EE90">rgb(144, 238, 144)</td></tr><tr><td><font color="LightPink">LightPink</font></td><td><font color="#FFB6C1">#FFB6C1</font></td><td bgcolor="#FFB6C1">rgb(255, 182, 193)</td></tr><tr><td><font color="LightSalmon">LightSalmon</font></td><td><font color="#FFA07A">#FFA07A</font></td><td bgcolor="#FFA07A">rgb(255, 160, 122)</td></tr><tr><td><font color="LightSeaGreen">LightSeaGreen</font></td><td><font color="#20B2AA">#20B2AA</font></td><td bgcolor="#20B2AA">rgb(32, 178, 170)</td></tr><tr><td><font color="LightSkyBlue">LightSkyBlue</font></td><td><font color="#87CEFA">#87CEFA</font></td><td bgcolor="#87CEFA">rgb(135, 206, 250)</td></tr><tr><td><font color="LightSlateBlue">LightSlateBlue</font></td><td><font color="#8470FF">#8470FF</font></td><td bgcolor="#8470FF">rgb(132, 112, 255)</td></tr><tr><td><font color="LightSlateGray">LightSlateGray</font></td><td><font color="#778899">#778899</font></td><td bgcolor="#778899">rgb(119, 136, 153)</td></tr><tr><td><font color="LightSteelBlue">LightSteelBlue</font></td><td><font color="#B0C4DE">#B0C4DE</font></td><td bgcolor="#B0C4DE">rgb(176, 196, 222)</td></tr><tr><td><font color="LightYellow">LightYellow</font></td><td><font color="#FFFFE0">#FFFFE0</font></td><td bgcolor="#FFFFE0">rgb(255, 255, 224)</td></tr><tr><td><font color="Lime">Lime</font></td><td><font color="#00FF00">#00FF00</font></td><td bgcolor="#00FF00">rgb(0, 255, 0)</td></tr><tr><td><font color="LimeGreen">LimeGreen</font></td><td><font color="#32CD32">#32CD32</font></td><td bgcolor="#32CD32">rgb(50, 205, 50)</td></tr><tr><td><font color="Linen">Linen</font></td><td><font color="#FAF0E6">#FAF0E6</font></td><td bgcolor="#FAF0E6">rgb(250, 240, 230)</td></tr><tr><td><font color="Magenta">Magenta</font></td><td><font color="#FF00FF">#FF00FF</font></td><td bgcolor="#FF00FF">rgb(255, 0, 255)</td></tr><tr><td><font color="Maroon">Maroon</font></td><td><font color="#800000">#800000</font></td><td bgcolor="#800000">rgb(128, 0, 0)</td></tr><tr><td><font color="MediumAquaMarine">MediumAquaMarine</font></td><td><font color="#66CDAA">#66CDAA</font></td><td bgcolor="#66CDAA">rgb(102, 205, 170)</td></tr><tr><td><font color="MediumBlue">MediumBlue</font></td><td><font color="#0000CD">#0000CD</font></td><td bgcolor="#0000CD">rgb(0, 0, 205)</td></tr><tr><td><font color="MediumOrchid">MediumOrchid</font></td><td><font color="#BA55D3">#BA55D3</font></td><td bgcolor="#BA55D3">rgb(186, 85, 211)</td></tr><tr><td><font color="MediumPurple">MediumPurple</font></td><td><font color="#9370D8">#9370D8</font></td><td bgcolor="#9370D8">rgb(147, 112, 216)</td></tr><tr><td><font color="MediumSeaGreen">MediumSeaGreen</font></td><td><font color="#3CB371">#3CB371</font></td><td bgcolor="#3CB371">rgb(60, 179, 113)</td></tr><tr><td><font color="MediumSlateBlue">MediumSlateBlue</font></td><td><font color="#7B68EE">#7B68EE</font></td><td bgcolor="#7B68EE">rgb(123, 104, 238)</td></tr><tr><td><font color="MediumSpringGreen">MediumSpringGreen</font></td><td><font color="#00FA9A">#00FA9A</font></td><td bgcolor="#00FA9A">rgb(0, 250, 154)</td></tr><tr><td><font color="MediumTurquoise">MediumTurquoise</font></td><td><font color="#48D1CC">#48D1CC</font></td><td bgcolor="#48D1CC">rgb(72, 209, 204)</td></tr><tr><td><font color="MediumVioletRed">MediumVioletRed</font></td><td><font color="#C71585">#C71585</font></td><td bgcolor="#C71585">rgb(199, 21, 133)</td></tr><tr><td><font color="MidnightBlue">MidnightBlue</font></td><td><font color="#191970">#191970</font></td><td bgcolor="#191970">rgb(25, 25, 112)</td></tr><tr><td><font color="MintCream">MintCream</font></td><td><font color="#F5FFFA">#F5FFFA</font></td><td bgcolor="#F5FFFA">rgb(245, 255, 250)</td></tr><tr><td><font color="MistyRose">MistyRose</font></td><td><font color="#FFE4E1">#FFE4E1</font></td><td bgcolor="#FFE4E1">rgb(255, 228, 225)</td></tr><tr><td><font color="Moccasin">Moccasin</font></td><td><font color="#FFE4B5">#FFE4B5</font></td><td bgcolor="#FFE4B5">rgb(255, 228, 181)</td></tr><tr><td><font color="NavajoWhite">NavajoWhite</font></td><td><font color="#FFDEAD">#FFDEAD</font></td><td bgcolor="#FFDEAD">rgb(255, 222, 173)</td></tr><tr><td><font color="Navy">Navy</font></td><td><font color="#000080">#000080</font></td><td bgcolor="#000080">rgb(0, 0, 128)</td></tr><tr><td><font color="OldLace">OldLace</font></td><td><font color="#FDF5E6">#FDF5E6</font></td><td bgcolor="#FDF5E6">rgb(253, 245, 230)</td></tr><tr><td><font color="Olive">Olive</font></td><td><font color="#808000">#808000</font></td><td bgcolor="#808000">rgb(128, 128, 0)</td></tr><tr><td><font color="OliveDrab">OliveDrab</font></td><td><font color="#6B8E23">#6B8E23</font></td><td bgcolor="#6B8E23">rgb(107, 142, 35)</td></tr><tr><td><font color="Orange">Orange</font></td><td><font color="#FFA500">#FFA500</font></td><td bgcolor="#FFA500">rgb(255, 165, 0)</td></tr><tr><td><font color="OrangeRed">OrangeRed</font></td><td><font color="#FF4500">#FF4500</font></td><td bgcolor="#FF4500">rgb(255, 69, 0)</td></tr><tr><td><font color="Orchid">Orchid</font></td><td><font color="#DA70D6">#DA70D6</font></td><td bgcolor="#DA70D6">rgb(218, 112, 214)</td></tr><tr><td><font color="PaleGoldenRod">PaleGoldenRod</font></td><td><font color="#EEE8AA">#EEE8AA</font></td><td bgcolor="#EEE8AA">rgb(238, 232, 170)</td></tr><tr><td><font color="PaleGreen">PaleGreen</font></td><td><font color="#98FB98">#98FB98</font></td><td bgcolor="#98FB98">rgb(152, 251, 152)</td></tr><tr><td><font color="PaleTurquoise">PaleTurquoise</font></td><td><font color="#AFEEEE">#AFEEEE</font></td><td bgcolor="#AFEEEE">rgb(175, 238, 238)</td></tr><tr><td><font color="PaleVioletRed">PaleVioletRed</font></td><td><font color="#D87093">#D87093</font></td><td bgcolor="#D87093">rgb(216, 112, 147)</td></tr><tr><td><font color="PapayaWhip">PapayaWhip</font></td><td><font color="#FFEFD5">#FFEFD5</font></td><td bgcolor="#FFEFD5">rgb(255, 239, 213)</td></tr><tr><td><font color="PeachPuff">PeachPuff</font></td><td><font color="#FFDAB9">#FFDAB9</font></td><td bgcolor="#FFDAB9">rgb(255, 218, 185)</td></tr><tr><td><font color="Peru">Peru</font></td><td><font color="#CD853F">#CD853F</font></td><td bgcolor="#CD853F">rgb(205, 133, 63)</td></tr><tr><td><font color="Pink">Pink</font></td><td><font color="#FFC0CB">#FFC0CB</font></td><td bgcolor="#FFC0CB">rgb(255, 192, 203)</td></tr><tr><td><font color="Plum">Plum</font></td><td><font color="#DDA0DD">#DDA0DD</font></td><td bgcolor="#DDA0DD">rgb(221, 160, 221)</td></tr><tr><td><font color="PowderBlue">PowderBlue</font></td><td><font color="#B0E0E6">#B0E0E6</font></td><td bgcolor="#B0E0E6">rgb(176, 224, 230)</td></tr><tr><td><font color="Purple">Purple</font></td><td><font color="#800080">#800080</font></td><td bgcolor="#800080">rgb(128, 0, 128)</td></tr><tr><td><font color="Red">Red</font></td><td><font color="#FF0000">#FF0000</font></td><td bgcolor="#FF0000">rgb(255, 0, 0)</td></tr><tr><td><font color="RosyBrown">RosyBrown</font></td><td><font color="#BC8F8F">#BC8F8F</font></td><td bgcolor="#BC8F8F">rgb(188, 143, 143)</td></tr><tr><td><font color="RoyalBlue">RoyalBlue</font></td><td><font color="#4169E1">#4169E1</font></td><td bgcolor="#4169E1">rgb(65, 105, 225)</td></tr><tr><td><font color="SaddleBrown">SaddleBrown</font></td><td><font color="#8B4513">#8B4513</font></td><td bgcolor="#8B4513">rgb(139, 69, 19)</td></tr><tr><td><font color="Salmon">Salmon</font></td><td><font color="#FA8072">#FA8072</font></td><td bgcolor="#FA8072">rgb(250, 128, 114)</td></tr><tr><td><font color="SandyBrown">SandyBrown</font></td><td><font color="#F4A460">#F4A460</font></td><td bgcolor="#F4A460">rgb(244, 164, 96)</td></tr><tr><td><font color="SeaGreen">SeaGreen</font></td><td><font color="#2E8B57">#2E8B57</font></td><td bgcolor="#2E8B57">rgb(46, 139, 87)</td></tr><tr><td><font color="SeaShell">SeaShell</font></td><td><font color="#FFF5EE">#FFF5EE</font></td><td bgcolor="#FFF5EE">rgb(255, 245, 238)</td></tr><tr><td><font color="Sienna">Sienna</font></td><td><font color="#A0522D">#A0522D</font></td><td bgcolor="#A0522D">rgb(160, 82, 45)</td></tr><tr><td><font color="Silver">Silver</font></td><td><font color="#C0C0C0">#C0C0C0</font></td><td bgcolor="#C0C0C0">rgb(192, 192, 192)</td></tr><tr><td><font color="SkyBlue">SkyBlue</font></td><td><font color="#87CEEB">#87CEEB</font></td><td bgcolor="#87CEEB">rgb(135, 206, 235)</td></tr><tr><td><font color="SlateBlue">SlateBlue</font></td><td><font color="#6A5ACD">#6A5ACD</font></td><td bgcolor="#6A5ACD">rgb(106, 90, 205)</td></tr><tr><td><font color="SlateGray">SlateGray</font></td><td><font color="#708090">#708090</font></td><td bgcolor="#708090">rgb(112, 128, 144)</td></tr><tr><td><font color="Snow">Snow</font></td><td><font color="#FFFAFA">#FFFAFA</font></td><td bgcolor="#FFFAFA">rgb(255, 250, 250)</td></tr><tr><td><font color="SpringGreen">SpringGreen</font></td><td><font color="#00FF7F">#00FF7F</font></td><td bgcolor="#00FF7F">rgb(0, 255, 127)</td></tr><tr><td><font color="SteelBlue">SteelBlue</font></td><td><font color="#4682B4">#4682B4</font></td><td bgcolor="#4682B4">rgb(70, 130, 180)</td></tr><tr><td><font color="Tan">Tan</font></td><td><font color="#D2B48C">#D2B48C</font></td><td bgcolor="#D2B48C">rgb(210, 180, 140)</td></tr><tr><td><font color="Teal">Teal</font></td><td><font color="#008080">#008080</font></td><td bgcolor="#008080">rgb(0, 128, 128)</td></tr><tr><td><font color="Thistle">Thistle</font></td><td><font color="#D8BFD8">#D8BFD8</font></td><td bgcolor="#D8BFD8">rgb(216, 191, 216)</td></tr><tr><td><font color="Tomato">Tomato</font></td><td><font color="#FF6347">#FF6347</font></td><td bgcolor="#FF6347">rgb(255, 99, 71)</td></tr><tr><td><font color="Turquoise">Turquoise</font></td><td><font color="#40E0D0">#40E0D0</font></td><td bgcolor="#40E0D0">rgb(64, 224, 208)</td></tr><tr><td><font color="Violet">Violet</font></td><td><font color="#EE82EE">#EE82EE</font></td><td bgcolor="#EE82EE">rgb(238, 130, 238)</td></tr><tr><td><font color="VioletRed">VioletRed</font></td><td><font color="#D02090">#D02090</font></td><td bgcolor="#D02090">rgb(208, 32, 144)</td></tr><tr><td><font color="Wheat">Wheat</font></td><td><font color="#F5DEB3">#F5DEB3</font></td><td bgcolor="#F5DEB3">rgb(245, 222, 179)</td></tr><tr><td><font color="White">White</font></td><td><font color="#FFFFFF">#FFFFFF</font></td><td bgcolor="#FFFFFF">rgb(255, 255, 255)</td></tr><tr><td><font color="WhiteSmoke">WhiteSmoke</font></td><td><font color="#F5F5F5">#F5F5F5</font></td><td bgcolor="#F5F5F5">rgb(245, 245, 245)</td></tr><tr><td><font color="Yellow">Yellow</font></td><td><font color="#FFFF00">#FFFF00</font></td><td bgcolor="#FFFF00">rgb(255, 255, 0)</td></tr><tr><td><font color="YellowGreen">YellowGreen</font></td><td><font color="#9ACD32">#9ACD32</font></td><td bgcolor="#9ACD32">rgb(154, 205, 50)</td></tr></tbody></table>
 ]]></content>
       <categories>
         <category>Tech</category>
-        <category>Software</category>
       </categories>
       <tags>
-        <tag>办公</tag>
-        <tag>Word</tag>
+        <tag>HTML</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>WorkFlowy使用体验</title>
-    <url>/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
-    <content><![CDATA[<p>对比Dynalist、幕布、WorkFlowy的介绍、功能以及适用范围后，首先选择WorkFlowy进行一段时间的使用测评。</p>
-<a id="more"></a>
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><h2 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h2><h2 id="竞品"><a href="#竞品" class="headerlink" title="竞品"></a>竞品</h2><h2 id="SWOT"><a href="#SWOT" class="headerlink" title="SWOT"></a>SWOT</h2>]]></content>
-      <categories>
-        <category>Tech</category>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>WorkFlowy</tag>
-        <tag>大纲笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Product Hunt</title>
-    <url>/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p align="center">想起来就更新</p>
-
-<a id="more"></a>
-
-<h2 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h2><h3 id="压制软件"><a href="#压制软件" class="headerlink" title="压制软件"></a>压制软件</h3><ol>
-<li><strong><a href="http://www.mediacoderhq.com/dlfull_zh.htm">MediaCode x64</a></strong><br>老牌专业压制工具，<del>平常其实用不到</del></li>
-<li><strong><a href="https://maruko.appinn.me/">小丸工具箱</a></strong><br>B站特供，方便直接选择类型压制，集成各种常用功能的综合性辅助软件</li>
-<li><strong><a href="https://ffmpeg.org/download.html">FFmpeg</a></strong><br>万物起源，实用简版可选择<strong>FFmpeg_Joiner</strong></li>
-</ol>
-<br/>
-
-<h3 id="动图编辑软件"><a href="#动图编辑软件" class="headerlink" title="动图编辑软件"></a>动图编辑软件</h3><ol>
-<li><strong><a href="https://gifcam.en.softonic.com/">Gifcam</a></strong><br>目前使用的Gif录制工具，其实也可以考虑通过Pr导出<del>就是麻烦了一点</del></li>
-</ol>
-<br/>
-
-<h3 id="播放软件"><a href="#播放软件" class="headerlink" title="播放软件"></a>播放软件</h3><ol>
-<li><p><strong><a href="https://potplayer.org/">Potplayer</a></strong><br>最方便实用</p>
-</li>
-<li><p><strong>FFmpeg - ffplay</strong><br>测试直播源效果极佳</p>
-</li>
-<li><p><strong><a href="https://www.videolan.org/">VLC</a></strong><br>听说是直播源播放神器，<del>没一次使用成功</del></p>
-</li>
-<li><p><strong><a href="https://sourceforge.net/projects/mpcbe/">MPC-BE</a></strong></p>
-<p>LoliHouse字幕组推荐使用Win播放器，还没试过</p>
-</li>
-</ol>
-<br/>
-
-<h2 id="下载类"><a href="#下载类" class="headerlink" title="下载类"></a>下载类</h2><h3 id="非BT"><a href="#非BT" class="headerlink" title="非BT"></a>非BT</h3><ol>
-<li><p><strong><a href="http://www.internetdownloadmanager.com/">IDM</a></strong><br>捕捉浏览器下载行为，抓取直播源最便捷的方法，速度取决于网速和<del>墙</del></p>
-<p>可以在<a href="https://www.runningcheese.com/">奔跑中的奶酪</a>的博客里搜索最新破解版</p>
-</li>
-</ol>
-<h3 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h3><ol>
-<li><p><strong><a href="https://www.xunlei.com/">迅雷</a></strong><br>国内最好用，但对版权资源比较敏感</p>
-</li>
-<li><p><strong><a href="https://pan.baidu.com/">百度云</a></strong><br>垃圾限速软件</p>
-</li>
-<li><p><strong><a href="https://www.freedownloadmanager.org/zh/">FDM</a></strong><br>动漫类使用效果比较好</p>
-<p><strong><em>2020/10/10 更新</em></strong></p>
-<p>怀疑设置有问题，元数据检索太慢，弃用</p>
-</li>
-<li><p><strong><a href="http://aria2.github.io/">Aria2</a></strong><br>设定比较繁琐，适合爱折腾的人</p>
-</li>
-<li><p><strong><a href="https://yixun.writeas.com/yi-xun">亿寻</a></strong><br>比较便捷，但更新换代频率过高，偶尔失效，弃用</p>
-</li>
-<li><p><strong><a href="http://www.baidu.com/link?url=vAmopF0EvviW88d1baYFr0TKPnx25u8einNkYpBeCqv7QkbA5nehBOwNS86sDTJA">qBittorrent</a></strong></p>
-<p>VCB推荐下载工具，确实好用</p>
-</li>
-</ol>
-<br/>
-
-<h2 id="效率类"><a href="#效率类" class="headerlink" title="效率类"></a>效率类</h2><h3 id="信息搜集整理"><a href="#信息搜集整理" class="headerlink" title="信息搜集整理"></a>信息搜集整理</h3><ol>
-<li><strong><a href="https://yinxiang.com/">印象笔记</a>/<a href="https://evernote.com/">Evernote</a></strong><br>文章摘录、信息储存、整理型笔记</li>
-<li><strong><a href="https://getpocket.com/">Pocket</a></strong><br>稍后阅读，与其他软件间的联动较多，同时支持Chrome插件，相较于Instapaper</li>
-<li><strong><a href="https://www.inoreader.com/">Inoreader</a></strong><br>RSS工具，配合<a href="https://ifttt.com/home">IFTTT</a>使用可完成定向信息筛选推送</li>
-</ol>
-<h3 id="清单"><a href="#清单" class="headerlink" title="清单"></a>清单</h3><ol>
-<li><strong><a href="https://todo.microsoft.com/">To-do</a></strong><br>Microsoft系列，联动Outlook比较实用，适合办公</li>
-</ol>
-<h3 id="云盘"><a href="#云盘" class="headerlink" title="云盘"></a>云盘</h3><ol>
-<li><strong>Onedrive</strong></li>
-<li><strong>iCloud</strong></li>
-</ol>
-<h3 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h3><ol>
-<li><p><strong><a href="https://www.sublimetext.com/">Sublime Text</a></strong><br>程序员适用</p>
-</li>
-<li><p><strong><a href="https://www.typora.io/">Typora</a></strong><br>简洁明了的文本编辑器</p>
-<p><strong>详见</strong>：<a href="https://lluphok.github.io/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">Typora使用心得</a></p>
-</li>
-</ol>
-<h3 id="大纲写作"><a href="#大纲写作" class="headerlink" title="大纲写作"></a>大纲写作</h3><ol>
-<li><strong><a href="https://workflowy.com/">Workflowy</a></strong></li>
-</ol>
-<h3 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h3><ol>
-<li><strong><a href="https://www.notion.so/">Notion</a></strong></li>
-</ol>
-<br/>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
-<li><p><strong><a href="http://www.foobar2000.org/">Foobar2000</a></strong></p>
-<p>各类插件齐全，上限很高的PC端播放器</p>
-</li>
-<li><p><strong><a href="http://www.bandisoft.com/bandizip/">Bandizip</a></strong><br>解压软件还是越简单越好</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Tech</category>
-        <category>Software</category>
-      </categories>
   </entry>
   <entry>
     <title>NexT主题配置及优化</title>
-    <url>/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
+    <url>/2020/09/18/Tech_NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<p align="center">熬夜伤身</p>
 
 <a id="more"></a>
@@ -1111,134 +1281,6 @@
         <tag>Hexo</tag>
         <tag>Blog</tag>
         <tag>NexT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《利兹与青鸟》原作摘录</title>
-    <url>/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</url>
-    <content><![CDATA[<p align="center">摘自《吹响吧！上低音号北宇治高中管樂社波澜的第二乐章后篇》</p>
-
-<hr>
-<a id="more"></a>
-
-<h1 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h1><p>看了下自由曲《利兹和青鸟》的第三乐章，里面有长笛和双簧管的合同solo。双簧管感伤澄澈的音色加上便随其后长笛的低语，交错的旋律反映出利兹和青鸟各自的思虑。<strong>从第一次吹这首曲子起，希美就确信长笛这段solo非自己莫属，在这间学校里能配得上霙双簧管的，只有自己。</strong>    </p>
-<br/>
-
-<p>「总感觉我们就是利兹和青鸟，所以第一次听solo合奏的时候我就确信solo必须我们两个来。」<br>一年前，希美退部的时候霙留了下来。希美不知道霙是怎样想的，只是从她愿意和自己练习这一点看，她没有讨厌自己。<br><strong>如果希美是青鸟</strong>，肯定会再次回到利兹的身边，就算不能一起生活，偶尔见面何妨不可。至少希美认为悲剧不必以悲剧的形式结束。  </p>
-<br/>
-
-<h1 id="第一章-憧憬的弱起"><a href="#第一章-憧憬的弱起" class="headerlink" title="第一章 憧憬的弱起"></a>第一章 憧憬的弱起</h1><p>「今年的自由曲完全是双簧管的主场。」<br>丽奈看着久美子的眼神冷静得可怕。眨了下眼睛，久美子缩了缩脖子。<br>「戏份最多嘛，特别是第三乐章虽然最后加了长笛的solo，但双簧管还是太抢眼了，基本就是它的solo。」<br>「双簧管去年有solo，今年戏份还要加码……<strong>大概在泷老师眼中霙前辈是北宇治的第一战力吧。</strong>」</p>
-<br/>
-
-<p>希美和霙今年担任第三乐章的solo。她们实力有目共睹，加上是三年级，所以没有一人对她们担任solo表示异议。而对于知道事情渊源的优子，看到霙沐浴在后辈的祝福之中表情复杂。优子担心的只有一点，就是希美负责长笛solo。在旁人眼里，<strong>霙和希美对于互相抱有的感情的认识有很大出入</strong>。</p>
-<br/>
-
-<h1 id="第二章-独白和静默"><a href="#第二章-独白和静默" class="headerlink" title="第二章 独白和静默"></a>第二章 独白和静默</h1><p><em>京都大会后，丽奈和久美子聊天。</em></p>
-<p>「现在霙前辈的演奏是不是对得起她原本的实力呢。」</p>
-<br/>
-
-<p>「霙前辈不必陪梨梨花闹的。」<br>「奏别说多余的话啦，万一前辈改变主意怎么办。」<br>梨梨花不满嘟起嘴唇，奏对此无视。霙手放在琴盘上摇摇头。<br>「没事。」<br>说完霙眯起眼看向长笛最边边的位置。从窗外射进来的阳光只照亮了那个位置。她薄薄的嘴唇微微上翘，如太过耀眼般落下眼皮。<br>「<strong>希美说要好好关心后辈。</strong>」<br>听到「希美」这两个字，丽奈眼皮跳了一下，她按捺不住张开的嘴唇，到头来什么都没说。</p>
-<br/>
-
-<p>希美的声音有种贯穿人心的凛然感。抑扬顿挫的演奏很好反映出感情的波动，每吹出的一音都包含惊人的力量感。然而霙的双簧管总感觉少了点什么。她的声音如同模板音源，少了自己的特色。<br>——现在霙前辈的演奏是否对得起她原本的实力呢？<br>开始自由曲练习后丽奈几次含蓄表达对霙演奏的不满，只是久美子从没明确表示赞同。往眼皮用力，久美子把全部精力放在双簧管的solo上。把霙的solo单独抽出来，是高水准的演奏。然而和希美的长笛却不能融合，有一种违和感，<strong>两人的声音是各走各的，没有协调感。两者都没错，只是配合性不行。</strong></p>
-<br/>
-
-<p>「你应该重回蓝天，你这美丽的翅膀能将你带往任何地方。」<br>「对我而言能待在你身边就足够幸福了，为何你要假装不见呢？」<br>对小鸟的话，利兹轻轻摇头。<br>「我是把你关住的鸟笼。小鸟不知何时会从鸟笼中逃脱，既然会在我意想不到时失去你，还不如让我亲手送走这份幸福。这就是我的爱，请让我能在最美好的时刻送走你。」<br>对利兹的话，小鸟流下眼泪。<br>「既然你这么说，我又怎么能拒绝。不过还请你能时不时想起我，想起这短暂幸福的日子，想起我爱着你这个事实。」<br>青鸟有力扇动美丽的翅膀飞向远方。面朝青鸟消失的方向，利兹一直一直看下去。</p>
-<br/>
-
-<p><em>丽奈对《利兹和青鸟》的解释：</em></p>
-<blockquote>
-<p>——面对太过幸福的自己，会时常恐惧幸福的终结，既然一直担心受怕那样的日子来临，还不如自己亲手断绝。</p>
-</blockquote>
-<br/>
-
-<p>希美踮起脚擦高的地方，尽全力伸直的手刚好够好上面窗户的下沿。霙看着希美，犹豫地开口问。<br>「希美。」<br>「嗯？」<br>「可以叫其他人去吗？」<br><strong>希美指尖挂着的抹布掉到地上。</strong>希美捡起来，把变得黑黑的内面对折，用变成一半大小的抹布擦着，希美笑着说。<br>「真没想到霙会叫别人，是谁？」<br>「剑崎同学，之前她说想一起去玩。」</p>
-<br/>
-
-<p>「真没想到这么多人去。」<br>希美苦笑。霙对此睁圆眼睛。<br>「希美喜欢多点人的？」<br>「人多热闹嘛。」<br>「果然。」<br>握紧抹布，霙露出浅浅的笑容。<strong>她的眼中只倒影出希美的身影。</strong><br>「祭典时希美叫我叫上其他人。」<br>「所以才叫了剑崎吗？」<br>「嗯。」<br>「这样啊。」<br>希美开朗地回应。从她耳边垂下来的黑发看去，<strong>她的脸不自然地拉着</strong>。维持着开朗的笑容，希美抓住抹布的手加大力道，原本折得整整齐齐的抹布此时变成一团，<strong>刚才折到内面的脏脏一面此时重新露出来</strong>。</p>
-<br/>
-
-<p><em>秀一与久美子聊补习班的事情。</em></p>
-<p>「就偶尔说说话啦，对了伞木前辈也在。」<br>「希美前辈？」<br>「她说成绩什么的，好像要去统考，貌似和中川前辈一所大学。」<br>出汗制服黏在了背上，室内空调有点强感觉有点冷，搓搓手臂，鸡皮一粒粒的。<br>「希美前辈不是和霙前辈考音大的吗？」<br>「改学校了吧，挺正常的。」<br>「可这不就。。。」<br>——背叛霙前辈了吗？</p>
-<br/>
-
-<p>「久美子和霙关系不错吧。」<br>「是，是吗？如果霙前辈也这样想就好了。」<br>久美子不好意思挠挠脸，希美摇摇头。<br>「不用谦虚，看你和霙说话的样子就知道了。她以前可没这么外向，所以啊。。。」<br>她把焦点放在远方。前方，在优子的引导下霙慢慢走进泳池，白色连衣裙像水母一样张开。旁边看着的梨梨花把刚才优子吹好的泳圈递过去。看来排球打完了。<br>「<strong>看到霙和别人玩得这么欢就感觉很奇怪。</strong>」<br>希美舀起刨冰，上面的糖浆透明眼看不见，冰粒在阳光下一点点消融。久美子不知作何回答。<br>「我和霙一直是朋友，<strong>但以前和她不太熟所以不怎么懂和她相处</strong>。她的话很少，想了什么都不说出来，一直弄不太懂她。啊，我不是diss她别误会了，她是我一个好朋友。」<br>希美赶紧摇手补充。久美子关注的只有一点，就是<strong>霙不过是希美众多朋友中的一个</strong>，她平淡道出的这个事实，让久美子心一阵酸。<br>「想和她搞好关系但总是不能称心如意。在和久美子优子你们相处时她挺放松的，<strong>可一轮到我，就感觉很见外。</strong>」<br>「是，是这样吗？」<br>「嗯绝对这样没错。<strong>solo时合不上调吧，最近就想是不是霙她不喜欢我——</strong>」</p>
-<br/>
-
-<p>「升上高三才第一次意识到毕业离自己这么近，才认真思考将来。不是没有按自己兴趣靠这行吃饭的想法，但兴趣每个人都有，同时很清楚光靠兴趣养不活自己。」<br>漂白液的味道窜过鼻尖，风吹过草地，孩子在面前欢快跑过，世界还是和平得恐怖。希美把下巴抵在膝盖上，自嘲地说。<br>「我喜欢长笛，可实力够吗？又或者我真的想靠这行吃饭吗？乐器什么的当上白领也能吹，而且社会上还有别的乐团，到时一边工作一边享受吹奏的快乐就行了。靠这行吃饭和兴趣，我觉得完全是两回事。」<br>希美一连串的话是对自己说的，这些话到底在她心里重复多少次了呢？久美子被她连珠炮的话压得插不上嘴，希美此时才反应过来，挠挠脸。<br>「最近就一直想东想西的。四月要交的进路调查我交了白纸，虽然大家都是。」<br>「。。。霙前辈知道前辈纠结志愿的事吗」<br>「别突然问这些，这可不是特意能说的事。」</p>
-<br/>
-
-<p>「总之万事学为先，不论怎么选都要笔试。对了对了你有听霙说她要考的那间音大是泷老师以前的学校吗？」<br>久美子还是第一次听，希美看久美子的脸就知道怎么回事了<br>「霙一直对这些没什么兴趣。那是私立学校，报录比挺高的。很多人是从一年级开始准备的，霙这种情况算很晚的了。」<br>「那希美前辈为什么选这间呢，音大不是有很多吗？」<br>以前久美子也问过霙为何要报这间，她的回答很简单，就是希美报了这间。如按霙的话，那最初选这间的人是希美，霙只是盲目跟从而已。既然如此希美自然有选这间学校的理由。<br>「这个嘛。」<br>希美一下子绷紧脸，温度从眼中消退。见此久美子握紧手中的杯子吞了口唾液。脚趾弯曲，垫子和地面发出ささ恼人的声音。犹豫了一下后希美还是开口了，她放下杯子挺直背，脚不讲究直直往前伸，笑着说。<br>「就随性子选的。」<br>久美子一听就知道她在说谎。刚才对自己未来想那么多的人绝不会因一时兴起而妄下决定。</p>
-<br/>
-
-<h1 id="第三章-她的共鸣"><a href="#第三章-她的共鸣" class="headerlink" title="第三章 她的共鸣"></a>第三章 她的共鸣</h1><p>「我也很久没全体指导过木管了，虽然个人指导还有。」<br>新山视线在霙身上停留了一会，霙轻轻点头。大概之前指导过双簧管的solo。</p>
-<br/>
-
-<p>「那下次大学开放日一起去？叫上其他人也可以。」<br>霙若无其事的邀请让久美子睁大眼睛，毕竟<strong>在1年前霙可不会邀请别人做什么东西</strong>。不知霙怎么理解短暂的沉默，她从画面移开眼睛，微微侧头。<br>「不想去？」<br>「才没这没事。对了，前辈的志愿是泷老师的大学吧。」<br>「我也去。」<br>听到久美子的话丽奈速答。对她毫无掩饰的态度久美子笑出来。霙放下游戏机稍稍猫起身子。<br>「还真不知道。」<br>「我是从希美前辈那里听来的，霙前辈没问新山老师吗？」<br>「没有，<strong>跟着希美就行。</strong>」<br>霙关了游戏机， 周围一下子暗下来。用手摸了摸脖子上的汗，久美子想起之前和希美的谈话。自己该不该向霙透露希美可能不去音大呢。霙又对希美进路了解多少呢。从希美参观其他学校，就可知她还有其他选择。<br>丽奈没注意久美子沉默，问道。<br>「希美前辈乐器课程怎么安排的？」<br>「不知道，没问过。」<br>「对了，新山老师怎么会介绍老师给前辈呢？是前辈主动找老师的吗？」<br>「不是。」<br>霙摇摇头。<br>「<strong>四月进路调查我交了白纸，然后新山老师特意来学校找我说我有能力，然后给我介绍双簧管的老师。</strong>」</p>
-<br/>
-
-<p>「新山老师说我不去音大就太可惜了。优子听我去音大也很高兴。」<br>听到优子名字久美子心跳了一下。<strong>换做以前霙对优子没什么反应，看来霙的心中渐渐有了除希美外其他人的位置。</strong>久美子咬着唇思考如何回话。丽奈伸出身子看着霙，她长长的黑发有甘甜橘子香气，说怕伤发质洗发水是特意从家里带来的。</p>
-<br/>
-
-<p>「可从刚才的话也不见得希美前辈一定考那间音大，还有可能考不上。如果希美前辈去不了怎么办？」<br>霙睁大眼睛，半开的口惊恐地说。<br>「……没想过。」<br>「真的假的？」<br>「希美考不上怎么办？」<br>「就没想过是自己考不上吗？」<br>听到久美子无意识吐槽，霙眨了眨眼。<br>「……对哦。」<br>「没想到霙前辈这么有自信。」<br>丽奈愉悦翘起嘴角。久美子倒是无法将“自信”和“霙”联系到一起就对了。霙在丽奈心目中和久美子心目中的不同。</p>
-<br/>
-
-<p>不管慌忙的久美子，丽奈直切核心。<br>「自由曲solo一直合不上，原因是不是前辈们相性不好？」<br>霙不禁发出疑惑的声音，<strong>眼神充满动摇</strong>。</p>
-<br/>
-
-<p>「我觉得优子没错，那不是妥协，是冷静考虑后才作的判断。勉强反而适得其反。」<br>一直默默听着的霙此时明确表态。在支持优子时霙的话便多起来。</p>
-<br/>
-
-<p>「我当然知道按实力排序硬把小日向放在第一肯定不行，也懂优子前辈是为大局才这样做的。可就是觉得太忧忧寡断……霙前辈也是。」<br>「我？」<br>「前辈明明能吹得更好，可就是故意压着。」<br>「没这回事。」<br>「真的吗？我认为<strong>霙前辈没相信希美前辈，所以演奏才那个样子。是觉得希美前辈不会配合自己才不肯把真正的自己表现出来。</strong>」<br>「那——」<br>「我想听霙前辈真正的声音，我想大家发挥自己最真实的实力去参加比赛。」<br>匆匆说完一大段丽奈总算停了下来，意识到自己说太过，抓起被汗润湿的头发丽奈小小道歉。在窗对面听到夜晚的虫鸣，今晚很热一直出汗，衣服都粘到背上了。久美子扇着风偷偷看霙。前辈还是面无表情，冻结的嘴唇吐出一语。<br>「**……希美不知什么时候就不在了，怎么可能信得了。<strong>」<br>她直直看着这边的瞳孔让人联想到夜晚的大海，在无人见过的深处有一抹黑暗。脸白得毫无血色，薄薄的嘴唇发白。挤出的话语让久美子吞气。两年前的风波至今没有消散。眼中薄薄的水膜在贩卖机的光线下一闪一闪。<br>「我当不了利兹，放手不了青鸟，我不想她从我眼前消失。不是不相信，</strong>是我当不了利兹**，无法对希美松手。」</p>
-<br/>
-
-<p>「就是一年级生中流行的那个抱抱然后互相说你喜欢对方的点，出发点貌似是好演奏的基础是好的人际关系。」<br>「我知道，南中的。」<br>难得霙把久美子的话抢过去。吹过走廊的风湿热，感觉粘粘的，相当不快。<br>「我不喜欢那个。」<br>霙表示明确的拒绝。久美子留下冷汗。<br>「这，这样啊。」<br>「嗯……我和希美都没干过。」<br>把耳机戴好霙站起来，塞住耳朵的耳机表达了对久美子明确的拒绝。</p>
-<br/>
-
-<p>「霙前辈把希美前辈看得很重，但在希美前辈眼中霙前辈不过是一个朋友。就<strong>互相认识不对等</strong>。」<br>目前明白的一点是霙最重视的是希美，可霙对希美只是一个普通朋友。在希美口中，霙是发小，是朋友。久美子听后不禁痛心，因为自己清楚希美对霙而言是多么重要，而希美却无法给予霙相应的期待。霙双簧管确实吹得很好，但缺乏自身的特色。洗练不多余的音色是她努力练习的成果。而丽奈口中霙最好的演奏，对她自身而言是否为最高实力的表现呢？目前而言霙的实力远超他人，还要求她更多是否有点坏心眼？<br>丽奈知道闭口不谈的久美子在想些什么。<br>「我觉得正好相反。」<br>「相反？」<br>丽奈换了下脚。把头发别到耳后丽奈把脸贴近久美子耳朵。<br>「希美前辈太过在意霙前辈了。」<br>「我觉得不是咯。希美前辈倒是自由得不行，她自己说不知是不是真的要考音大。」<br>「大概在意霙前辈才那样的。」<br>「在意不才更应该马上决定去同一间学校吗？」<br>两人旁边贩卖机发出低鸣，不断刺激耳膜让人厌烦。丽奈认真的眼神直直盯着久美子，仿佛教导弄不清事理的小孩子，丽奈慢慢地清晰地说。<br>「在意可不光是好意的感情。」<br>「就是说——」<br>对屏气的久美子，丽奈说道。<br>「<strong>希美前辈大概从以前起无意识地在嫉妒霙前辈。</strong>」</p>
-<br/>
-
-<p>桥本耸耸肩，把视线移到希美身上。担心看着霙的她注意到桥本的视线赶紧调整好坐姿。<br>「长笛吹得很生动，我就挺喜欢的。但感情太过丰富有点喧宾夺主的味道，要多配合下双簧管的声音。」</p>
-<br/>
-
-<p>——开玩笑的。<br>她的口吻带有玩弄意味，不自然僵住的脸部肌肉正是她假笑失败的证据。<br>「我还没见过有人能简简单单决定自己将来怎么走的。」<br>「希美前辈果然在为进路伤脑筋吗？」<br>「也不是……<strong>就不服气或是执着这样的。</strong>」<br>她再次拿起西瓜大大叹了口气。<br>「90%看透现实决定好了方向，但10%还不服气期待梦想。」<br>「那10%是音大吗？」<br>「如果那是90%我早就去上乐器课了。」</p>
-<br/>
-
-<p>「如果我说我也不清楚为何当初要跟霙说要考音大的事你会吃惊吗？<br>「？？」<br>久美子张大嘴一脸蠢样，希美见此没有笑。中庭有谁发出欢呼，看来是成功打到西瓜了。看着别开视线希美的侧脸久美子压低声音问。<br>「到底怎么回事？」<br>「就那回事。跟霙说了后就后悔得要死，想撤回的时候已经晚了，就一直拖着拖着……」<br>「那个……说真的？」<br>「如果我说是呢？会看不起我？」<br>希美一把抓住自己的刘海，她强装镇定的语气背后却透露出一丝颤抖。希美眼中映出久美子一脸疑惑的样子，往常有灵气的眼睛此刻黯淡无光，仿佛一汪看不到底的泉水。<br>——才不会。<br>如此回答很简单，但这种场面话此刻无论如何是说不出来。喉咙发干，吞吞口水，口腔深处的舌头这时异常烦人。<br>「……会。」<br>听到自己的回答希美什么都没说。阴郁的眼睛轱辘一转，她露出牙齿挤出笑容，头发因汗贴在额头上。<br>「假的是吗？」<br>久美子祈祷希美能说“是”，不愿承认希美做过如此不经大脑的事。如果一切是真的，那一股劲相信希美话的霙就太可伶了。久美子寻求希望般抓住她的双手，夜风吹过，一阵温热。<br>「我要回去了。」<br>希美一把甩开久美子。以前和她说过几次话，但一次也没有像这次一样强硬把话切断。希美瞥了眼惊住的久美子，把纸盘收拾好。刚才还在空中摇晃的她的双脚此刻踏实站在地面上，矫健的双脚将让她走上对她而言最理想的道路。<br>伞木希美原本就是那样的人，为了贯彻自己的道路连有人踩在自己脚下都浑然不觉。久美子想在很想见霙，很想像告诉纯洁的孩子圣诞老人不存在一样将她内心脆弱的崇拜心理一击粉碎。既然担心受怕不时有人踩雷，还不如借自己的手将一切重置；既然害怕事情暴露的一天来临，长痛不如短痛。</p>
-<br/>
-
-<p>「霙前辈有什么想让希美前辈做的吗？」<br>「嗯。」<br>「那究竟是……」<br>「<strong>想一直和她一起。</strong>」</p>
-<br/>
-
-<p>「前辈一直说要和希美前辈上同一间大学，如果这样前辈的志愿校应该也有几间才对。但前辈一直说的就只有那间音大，理由真的是希美前辈而已吗？」<br>霙既没肯定也没否定，她睁大的眼睛中光在摇晃着。咬唇，她的视线看着自己大腿上的手，如同遇到解不开的问题一副走投无路的表情。</p>
-<br/>
-
-<p>「<strong>可我不懂能不能和希美的合上。</strong>」<br>吐露的不安正是霙隐藏至此的真心话。</p>
-<br/>
-
-<p>贯穿第二乐章最后的寂静双簧管solo从中突出。在听到第一个音的时候大家都屏住了呼吸。<br>复杂的指法没有丝毫停顿，如歌声的旋律纤细的同时带有坚定的力度。浓缩的感情一下子压倒室内的空气。如同无形的锤子，久美子觉得头发一阵发晕，意识本能被那声音吸引过去。而木管的伴奏此时则完全黯然失色，脑中只剩下双簧管的声音。<br>胸口一阵苦楚，久美子不禁发出叹息，视野一阵模糊眼睛发热。霙用音乐塑造了属于她自己的世界。<strong>就算长笛也开始了solo，但进入久美子耳朵的，只有双簧管。</strong><br>就算不愿和利兹分开想永远和利兹在一起，青鸟最后还是听从了利兹的话。要问原因，就是青鸟爱着利兹。涌上来的悲伤寂寞就算不说出口也无所谓，只要对方幸福便心满意足了。张开翅膀，代表幸福的青鸟从利兹身边离开飞向了蓝天。<br>充满悲哀的双簧管把周围的声音抹去，就算音量不大，现在能听到的就只有双簧管的声音。长笛的solo不知何时消失了，往旁看去<strong>希美眼中滴落大滴眼泪</strong>。虽然她的嘴仍抵在长笛上，但吹奏停止了。其他乐器也被霙打乱了步伐，曲子完全崩溃了。然而集中精力的霙没有注意到周围的异样，声音魄力渐渐加大。她没有注意到长笛停下，伴奏崩塌。手指舞动，直到休止符拉出长长的一音。</p>
-<br/>
-
-<p>「你能理解我的震惊吗？」<br>「对霙前辈演奏震惊吗？」<br>「嗯。实力上的差距竟然如此露骨就摆在了面前。霙她太犯规了。」<br>假装淡定的声音音调有些高。希美露出白色的牙齿，她一直以为这样的在别人眼中是笑容。直直照射的阳光让皮肤一阵发烫，灼烧的感觉一点点蔓延。<br>「霙为了配合我实力一直都在放水吧。」<br>「我觉得不是。」<br>「可实力差距这么大是事实吧。我也真是傻，一直叫霙solo加油殊不知拖后腿的是自己。」<br>——我脸皮真是厚，好想死。<br>声音细若游丝，她把脸埋入手臂中，蜷缩起来的姿势让她看起来小了不少。<br>「我一开始就知道霙实力有多强了，对她而言练习就像呼吸一样，中学时实力有目共睹，只是我不愿承认一直自欺欺人而已。内心的某处一直觉得自己实力比霙强，因为论喜欢音乐霙怎么比得上我。然而事实是就算我多不愿意都好，霙的实力就是比我强。」<br>遮住脸的希美一口气把肮脏没出息的真心话全部暴露在久美子面前。<br>「昨天跟你说了告诉霙我去音大的理由，那全是真的。五月黄金周的时候霙把宣传册子拿来给我看，说是新山老师给她的，那一刻我就懂了，霙和自己不是同个世界的。」<br>压抑不住的哽咽从她口中泻出，她继续说。<br>「四月进路调查交白纸的不只霙，我也是。可新山老师之后没来找我。一开始以为是偏心，但后来我错了，新山老师单纯看中了霙的才华。如果我去找老师商量肯定能得到悉心的指导，但这些不重要，重要的是我的实力还不值得老师主动来找我，霙比我更有实力。」<br>「就是说……」<br>「<strong>我不想输给霙，不想被人瞧不起为了跟她站在同一高度上所以我才跟霙说我去考音大。</strong>现在想起来也真是天真，光耍嘴皮子有什么用。如久美子所说，我这个人实在不敢恭维。」<br>久美子才终于明白夏纪叫自己来的理由。希美对自己过去做过的蠢事无比自责，她所希望的不是治标不治本的安慰，而是对自身罪行的宣判。所以夏纪才叫久美子来，夏纪无法责备希美。<br>她吸了汗的T恤露出内衣的颜色。久美子一把轻轻拍在她的后背上。把脸埋在手臂里的希美慢慢把头抬起来，泛着泪光的眼睛直直看着久美子。<br>「希美前辈喜欢霙前辈吗？」<br>希美吞了口气，紧闭的嘴唇害怕般颤抖。<br>「不讨厌。」<br>「那喜欢和霙前辈两人的solo吗？」<br>希美盯着自己，流出的泪水用手擦去。<br>「……能说件傻事吗？」<br>「请。」<br>「自由曲定为『利兹和青鸟』的时候我觉得很像我和霙，霙是利兹我是青鸟。我辞掉社团霙留了下来，霙一直等着我回去。」<br>到此久美子一样。只能目送青鸟离开的利兹身影不禁让人想起去年时两人的样子。希美脸扭曲道。<br>「然而我错了，霙才是青鸟。」<br>被利兹所救的青鸟经由利兹的手重返蓝天，没有束缚的笼子，青鸟两翼将无尽高飞。<br>——啪<br>希美大力拍自己的脸，仿佛要和刚才难为情的自己说再见，她一下子站起来。逆光看不清她的表情。<br>「我也不能再这样拖后腿了，我唯一的反抗就是完美为她的solo伴奏。喜欢也好讨厌也罢，目前我能和她对等的手段就只剩这个了。这么难堪的样子是最后一次了，我的任务就是尽好自己职责。」<br>久美子脑中闪过去年霙的样子。<strong>两人隔着无法跨越的鸿沟，互相的执着没有交叉点。和霙对希美的完全不同，希美同样对霙抱有强烈的执着。嫉妒羡慕屈辱罪恶感，</strong>这些完全称不上好的心态在久美子眼中正慢慢往好的方向发展。比起单纯的友人A，这样的对霙来说无疑更好。</p>
-<br/>
-
-<p>「……爱的抱抱。」<br>「？？」<br>突然冒出的词语让久美子摸不着头脑。霙面无表情看着自己说。<br>「中学流行这个的时候我光是在旁边看。」<br>「挺什么的嘛？」<br>「光是等别人邀请我。」<br>霙用力抓住把手，推开重重的门。会场里观众席微暗，灯光只照亮舞台。霙咬着嘴唇说。<br>「<strong>如果那个时候主动点，事情可能就不一样了。</strong>」</p>
-<br/>
-
-<p>「希美一直都自作主张。」<br>语气平淡，但每字每字咬字清晰，霙的脚踩在区分内外的门槛上。希美无意识往后退一步。夕阳沉下的世界，一片猩红。<br>「前两年也是，瞒着我退部。」<br>「为什么突然说起以前的事？」<br>「不是『以前』，对我来说是『现在』。」</p>
-<br/>
-
-<p>「我一直追在希美后面，为了不被希美抛弃一直坚持吹奏。在我心目中希美一直是第一的，我想呆在希美身边！所以双簧管才这么努力！」<br>被霙的气势吓到希美往后退了几步，汗顺着脸滴下，染湿了地面。<br>「别说得这么夸张。」<br>「没夸张，是真的。」<br>「竟然说这样的你太狡猾了。」<br>希美喉咙颤抖，拉紧沙哑的声音融入黄昏的空气。<br>「你比我有实力竟然对我说这样的？说什么为了我才坚持吹奏，就用这样简单的理由把至今的努力总结吗？对你来说双簧管就这么不重要吗？」<br>「不是。」<br>「什么不是。」<br>「不是双簧管不重要，<strong>是希美你对我太重要了。</strong>」<br>「我不懂你为何要这样说，我才不是那么特别的人。」<br>「希美怎么想自己的我不管，对我来说希美就是特别的，所以——」<br>说到这霙突然停下来。虫鸣满静，泪沾湿，何奈摇头把话噤。<br>「……抱歉，不是想说这个的，原本是想谢谢你的。」<br>听到夏纪在旁边咽了口气。久美子把手叠在她颤抖的手腕上。在更里面，优子默默伫立着。越过霙希美注意到优子，露出为难的表情，她用手抓抓脸。<br>「我没做什么要霙谢我的，反而你生我气不考音大才对。」<br>「没生气。」<br>「为什么？」<br>「这是希美选的，希美认为这样好就行。」<br>太阳落到地平线下，猩红被蓝和紫取代。霙黑发随着光线而变色。<strong>几分无奈，希美露出笑容，轻轻颤动的喉咙说出深埋内心的情感。</strong><br>「被霙说这个觉得挺难受的。」<br>「不喜欢？」<br>「也不是，怎么说……算了没事。谢了霙。」<br>「不用谢？」<br>「为什么是疑问句啦。直直说出来就好了。」<br>希美带着几分笑意，她从裙子下露出的双腿像是隐藏什么似的交叉着。霙目光游移，突然想到什么张开双手，希美吓一跳。<br>「怎，怎么了？」<br>「……爱的抱抱。」<br>霙一脸认真声音有些破音。希美马上懂了。<br>「这个啊，好久之前的了。」<br>希美张开手，霙飞扑进希美的怀中，紧紧把手弯在希美后背霙的样子就像抱住布偶的小孩子。<br>「如果希美不在，我肯定无法吹下去，一事无成。谢谢，全都是希美给我的。」<br>「我什么都没做啦，全都是你自己努力得来的。」<br>「就算如此，至今我都是为希美而吹的。」<br>霙闭上的眼睛，泻出的低喃，搭在希美肩上她的额头。<br>「第一次见面时谢谢你温柔对我，跟我说话，和我成为朋友。」<br>「我喜欢霙的努力。后天大会solo的背后就交给我吧。」<br>「最喜欢希美了。」<br>有一瞬间不自然的沉默，霙的手指陷入希美后背，她不安抬起头来。希美低头看着霙，无力地笑道。<br>「嗯……我也最喜欢霙的演奏了。」<br>希美温柔推开霙，霙没说什么，只是默默点头。</p>
-<br/>
-
-<h1 id="第四章-通往未来的延长音"><a href="#第四章-通往未来的延长音" class="headerlink" title="第四章 通往未来的延长音"></a>第四章 通往未来的延长音</h1><p>「决定考音大了吗？」<br>「不仅于此，就算希美不去，我也会继续。音乐是希美给我的。」<br>霙害羞低下头。<br>「我会支持前辈的。」<br>「……嗯。」<br>霙紧紧握住双簧管点头。盖在白色脖颈上的黑发，比夏天时长了一点。</p>
-]]></content>
-      <categories>
-        <category>ACG</category>
-      </categories>
-      <tags>
-        <tag>利兹与青鸟</tag>
-        <tag>轻小说</tag>
       </tags>
   </entry>
 </search>

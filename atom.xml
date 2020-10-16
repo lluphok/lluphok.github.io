@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-13T14:10:41.037Z</updated>
+  <updated>2020-10-15T08:21:33.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,9 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML文本颜色设置</title>
+    <link href="http://example.com/2020/10/15/Tech_HTML%E6%96%87%E6%9C%AC%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://example.com/2020/10/15/Tech_HTML%E6%96%87%E6%9C%AC%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE/</id>
+    <published>2020-10-15T15:51:18.000Z</published>
+    <updated>2020-10-15T08:21:33.000Z</updated>
+    
+    
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;内嵌HTML语言设置文本颜色&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tech" scheme="http://example.com/categories/Tech/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo备份_Github方案</title>
-    <link href="http://example.com/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/"/>
-    <id>http://example.com/2020/10/13/Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</id>
+    <link href="http://example.com/2020/10/13/Tech_Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/"/>
+    <id>http://example.com/2020/10/13/Tech_Hexo%E5%A4%87%E4%BB%BD_Github%E6%96%B9%E6%A1%88/</id>
     <published>2020-10-13T11:07:27.000Z</published>
     <updated>2020-10-13T14:10:41.037Z</updated>
     
@@ -43,8 +62,8 @@
   
   <entry>
     <title>Word域应用</title>
-    <link href="http://example.com/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/"/>
-    <id>http://example.com/2020/10/12/Word%E5%9F%9F%E5%BA%94%E7%94%A8/</id>
+    <link href="http://example.com/2020/10/12/Tech_Software_Word%E5%9F%9F%E5%BA%94%E7%94%A8/"/>
+    <id>http://example.com/2020/10/12/Tech_Software_Word%E5%9F%9F%E5%BA%94%E7%94%A8/</id>
     <published>2020-10-12T10:30:21.000Z</published>
     <updated>2020-10-13T14:07:51.507Z</updated>
     
@@ -66,8 +85,8 @@
   
   <entry>
     <title>WorkFlowy使用体验</title>
-    <link href="http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-    <id>http://example.com/2020/10/09/WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
+    <link href="http://example.com/2020/10/09/Tech_Software_WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
+    <id>http://example.com/2020/10/09/Tech_Software_WorkFlowy%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
     <published>2020-10-09T10:23:00.000Z</published>
     <updated>2020-10-13T14:11:14.686Z</updated>
     
@@ -89,8 +108,8 @@
   
   <entry>
     <title>NexT主题配置及优化</title>
-    <link href="http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/"/>
-    <id>http://example.com/2020/09/18/NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</id>
+    <link href="http://example.com/2020/09/18/Tech_NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/"/>
+    <id>http://example.com/2020/09/18/Tech_NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E5%8F%8A%E4%BC%98%E5%8C%96/</id>
     <published>2020-09-17T22:43:25.000Z</published>
     <updated>2020-10-13T14:11:24.774Z</updated>
     
@@ -112,8 +131,8 @@
   
   <entry>
     <title>Hexo基础建站</title>
-    <link href="http://example.com/2020/09/18/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/"/>
-    <id>http://example.com/2020/09/18/Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</id>
+    <link href="http://example.com/2020/09/18/Tech_Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/"/>
+    <id>http://example.com/2020/09/18/Tech_Hexo%E5%9F%BA%E7%A1%80%E5%BB%BA%E7%AB%99/</id>
     <published>2020-09-17T21:00:07.000Z</published>
     <updated>2020-10-13T03:59:40.000Z</updated>
     
@@ -135,11 +154,11 @@
   </entry>
   
   <entry>
-    <title>Onedrive软连接搭建实例_mklink命令的使用</title>
-    <link href="http://example.com/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B_mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://example.com/2020/09/17/Onedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E6%90%AD%E5%BB%BA%E5%AE%9E%E4%BE%8B_mklink%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <title>mlink命令搭建Onedrive软连接实例</title>
+    <link href="http://example.com/2020/09/17/Tech_mlink%E5%91%BD%E4%BB%A4%E6%90%AD%E5%BB%BAOnedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E4%BE%8B/"/>
+    <id>http://example.com/2020/09/17/Tech_mlink%E5%91%BD%E4%BB%A4%E6%90%AD%E5%BB%BAOnedrive%E8%BD%AF%E8%BF%9E%E6%8E%A5%E5%AE%9E%E4%BE%8B/</id>
     <published>2020-09-16T23:25:08.000Z</published>
-    <updated>2020-10-13T05:46:58.000Z</updated>
+    <updated>2020-10-16T04:25:12.000Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;OneDrive的自动同步功能在多主机工作时特别便捷，但OneDrive只能默认同步保存在该位置的文件到其服务器，有时需要同步本地其他目录的文件只能借助辅助文件夹手动同步。&lt;/p&gt;
@@ -160,8 +179,8 @@
   
   <entry>
     <title>Typora使用体验</title>
-    <link href="http://example.com/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-    <id>http://example.com/2020/09/16/Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
+    <link href="http://example.com/2020/09/16/Tech_Software_Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
+    <id>http://example.com/2020/09/16/Tech_Software_Typora%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</id>
     <published>2020-09-16T13:50:17.000Z</published>
     <updated>2020-10-13T14:10:34.885Z</updated>
     
@@ -185,8 +204,8 @@
   
   <entry>
     <title>CAD进阶笔记</title>
-    <link href="http://example.com/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2020/09/16/CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://example.com/2020/09/16/Tech_Software_CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2020/09/16/Tech_Software_CAD%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0/</id>
     <published>2020-09-16T09:07:21.000Z</published>
     <updated>2020-10-13T14:10:54.203Z</updated>
     
@@ -208,10 +227,10 @@
   
   <entry>
     <title>Product Hunt</title>
-    <link href="http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    <id>http://example.com/2020/01/21/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
+    <link href="http://example.com/2020/01/21/Tech_Software_Product%20Hunt/"/>
+    <id>http://example.com/2020/01/21/Tech_Software_Product%20Hunt/</id>
     <published>2020-01-20T17:40:07.000Z</published>
-    <updated>2020-10-13T14:10:26.752Z</updated>
+    <updated>2020-10-15T09:38:33.000Z</updated>
     
     
     <summary type="html">&lt;p align=&quot;center&quot;&gt;想起来就更新&lt;/p&gt;</summary>
@@ -227,8 +246,8 @@
   
   <entry>
     <title>Cmd Markdown语法参考</title>
-    <link href="http://example.com/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/"/>
-    <id>http://example.com/2020/01/09/Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</id>
+    <link href="http://example.com/2020/01/09/Tech_Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/"/>
+    <id>http://example.com/2020/01/09/Tech_Cmd%20Markdown%E8%AF%AD%E6%B3%95%E5%8F%82%E8%80%83/</id>
     <published>2020-01-09T06:33:56.000Z</published>
     <updated>2020-10-10T13:28:52.199Z</updated>
     
@@ -246,8 +265,8 @@
   
   <entry>
     <title>《利兹与青鸟》原作摘录</title>
-    <link href="http://example.com/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/"/>
-    <id>http://example.com/2020/01/09/%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</id>
+    <link href="http://example.com/2020/01/09/ACG_%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/"/>
+    <id>http://example.com/2020/01/09/ACG_%E3%80%8A%E5%88%A9%E5%85%B9%E4%B8%8E%E9%9D%92%E9%B8%9F%E3%80%8B%E5%8E%9F%E4%BD%9C%E6%91%98%E5%BD%95/</id>
     <published>2020-01-09T05:53:56.000Z</published>
     <updated>2020-10-13T14:09:50.886Z</updated>
     
