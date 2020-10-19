@@ -194,11 +194,11 @@
     <category term="Software" scheme="http://example.com/categories/Tech/Software/"/>
     
     
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
-    
     <category term="Typora" scheme="http://example.com/tags/Typora/"/>
     
     <category term="文本编辑器" scheme="http://example.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
